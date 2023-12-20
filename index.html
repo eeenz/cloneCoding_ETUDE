@@ -136,12 +136,41 @@
             <div class="right">
                 <a href="#" class="btn_search"><img src="#" alt=""></a>
                 <!-- 검색할때 열리는 창 -->
-                <div class="search_category">
-                    <h1>Search For Products</h1>
+                <div class="serch_bg">
+                    <form class="search_form" method="get">
+                        <fieldset>
+                            <legend class="skip">검색</legend>
+                            <ul class="src_head">
+                                <a href="#" class="src_logo"><img src="#" alt="ETUDE 로고"></a>
+                                <a href="#" class="btn_x"><img src="#" alt=""></a>
+                            </ul>
+                            <ul class="src_contens">
+                                <li>
+                                    <h2>Search For Products</h2>
+                                </li>
+                                <li>
+                                    <label for="src">
+                                        <input type="search" name="src" id="src" placeholder="#립케어 강자! 진저슈가">
+                                        <button type="submit" name="src_btn" id="src_btn"></button>
+                                    </label>
+                                </li>
+                                <li>
+                                    <p>TREND<em>#TAG</em></p>
+                                    <a href="#">신제품 모아보기</a>
+                                    <a href="#">진저슈가</a>
+                                    <a href="#">플레이 컬러 아이즈</a>
+                                    <a href="#">순정</a>
+                                    <a href="#">비건</a>
+                                    <a href="#">픽싱 틴트</a>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
                 </div>
-                <!-- 검색할때 열리는 창 //끝// -->
-                <a href="#" class="btn_menu"><img src="#" alt=""></a>
                 <!-- 햄버거바 클릭할때 열리는 창 -->
+                <a href="#" class="btn_x"><img src="#" alt=""></a>
+                <a href="#" class="btn_menu"><img src="#" alt=""></a>
+                <div class="menu_bg">
                     <ul class="side_category">
                         <li>
                             <a href="#">BRAND</a>
@@ -171,27 +200,149 @@
                                 <li><a href="#">립</a>
                                     <ul class="side_sub_lip">
                                         <li><a href="#">전체</a></li>
-                                        <li><a href="#">싱글섀도우</a></li>
-                                        <li><a href="#">아이팔레트</a></li>
-                                        <li><a href="#">싱글섀도우</a></li>
-                                        <li><a href="#">마스카라</a></li>
-                                        <li><a href="#">아이라이너</a></li>
-                                        <li><a href="#">아이브라우</a></li>
+                                        <li><a href="#">립스틱</a></li>
+                                        <li><a href="#">틴트</a></li>
+                                        <li><a href="#">글로스</a></li>
+                                        <li><a href="#">립펜슬</a></li>
+                                        <li><a href="#">립케어</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">페이스</a></li>
-                                <li><a href="#">네일</a></li>
-                                <li><a href="#">스킨케어</a></li>
-                                <li><a href="#">마스크·팩</a></li>
-                                <li><a href="#">클렌저</a></li>
-                                <li><a href="#">바디</a></li>
-                                <li><a href="#">헤어</a></li>
-                                <li><a href="#">툴</a></li>
+                                <li><a href="#">페이스</a>
+                                    <ul class="side_sub_face">
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">베이스·프라이머</a></li>
+                                        <li><a href="#">쿠션·파운데이션</a></li>
+                                        <li><a href="#">BB·컨실러</a></li>
+                                        <li><a href="#">팩트·파우더</a></li>
+                                        <li><a href="#">컨투어링·하이라이터</a></li>
+                                        <li><a href="#">블러셔</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">네일</a>
+                                    <ul class="side_sub_nail">
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">네일컬러</a></li>
+                                        <li><a href="#">네일케어</a></li>
+                                        <li><a href="#">네일리무버</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스킨케어</a>
+                                    <ul class="side_sub_skin">
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">토너·패드</a></li>
+                                        <li><a href="#">에멀전</a></li>
+                                        <li><a href="#">에센스·세럼</a></li>
+                                        <li><a href="#">크림·밤</a></li>
+                                        <li><a href="#">미스트</a></li>
+                                        <li><a href="#">선케어</a></li>
+                                        <li><a href="#">세트</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">마스크·팩</a>
+                                    <ul class="side_sub_mask">
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">시트마스크</a></li>
+                                        <li><a href="#">페이셜팩</a></li>
+                                        <li><a href="#">패치</a></li>
+                                    </ul>
+                                </li> 
+                                <li><a href="#">클렌저</a>
+                                    <ul class="side_sub_cleanser">
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">페이셜 클렌징</a></li>
+                                        <li><a href="#">메이크업 클렌징</a></li>
+                                        <li><a href="#">필링·스크럽</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">바디</a>
+                                    <ul class="side_sub_body">
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">워시</a></li>
+                                        <li><a href="#">보습</a></li>
+                                        <li><a href="#">핸드·풋</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">헤어</a>
+                                    <ul class="side_sub_hair">
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">컬러·스타일링</a></li>
+                                        <li><a href="#">헤어케어</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">툴</a>
+                                    <ul class="side_sub_tool">
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">브러쉬</a></li>
+                                        <li><a href="#">퍼프</a></li>
+                                        <li><a href="#">화장·솜면봉</a></li>
+                                        <li><a href="#">속눈썹·브라우</a></li>
+                                        <li><a href="#">공용기</a></li>
+                                        <li><a href="#">헤어도구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MAKEUP LOOK</a>
+                        </li>
+                        <li>
+                            <a href="#">FOUNDATION FACTORY</a>
+                        </li>
+                        <li>
+                            <a href="#">@etudeofficial</a>
+                            <ul class="side_official">
+                                <li><a href="#">Instagram<img src="#" alt=""></a></li>
+                                <li><a href="#">Tiktok<img src="#" alt=""></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">STORE</a>
+                            <ul class="side_store">
+                                <li><a href="#">온라인<img src="#" alt=""></a></li>
+                                <li><a href="#">오프라인<img src="#" alt=""></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                            <ul class="side_contact">
+                                <li><a href="#">공지사항<img src="#" alt=""></a></li>
+                                <li><a href="#">FAQ<img src="#" alt=""></a></li>
+                                <li><a href="#">고객문의<img src="#" alt=""></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MEMBERSHIP</a>
+                            <ul class="side_member">
+                                <li><a href="#">핑크멤버십<img src="#" alt=""></a></li>
+                                <li><a href="#">뷰티포인트<img src="#" alt=""></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">뽀오얀</a>
+                            <ul class="side_bbo">
+                                <li><a href="#">About 뽀오얀<img src="#" alt=""></a></li>
+                                <li><a href="#">제품 보기<img src="#" alt=""></a></li>
+                            </ul>
+                        </li>
+                        <li class="hide_area">
+                            <ul class="hide_button">
+                                <a href="#">
+                                    <p><em>Shopping at</em></p>
+                                    <p>네이버 브랜드 스토어</p>
+                                    <img src="#" alt="">
+                                </a>
+                            </ul>
+                            <ul class="hide_lnb">
+                                <li><a href="#">네이버 브랜드 스토어</a></li>
+                                <li><a href="#">올리브영 브랜드관</a></li>
+                                <li><a href="#">아모레몰 브랜드관</a></li>
+                                <li><a href="#">ETUDE GLOBAL MALL</a></li>
                             </ul>
                         </li>
                     </ul>
-                <!-- 햄버거바 클릭할때 열리는 창 //끝// -->
-                <a href="#" class="btn_x"><img src="#" alt=""></a>
+                </div>
             </div>
         </nav>
     </header>
