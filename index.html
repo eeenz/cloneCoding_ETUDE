@@ -10,19 +10,17 @@
 <body>
     <header>
         <!--  ///////////////////////////////  header - left /////////////////////////////// -->
+        <h1><a href="./index.html"><img src="./images/logo/img_logo_main_2023-1.png" alt="에뛰드하우스 로고"></a></h1>
         <nav class="gnb">
             <ul class="left">
-                <!-- 에뛰드 로고 -->
-                <li class="logo">
-                    <a href="#"><img src="./images/logo/img_logo_main_2023-1.png" alt=""></a>
-                </li>
                 <!-- 카테고리_메인 => PRODUCT -->
                 <li class="product"><a href="#">PRODUCT</a>
-                    <!-- 카테고리_lnb 영역 -->
-                    <ul class="lnb_left">
-                        <li><a href="#">신제품<img src="#" alt=""></a></li>
-                        <li><a href="#">전체보기<img src="#" alt=""></a></li>
-                    </ul>
+                <!-- 카테고리_lnb 영역 -->
+                <div class="nav_lnb">
+                    <div class="lnb_left">
+                        <a href="#">신제품<img src="#" alt=""></a>
+                        <a href="#">전체보기<img src="#" alt=""></a>
+                    </div>
                     <ul class="lnb_right">
                         <li class="cate_eye"><a href="#">아이</a>
                             <ul>
@@ -120,7 +118,7 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
+                </div>
                 <!-- 카테고리_메인 => BRAND -->
                 <li class="brand"><a href="#">BRAND</a>
                     <a href="#">About ETUDE</a>
@@ -134,43 +132,41 @@
             </ul>
         <!--  ///////////////////////////////  header - right  ////////////////////////////// -->
             <div class="right">
-                <a href="#" class="btn_search"><img src="#" alt=""></a>
-                <!-- 검색할때 열리는 창 -->
-                <div class="serch_bg">
-                    <form class="search_form" method="get">
-                        <fieldset>
-                            <legend class="skip">검색</legend>
-                            <ul class="src_head">
-                                <li>
-                                    <a href="#" class="serch_logo"><img src="#" alt="ETUDE 로고"></a>
-                                    <a href="#" class="btn_x"><img src="#" alt=""></a>
-                                </li>
-                            </ul>
-                            <ul class="src_contens">
-                                <li>
-                                    <h2>Search For Products</h2>
-                                </li>
-                                <li>
-                                    <label for="src"><input type="search" name="src" id="src" placeholder="#립케어 강자! 진저슈가"></label>
-                                    <button type="submit" name="src_btn" id="src_btn"></button>
-                                </li>
-                                <li>
-                                    <p>TREND<em>#TAG</em></p>
-                                    <a href="#">신제품 모아보기</a>
-                                    <a href="#">진저슈가</a>
-                                    <a href="#">플레이 컬러 아이즈</a>
-                                    <a href="#">순정</a>
-                                    <a href="#">비건</a>
-                                    <a href="#">픽싱 틴트</a>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </form>
+                <a href="#" class="btn_search"><img src="#" alt="검색하기"></a>
+                <!-- 검색할 때 열리는 창 -->
+                <div class="search_bg">
+                    <div class="src_head">
+                        <h1><a href="#"><img src="#" alt="에뛰드하우스 로고"></a></h1>
+                        <a href="#" class="btn_x"><img src="#" alt="검색창닫기"></a>
+                    </div>
+                    <div class="src_contens">
+                        <h2>Search For Products</h2>
+                        <form class="search_form" method="get">
+                            <fieldset>
+                                <legend class="skip">검색</legend>
+                                <label for="src"><input type="search" name="src" id="src" placeholder="#립케어 강자! 진저슈가"></label>
+                                <button type="submit" name="src_btn" id="src_btn"></button>
+                            </fieldset>
+                        </form>
+                        <div class="src_comment">
+                            <h3>TREND <span>#TAG</span></h3>
+                            <a href="#">신제품 모아보기</a>
+                            <a href="#">진저슈가</a>
+                            <a href="#">플레이 컬러 아이즈</a>
+                            <a href="#">순정</a>
+                            <a href="#">비건</a>
+                            <a href="#">픽싱 틴트</a>
+                        </div>
+                    </div>
                 </div>
-                <!-- 햄버거바 클릭할때 열리는 창 -->
-                <a href="#" class="btn_x"><img src="#" alt=""></a>
-                <a href="#" class="btn_menu"><img src="#" alt=""></a>
+                <!-- 햄버거바 클릭할 때 열리는 창 -->
+                <a href="#" class="btn_menu"><img src="#" alt="사이드 메뉴 펼쳐보기"></a>
                 <div class="menu_bg">
+                    <div class="side_menu_head">
+                        <h1><a href="#"><img src="#" alt="에뛰드하우스 로고"></a></h1>
+                        <a href="#" class="btn_search"><img src="#" alt="검색창 열기"></a>
+                        <a href="#" class="btn_x"><img src="#" alt="사이드 메뉴 창닫기"></a>
+                    </div>
                     <ul class="side_category">
                         <li>
                             <a href="#">BRAND</a>
@@ -284,12 +280,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#">MAKEUP LOOK</a>
-                        </li>
-                        <li>
-                            <a href="#">FOUNDATION FACTORY</a>
-                        </li>
+                        <li><a href="#">MAKEUP LOOK</a></li>
+                        <li><a href="#">FOUNDATION FACTORY</a></li>
                         <li>
                             <a href="#">@etudeofficial</a>
                             <ul class="side_official">
@@ -326,25 +318,20 @@
                                 <li><a href="#">제품 보기<img src="#" alt=""></a></li>
                             </ul>
                         </li>
-                        <li class="hide_area">
-                            <ul class="hide_button">
-                                <li>
-                                    <a href="#">
-                                        <p><em>Shopping at</em></p>
-                                        <p>네이버 브랜드 스토어</p>
-                                        <img src="#" alt="">
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            <ul class="hide_lnb">
-                                <li><a href="#">네이버 브랜드 스토어</a></li>
-                                <li><a href="#">올리브영 브랜드관</a></li>
-                                <li><a href="#">아모레몰 브랜드관</a></li>
-                                <li><a href="#">ETUDE GLOBAL MALL</a></li>
-                            </ul>
-                        </li>
                     </ul>
+                    <div class="naver_store_btn">
+                        <div class="naver_store_list">
+                            <a href="#">네이버 브랜드 스토어</a>
+                            <a href="#">올리브영 브랜드관</a>
+                            <a href="#">아모레몰 브랜드관</a>
+                            <a href="#">ETUDE GLOBAL MALL</a>
+                        </div>
+                        <a href="#">
+                            <span>Shopping at</span>
+                            <span>네이버 브랜드 스토어</span>
+                            <img src="#" alt="네이버 브랜드 스토어 바로가기 목록보기">
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- 모바일용 헤더 -->
@@ -352,9 +339,32 @@
                 <ul>
                     <li></li>
                 </ul>
-            </div>
+            </div>                
         </nav>
     </header>
+    <!-- 맨위로 이동하는 ^ 버튼 -->
+    <a href="#" class="site_btn_up"><img src="#" alt="맨위로 이동하기 아이콘"></a>
+    <!-- 모바일용 + 버튼 -->
+    <a href="#" class="site_btn_plus"><img src="#" alt="메뉴 더보기 아이콘"></a>
+    <ul class="btn_list">
+        <li>
+            <a href="#">HOME</a>
+            <a href="#"><img src="#" alt=""></a>
+        </li>
+        <li>
+            <a href="#">파운데이션 팩토리</a>
+            <a href="#"><img src="#" alt=""></a>
+        </li>
+        <li>
+            <a href="#">스토어</a>
+            <a href="#"><img src="#" alt=""></a>
+        </li>
+        <li>
+            <a href="#">고객문의</a>
+            <a href="#"><img src="#" alt=""></a>
+        </li>
+    </ul>
+    <a href="#" class="site_btn_x"></a>
     <main>
         <!-- 메인 배너 영역 -->
         <section class="banner">
@@ -844,28 +854,5 @@
             <a href="#"><img src="#" alt="에뛰드하우스 틱톡 바로가기"></a>
         </div>
     </footer>
-    <!-- 맨위로 이동하는 ^ 버튼 -->
-    <a href="#" class="site_btn_up"></a>
-    <!-- 모바일용 + 버튼 -->
-    <a href="#" class="site_btn_plus"></a>
-    <ul class="btn_list">
-        <li>
-            <a href="#">HOME</a>
-            <a href="#"><img src="#" alt=""></a>
-        </li>
-        <li>
-            <a href="#">파운데이션 팩토리</a>
-            <a href="#"><img src="#" alt=""></a>
-        </li>
-        <li>
-            <a href="#">스토어</a>
-            <a href="#"><img src="#" alt=""></a>
-        </li>
-        <li>
-            <a href="#">고객문의</a>
-            <a href="#"><img src="#" alt=""></a>
-        </li>
-    </ul>
-    <a href="#" class="site_btn_x"></a>
 </body>
 </html> 
