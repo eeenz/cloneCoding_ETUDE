@@ -8,118 +8,140 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
+    <!-- 맨위로 이동하는 ^ 버튼 -->
+    <a href="#" class="site_btn_up"><img src="#" alt="맨위로 이동하기"></a>
+    <!-- 모바일용 + 버튼 -->
+    <a href="#" class="site_btn_plus"><img src="#" alt="메뉴 더보기"></a>
+    <ul class="btn_list">
+        <li>
+            <a href="#">HOME</a>
+            <a href="#"><img src="#" alt=""></a>
+        </li>
+        <li>
+            <a href="#">파운데이션 팩토리</a>
+            <a href="#"><img src="#" alt=""></a>
+        </li>
+        <li>
+            <a href="#">스토어</a>
+            <a href="#"><img src="#" alt=""></a>
+        </li>
+        <li>
+            <a href="#">고객문의</a>
+            <a href="#"><img src="#" alt=""></a>
+        </li>
+    </ul>
+    <a href="#" class="site_btn_x"></a>
     <header>
         <!--  ///////////////////////////////  header - left /////////////////////////////// -->
-        <h1><a href="./index.html"><img src="./images/logo/img_logo_main_2023-1.png" alt="에뛰드하우스 로고"></a></h1>
+        <h1><a href="./index.html"><img src="./images/logo/img_logo_main_2023-1.png" alt="에뛰드하우스"></a></h1>
         <nav class="gnb">
             <ul class="left">
-                <!-- 카테고리_메인 => PRODUCT -->
                 <li class="product"><a href="#">PRODUCT</a>
-                <!-- 카테고리_lnb 영역 -->
-                <div class="nav_lnb">
-                    <div class="lnb_left">
-                        <a href="#">신제품<img src="#" alt=""></a>
-                        <a href="#">전체보기<img src="#" alt=""></a>
+                    <!-- PRODUCT - lnb 영역 -->
+                    <div class="lnb_product">
+                        <div class="lnb_left">
+                            <a href="#">신제품<img src="#" alt=""></a>
+                            <a href="#">전체보기<img src="#" alt=""></a>
+                        </div>
+                        <ul class="lnb_right">
+                            <li class="cate_eye"><a href="#">아이</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">싱글섀도우</a></li>
+                                    <li><a href="#">아이팔레트</a></li>
+                                    <li><a href="#">마스카라</a></li>
+                                    <li><a href="#">아이라이너</a></li>
+                                    <li><a href="#">아이브로우</a></li>
+                                </ul>
+                            </li>
+                            <li class="cate_lip"><a href="#">립</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">립스틱</a></li>
+                                    <li><a href="#">틴트</a></li>
+                                    <li><a href="#">글로스</a></li>
+                                    <li><a href="#">립펜슬</a></li>
+                                    <li><a href="#">립케어</a></li>
+                                </ul>
+                            </li>
+                            <li class="cate_face"><a href="#">페이스</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">베이스·프라이머</a></li>
+                                    <li><a href="#">쿠션·파운데이션</a></li>
+                                    <li><a href="#">BB·컨실러</a></li>
+                                    <li><a href="#">팩트·파우더</a></li>
+                                    <li><a href="#">컨투어링·하이라이터</a></li>
+                                    <li><a href="#">블러셔</a></li>
+                                </ul>
+                            </li>
+                            <li class="cate_skin"><a href="#">스킨케어</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">토너·패드</a></li>
+                                    <li><a href="#">에멀전</a></li>
+                                    <li><a href="#">에센스·세럼</a></li> 
+                                    <li><a href="#">크림·밤</a></li> 
+                                    <li><a href="#">미스트</a></li> 
+                                    <li><a href="#">선케어</a></li> 
+                                    <li><a href="#">세트</a></li> 
+                                    <li><a href="#">기타</a></li> 
+                                </ul>
+                            </li>
+                            <li class="cate_nail"><a href="#">네일</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">네일컬러</a></li>
+                                    <li><a href="#">네일케어</a></li>
+                                    <li><a href="#">네일리무버</a></li> 
+                                </ul>
+                            </li>
+                            <li class="cate_mask"><a href="#">마스크·팩</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">시트마스크</a></li>
+                                    <li><a href="#">페이셜팩</a></li>
+                                    <li><a href="#">패치</a></li> 
+                                </ul>
+                            </li>
+                            <li class="cate_cleanser"><a href="#">클렌저</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">페이셜 클렌징</a></li>
+                                    <li><a href="#">메이크업 클렌징</a></li>
+                                    <li><a href="#">필링·스크럽</a></li> 
+                                </ul>
+                            </li>
+                            <li class="cate_body"><a href="#">바디</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">워시</a></li>
+                                    <li><a href="#">보습</a></li>
+                                    <li><a href="#">핸드·풋</a></li> 
+                                </ul>
+                            </li>
+                            <li class="cate_hair"><a href="#">헤어</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">컬러·스타일링</a></li>
+                                    <li><a href="#">헤어케어</a></li>
+                                </ul>
+                            </li>
+                            <li class="cate_tool"><a href="#">툴</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">브러쉬</a></li>
+                                    <li><a href="#">퍼프</a></li>
+                                    <li><a href="#">화장솜·면봉</a></li>
+                                    <li><a href="#">속눈썹·브라우</a></li>
+                                    <li><a href="#">공용기</a></li>
+                                    <li><a href="#">헤어도구</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="lnb_right">
-                        <li class="cate_eye"><a href="#">아이</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">싱글섀도우</a></li>
-                                <li><a href="#">아이팔레트</a></li>
-                                <li><a href="#">마스카라</a></li>
-                                <li><a href="#">아이라이너</a></li>
-                                <li><a href="#">아이브로우</a></li>
-                            </ul>
-                        </li>
-                        <li class="cate_lip"><a href="#">립</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">립스틱</a></li>
-                                <li><a href="#">틴트</a></li>
-                                <li><a href="#">글로스</a></li>
-                                <li><a href="#">립펜슬</a></li>
-                                <li><a href="#">립케어</a></li>
-                            </ul>
-                        </li>
-                        <li class="cate_face"><a href="#">페이스</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">베이스·프라이머</a></li>
-                                <li><a href="#">쿠션·파운데이션</a></li>
-                                <li><a href="#">BB·컨실러</a></li>
-                                <li><a href="#">팩트·파우더</a></li>
-                                <li><a href="#">컨투어링·하이라이터</a></li>
-                                <li><a href="#">블러셔</a></li>
-                            </ul>
-                        </li>
-                        <li class="cate_skin"><a href="#">스킨케어</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">토너·패드</a></li>
-                                <li><a href="#">에멀전</a></li>
-                                <li><a href="#">에센스·세럼</a></li> 
-                                <li><a href="#">크림·밤</a></li> 
-                                <li><a href="#">미스트</a></li> 
-                                <li><a href="#">선케어</a></li> 
-                                <li><a href="#">세트</a></li> 
-                                <li><a href="#">기타</a></li> 
-                            </ul>
-                        </li>
-                        <li class="cate_nail"><a href="#">네일</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">네일컬러</a></li>
-                                <li><a href="#">네일케어</a></li>
-                                <li><a href="#">네일리무버</a></li> 
-                            </ul>
-                        </li>
-                        <li class="cate_mask"><a href="#">마스크·팩</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">시트마스크</a></li>
-                                <li><a href="#">페이셜팩</a></li>
-                                <li><a href="#">패치</a></li> 
-                            </ul>
-                        </li>
-                        <li class="cate_cleanser"><a href="#">클렌저</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">페이셜 클렌징</a></li>
-                                <li><a href="#">메이크업 클렌징</a></li>
-                                <li><a href="#">필링·스크럽</a></li> 
-                            </ul>
-                        </li>
-                        <li class="cate_body"><a href="#">바디</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">워시</a></li>
-                                <li><a href="#">보습</a></li>
-                                <li><a href="#">핸드·풋</a></li> 
-                            </ul>
-                        </li>
-                        <li class="cate_hair"><a href="#">헤어</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">컬러·스타일링</a></li>
-                                <li><a href="#">헤어케어</a></li>
-                            </ul>
-                        </li>
-                        <li class="cate_tool"><a href="#">툴</a>
-                            <ul>
-                                <li><a href="#">전체</a></li>
-                                <li><a href="#">브러쉬</a></li>
-                                <li><a href="#">퍼프</a></li>
-                                <li><a href="#">화장솜·면봉</a></li>
-                                <li><a href="#">속눈썹·브라우</a></li>
-                                <li><a href="#">공용기</a></li>
-                                <li><a href="#">헤어도구</a></li>
-                                <li><a href="#">기타</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- 카테고리_메인 => BRAND -->
+                </li>
                 <li class="brand"><a href="#">BRAND</a>
                     <div class="lnb_brand">
                         <a href="#">About ETUDE</a>
@@ -127,18 +149,18 @@
                         <a href="#">지구를 위한 활동</a>
                     </div>
                 </li>
-                <!-- 카테고리_메인 => MAKEUPLOOK, STORE, FOUNDATION FACTORY -->
                 <li class="makeup"><a href="#">MAKEUPLOOK</a></li>
                 <li class="store"><a href="#">STORE</a></li>
                 <li class="foundation"><a href="#">FOUNDATION FACTORY</a></li>
             </ul>
+        </nav>
         <!--  ///////////////////////////////  header - right  ////////////////////////////// -->
             <div class="right">
                 <a href="#" class="btn_search"><img src="#" alt="검색하기"></a>
                 <!-- 검색할 때 열리는 창 -->
                 <div class="search_bg">
                     <div class="src_head">
-                        <h1><a href="#"><img src="#" alt="에뛰드하우스 로고"></a></h1>
+                        <h1><a href="#"><img src="#" alt="에뛰드하우스"></a></h1>
                         <a href="#" class="btn_x"><img src="#" alt="검색창닫기"></a>
                     </div>
                     <div class="src_contens">
@@ -146,8 +168,8 @@
                         <form class="search_form" method="get">
                             <fieldset>
                                 <legend class="skip">검색</legend>
-                                <label for="src"><input type="search" name="src" id="src" placeholder="#립케어 강자! 진저슈가"></label>
-                                <button type="submit" name="src_btn" id="src_btn"></button>
+                                <input type="search" name="src" id="src" placeholder="#립케어 강자! 진저슈가">
+                                <button type="submit" name="src_btn" id="src_btn"><img src="#" alt=""></button>
                             </fieldset>
                         </form>
                         <div class="src_comment">
@@ -162,10 +184,14 @@
                     </div>
                 </div>
                 <!-- 햄버거바 클릭할 때 열리는 창 -->
-                <a href="#" class="btn_menu"><img src="#" alt="사이드 메뉴 펼쳐보기"></a>
+                <a href="#" class="btn_barmenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
                 <div class="menu_bg">
                     <div class="side_menu_head">
-                        <h1><a href="#"><img src="#" alt="에뛰드하우스 로고"></a></h1>
+                        <h1><a href="#"><img src="#" alt="에뛰드하우스"></a></h1>
                         <a href="#" class="btn_search"><img src="#" alt="검색창 열기"></a>
                         <a href="#" class="btn_x"><img src="#" alt="사이드 메뉴 창닫기"></a>
                     </div>
@@ -336,97 +362,120 @@
                     </div>
                 </div>
             </div>
-            <!-- 모바일용 헤더 -->
-            <div class="m_header">
-                <ul>
-                    <li></li>
-                </ul>
-            </div>                
-        </nav>
+        <!-- 모바일용 헤더 -->
+        <div class="m_header">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
     </header>
-    <!-- 맨위로 이동하는 ^ 버튼 -->
-    <a href="#" class="site_btn_up"><img src="#" alt="맨위로 이동하기 아이콘"></a>
-    <!-- 모바일용 + 버튼 -->
-    <a href="#" class="site_btn_plus"><img src="#" alt="메뉴 더보기 아이콘"></a>
-    <ul class="btn_list">
-        <li>
-            <a href="#">HOME</a>
-            <a href="#"><img src="#" alt=""></a>
-        </li>
-        <li>
-            <a href="#">파운데이션 팩토리</a>
-            <a href="#"><img src="#" alt=""></a>
-        </li>
-        <li>
-            <a href="#">스토어</a>
-            <a href="#"><img src="#" alt=""></a>
-        </li>
-        <li>
-            <a href="#">고객문의</a>
-            <a href="#"><img src="#" alt=""></a>
-        </li>
-    </ul>
-    <a href="#" class="site_btn_x"></a>
     <main>
         <!-- 메인 배너 영역 -->
-        <section class="banner">
-            <a href="#" class="banner_1">
-                <h2>리플레이 컬렉션 ♥네이버 단독 선발매♥</h2>
-                <p>다시 보고, 모으고 싶은 소장가치 환생템 뉴이어 Replay</p>
-            </a>
-            <a href="#" class="banner_2">
-                <h2>리플레이 컬렉션 ♥네이버 단독 선발매♥</h2>
-                <p>신상 위크 12/18 ~ 12/24</p>
-            </a>
-            <a href="#" class="banner_3">
-                <h2>롯데온 선/런/칭</h2>
-                <p>속눈썹 뿌리부터 한올 한올 결살리는 역대급 마스카라♥</p>
-            </a>
-            <a href="#" class="banner_4">
-                <h2>핑덕 러버스! 핑카이브 컬렉션</h2>
-                <p>포근하고 따뜻한 웜 핑크 베리에이션 팔레트</p>
-            </a>
-            <a href="#" class="banner_5">
-                <h2>조효진 개발 쉐딩 스틱</h2>
-                <p>한-끗 차이로 달라지는 부위별 음영 재창조 메이커</p>
-            </a>
-            <a href="#" class="banner_6">
-                <h2>CITY EDITION</h2>
-                <p>매력적인 도시의 느낌을 담아낸 컬러 컬렉션</p>
-            </a>
-            <a href="#" class="banner_7">
-                <h2>고수분 물빛 스밈 틴트</h2>
-                <p>맑은 물빛이 촉촉하게 스며드는 프루티 듀이 틴트</p>
-            </a>
-            <a href="#" class="banner_8">
-                <h2>민감 피부 자극도 제로</h2>
-                <p>순정 약산성 5.5 진정 토너</p>
-            </a>
+        <section>
+            <div class="banner banner1">
+                <div class="txt">
+                    <h2>리플레이 컬렉션 ♥네이버 단독 선발매♥</h2>
+                    <p>다시 보고, 모으고 싶은 소장가치 환생템 뉴이어 Replay</p>
+                </div>
+                <div class="bar_progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="banner banner2">
+                <div class="txt">
+                    <h2>리플레이 컬렉션 ♥네이버 단독 선발매♥</h2>
+                    <p>신상 위크 12/18 ~ 12/24</p>
+                </div>
+                <div class="bar_progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="banner banner3">
+                <div class="txt">
+                    <h2>롯데온 선/런/칭</h2>
+                    <p>속눈썹 뿌리부터 한올 한올 결살리는 역대급 마스카라♥</p>
+                </div>
+                <div class="bar_progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="banner banner4">
+                <div class="txt">
+                    <h2>핑덕 러버스! 핑카이브 컬렉션</h2>
+                    <p>포근하고 따뜻한 웜 핑크 베리에이션 팔레트</p>
+                </div>
+                <div class="bar_progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="banner banner5">
+                <div class="txt">
+                    <h2>조효진 개발 쉐딩 스틱</h2>
+                    <p>한-끗 차이로 달라지는 부위별 음영 재창조 메이커</p>
+                </div>
+                <div class="bar_progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="banner banner6">
+                <div class="txt">
+                    <h2>CITY EDITION</h2>
+                    <p>매력적인 도시의 느낌을 담아낸 컬러 컬렉션</p>
+                </div>
+                <div class="bar_progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="banner banner7">
+                <div class="txt">
+                    <h2>고수분 물빛 스밈 틴트</h2>
+                    <p>맑은 물빛이 촉촉하게 스며드는 프루티 듀이 틴트</p>
+                </div>
+                <div class="bar_progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="banner banner8">
+                <div class="txt">
+                    <h2>민감 피부 자극도 제로</h2>
+                    <p>순정 약산성 5.5 진정 토너</p>
+                </div>
+                <div class="bar_progress">
+                    <span></span>
+                </div>
+            </div>
         </section>
-        <section class="product">
-            <ul>
-                <li class="product_1">
+        <section>
+            <ul class="product">
+                <li>
                     <a href="#">
-                        <span><img src="#" alt=""></span>
+                        <p><img src="#" alt=""></p>
                         <h3>픽싱틴트</h3>
                         <p>12,000원</p>
                     </a>
                 </li>
-                <li class="product_2">
+                <li>
                     <a href="#">
-                        <span><img src="#" alt=""></span>
+                        <p><img src="#" alt=""></p>
                         <h3>플레이 컬러 아이즈</h3>
                         <p>30,000원</p>
                     </a>
                 </li>
-                <li class="product_3">
+                <li>
                     <a href="#">
-                        <span><img src="#" alt=""></span>
+                        <p><img src="#" alt=""></p>
+                        <h3>컬 픽스 마스카라</h3>
+                        <p>15,000원</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p><img src="#" alt=""></p>
                         <h3>그림자 쉐딩</h3>
                         <p>20,000원</p>
                     </a>
                 </li>
-                <li class="product_4">
+                <li>
                     <a href="#">
                         <p><img src="#" alt=""></p>
                         <h3>순정 시카 카밍 앰플 에센스</h3>
@@ -435,104 +484,100 @@
                 </li>
             </ul>
         </section>
-        <section class="makeup_look">
+        <section>
             <div class="bg_img">
-                <ul class="img_view">
-                    <li>
-                        <img src="#" alt="">  
-                        <span class="title">Makeup Look</span>
-                        <a href="#">View More</a>  
-                    </li>
-                    <li><a href="#"><img src="#" alt=""></a></li>
-                    <li><img src="#" alt=""></li>
-                </ul>
-                <ul class="img_item">
-                    <li>
-                        <a href="#">
-                            <img src="#" alt="" class="photo">
-                            <span>EYE</span>
-                            <img src="#" alt="" class="btn_arw">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="#" alt="" class="photo">
-                            <span>EYE</span>
-                            <img src="#" alt="" class="btn_arw">
-                        </a>
-                    </li>
-                </ul>
+                <div class="top">
+                    <p><img src="#" alt=""></p>
+                    <h2>Makeup Look</h2>
+                    <p>지금 나에게 어울리는 메이크업 룩은?</p>
+                    <a href="#">View More</a>
+                </div>
+                <a href="#"><img src="#" alt=""></a>
+                <p><img src="#" alt=""></p>
+                <div class="item">
+                    <a href="#">
+                        <img src="#" alt="" class="photo">
+                        <span>EYE</span>
+                        <img src="#" alt="" class="btn_arw">
+                    </a>
+                    <a href="#">
+                        <img src="#" alt="" class="photo">
+                        <span>EYE</span>
+                        <img src="#" alt="" class="btn_arw">
+                    </a>
+                </div>
             </div>
         </section>
-        <section class="product_skin_care">
-            <div class="skin_bg"></div>
+        <section>
             <div class="skin_contents">
-                <ul class="top">
-                    <li>
-                        <span class="title">SOON JUNG</span>
-                        <span>30년 History, 저자극 검증 System</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#"><img src="#" alt=""></a>
-                        <span class="icon_new">NEW</span>
-                    </li>
-                    <li>
-                        <p>#보습크림 #순정</p>
-                        <a>순정 2x베리어 보습 크림 60ml</a>
-                        <p><em>17,000</em>원</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#"><img src="#" alt=""></a>
-                        <span class="icon_new">NEW</span>
-                    </li>
-                    <li>
-                        <p>#순정 #앰플에센스</p>
-                        <a>순정 시카 카밍 앰플 에센스 50ml</a>
-                        <p><em>29,000</em>원</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#"><img src="#" alt=""></a>
-                        <span class="icon_new">NEW</span>
-                    </li>
-                    <li>
-                        <p>#순정 #약산성 #폼클렌징</p>
-                        <a>순정 약산성 5.5 폼 클렌저 150ml</a>
-                        <p><em>12,000</em>원</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#"><img src="#" alt=""></a>
-                        <span class="icon_new">NEW</span>
-                    </li>
-                    <li>
-                        <p>#수분크림 #순정</p>
-                        <a>순정 수분 베리어 크림 75ml</a>
-                        <p><em>22,000</em>원</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#"><img src="#" alt=""></a>
-                        <span class="icon_new">NEW</span>
-                    </li>
-                    <li>
-                        <p>#순정 #약산성</p>
-                        <a>순정 약산성 6.5 휩 클렌저 150ml</a>
-                        <a href="#" class="item_option">
-                            <img src="#" alt="">
-                            <img src="#" alt="">
-                            <img src="#" alt="">
-                        </a>
-                        <p><em>11,000</em>원</p>
-                    </li>
-                </ul>
+                <div class="top">
+                    <p><img src="#" alt=""></p>
+                    <h2>SOON JUNG</h2>
+                    <p>30년 History, 저자극 검증 System</p>
+                    <a href="#">View More</a>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li>
+                            <p class="icon_new">NEW</p>
+                            <a href="#"><img src="#" alt=""></a>
+                        </li>
+                        <li>
+                            <p>#보습크림 #순정</p>
+                            <h3><a href="#">순정 2x베리어 보습 크림 60ml</a></h3>
+                            <p><em>17,000</em>원</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p class="icon_new">NEW</p>
+                            <a href="#"><img src="#" alt=""></a>
+                        </li>
+                        <li>
+                            <p>#순정 #앰플에센스</p>
+                            <h3><a href="#">순정 시카 카밍 앰플 에센스 50ml</a></h3>
+                            <p><em>29,000</em>원</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p class="icon_new">NEW</p>
+                            <a href="#"><img src="#" alt=""></a>
+                        </li>
+                        <li>
+                            <p>#순정 #약산성 #폼클렌징</p>
+                            <h3><a href="#">순정 약산성 5.5 폼 클렌저 150ml</a></h3>
+                            <p><em>12,000</em>원</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p class="icon_new">NEW</p>
+                            <a href="#"><img src="#" alt=""></a>
+                        </li>
+                        <li>
+                            <p>#수분크림 #순정</p>
+                            <h3><a href="#">순정 수분 베리어 크림 75ml</a></h3>
+                            <p><em>22,000</em>원</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p class="icon_new">NEW</p>
+                            <a href="#"><img src="#" alt=""></a>
+                        </li>
+                        <li>
+                            <p>#순정 #약산성</p>
+                            <h3><a href="#">순정 약산성 5.5 진정 토너</a></h3>
+                            <div class="item_option">
+                                <a href="#"><img src="#" alt=""></a>
+                                <a href="#"><img src="#" alt=""></a>
+                                <a href="#"><img src="#" alt=""></a>
+                            </div>
+                            <p><em>12,000</em>원</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="gift_area">
