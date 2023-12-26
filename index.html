@@ -37,7 +37,7 @@
             <ul class="gnb">
                 <li><a href="#">PRODUCT</a>
                     <!-- PRODUCT - lnb 영역 -->
-                    <div class="product_bg">
+                    <div class="lnb_bg">
                         <div class="lnb">
                             <div class="left">
                                 <a href="#">신제품<img src="#" alt=""></a>
@@ -144,7 +144,7 @@
                     </div>
                 </li> 
                 <li><a href="#">BRAND</a>
-                    <div class="brand_bg">
+                    <div class="lnb_bg">
                         <div class="lnb">
                             <a href="#">About ETUDE</a>
                             <a href="#">뷰티즌</a>
@@ -556,8 +556,10 @@
                         <p>순정 약산성 5.5 진정 토너</p>
                     </div>
                 </div>
-                <div class="bar_progress">
-                    <span></span>
+                <div class="bar_area">
+                    <div class="bar">
+                        <span class="bar_going"></span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -632,65 +634,95 @@
                     <p>30년 History, 저자극 검증 System</p>
                     <a href="#" class="icon_view">View More</a>
                 </div>
-                <div class="item">
-                    <ul>
+                <div class="container">
+                    <ul class="item">
                         <li>
-                            <p class="icon_new">NEW</p>
-                            <a href="#"><img src="#" alt=""></a>
-                        </li>
-                        <li>
-                            <p>#보습크림 #순정</p>
-                            <h3><a href="#">순정 2x베리어 보습 크림 60ml</a></h3>
-                            <p class="price"><em>17,000</em>원</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p class="icon_new">NEW</p>
-                            <a href="#"><img src="#" alt=""></a>
-                        </li>
-                        <li>
-                            <p>#순정 #앰플에센스</p>
-                            <h3><a href="#">순정 시카 카밍 앰플 에센스 50ml</a></h3>
-                            <p class="price"><em>29,000</em>원</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p class="icon_new">NEW</p>
-                            <a href="#"><img src="#" alt=""></a>
-                        </li>
-                        <li>
-                            <p>#순정 #약산성 #폼클렌징</p>
-                            <h3><a href="#">순정 약산성 5.5 폼 클렌저 150ml</a></h3>
-                            <p class="price"><em>12,000</em>원</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p class="icon_new">NEW</p>
-                            <a href="#"><img src="#" alt=""></a>
-                        </li>
-                        <li>
-                            <p>#수분크림 #순정</p>
-                            <h3><a href="#">순정 수분 베리어 크림 75ml</a></h3>
-                            <p class="price"><em>22,000</em>원</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p class="icon_new">NEW</p>
-                            <a href="#"><img src="#" alt=""></a>
-                        </li>
-                        <li>
-                            <p>#순정 #약산성</p>
-                            <h3><a href="#">순정 약산성 5.5 진정 토너</a></h3>
-                            <div class="item_option">
-                                <a href="#"><img src="#" alt=""></a>
-                                <a href="#"><img src="#" alt=""></a>
-                                <a href="#"><img src="#" alt=""></a>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a>
                             </div>
-                            <p class="price"><em>12,000</em>원</p>
+                            <div class="item_info">
+                                <p>#보습크림 #순정</p>
+                                <h3><a href="#">순정 2x베리어 보습 크림 60ml</a></h3>
+                                <p class="price"><em>17,000</em>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a>
+                            </div>
+                            <div class="item_info">
+                                <p>#순정 #앰플에센스</p>
+                                <h3><a href="#">순정 시카 카밍 앰플 에센스 50ml</a></h3>
+                                <p class="price"><em>29,000</em>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a>
+                            </div>
+                            <div class="item_info">
+                                <p>#순정 #약산성 #폼클렌징</p>
+                                <h3><a href="#">순정 약산성 5.5 폼 클렌저 150ml</a></h3>
+                                <p class="price"><em>12,000</em>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a>
+                            </div>
+                            <div class="item_info">
+                                <p>#수분크림 #순정</p>
+                                <h3><a href="#">순정 수분 베리어 크림 75ml</a></h3>
+                                <p class="price"><em>22,000</em>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a>
+                            </div>
+                            <div class="item_info">
+                                <p>#순정 #약산성</p>
+                                <h3><a href="#">순정 약산성 6.5 휩 클렌저 150ml</a></h3>
+                                <div class="item_option">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <a href="#"><img src="#" alt=""></a>
+                                </div>
+                                <p class="price"><em>11,000</em>원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a>
+                            </div>
+                            <div class="item_info">
+                                <p>#순정 #약산성</p>
+                                <h3><a href="#">순정 약산성 5.5 진정 토너</a></h3>
+                                <div class="item_option">
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <a href="#"><img src="#" alt=""></a>
+                                </div>
+                                <p class="price"><em>12,000</em>원</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -735,8 +767,6 @@
             </div>
         </section>
         <section class="new_area">
-            <a href="#" class="prev_btn"><img src="#" alt=""></a>
-            <a href="#" class="next_btn"><img src="#" alt=""></a>
             <div class="bg_img">
                 <div class="top">
                     <p class="small_img"><img src="#" alt=""></p>
@@ -745,15 +775,19 @@
                     <a href="#" class="icon_view">View More</a>
                 </div>
                 <div class="what_new_item">
+                    <a href="#" class="prev_btn"><img src="#" alt=""></a>
+                    <a href="#" class="next_btn"><img src="#" alt=""></a>
                     <ul>
                         <li>
-                            <a href="#">
-                                <img src="#" alt="">
-                                <span class="icon_new">NEW</span>
-                            </a> 
-                            <div>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a> 
+                            </div>
+                            <div class="item_info">
                                 <p>#리플레이 #시럽글로시밤</p>
-                                <a href="#" class="product_name">(리플레이) 시럽 글로시밤</a>
+                                <h3><a href="#">(리플레이) 시럽 글로시밤</a></h3>
                                 <div class="item_option">
                                     <a href="#"><img src="#" alt="01 체리 시럽"></a>
                                     <a href="#"><img src="#" alt="02 로지 라벤더"></a>
@@ -763,13 +797,15 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="#" alt="">
-                                <span class="icon_new">NEW</span>
-                            </a> 
-                            <div>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a> 
+                            </div>                            
+                            <div class="item_info">
                                 <p>#룩앳마이아이즈 #리플레이</p>
-                                <a href="#" class="product_name">(리플레이) 룩앳 마이 아이즈</a>
+                                <h3><a href="#">(리플레이) 룩앳 마이 아이즈</a></h3>
                                 <div class="item_option">
                                     <a href="#"><img src="#" alt="까페라떼우유많이라구"></a>
                                     <a href="#"><img src="#" alt="단독주연안개꽃"></a>
@@ -784,13 +820,15 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="#" alt="">
-                                <span class="icon_new">NEW</span>
-                            </a> 
-                            <div>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a> 
+                            </div>
+                            <div class="item_info">
                                 <p>#리플레이 #아이섀도우 #플레이컬러아이즈 </p>
-                                <a href="#" class="product_name">(리플레이) 플레이 컬러 아이즈</a>
+                                <h3><a href="#">(리플레이) 플레이 컬러 아이즈</a></h3>
                                 <div class="item_option">
                                     <a href="#"><img src="#" alt="레전설 체리의 등장"></a>
                                     <a href="#"><img src="#" alt="알유 레이디?"></a>
@@ -800,13 +838,15 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="#" alt="">
-                                <span class="icon_new">NEW</span>
-                            </a> 
-                            <div>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="#" alt="">
+                                    <span class="icon_new">NEW</span>
+                                </a> 
+                            </div>
+                            <div class="item_info">
                                 <p>#립펜슬 #오버립</p>
-                                <a href="#" class="product_name">베이스 앤 오버 립 펜슬  #핑크베이지</a>
+                                <h3><a href="#">베이스 앤 오버 립 펜슬 #핑크베이지</a></h3>
                                 <p class="price"><em>12,000</em>원</p>
                             </div>
                         </li>
@@ -815,15 +855,27 @@
             </div>
         </section>
         <section class="official_area">
-            <div class="left_tiktok">
-                <p>ETUDE Official <em>Tiktok</em></p>
-                <video src="#" class="tiktok_video"></video>
-                <p>FOLLOW US</p>
-                <p>@etude_official</p>
+            <div class="tiktok">
+                <div class="left_txt">
+                    <p>ETUDE Official <em>Tiktok</em></p>
+                </div>
+                <div class="right">
+                    <a href="#"><img src="#" alt=""></a>
+                    <p>FOLLOW US</p>
+                    <p><strong>@etude_official</strong></p>
+                </div>
             </div>
-            <div class="right_insta">
-                <p>ETUDE Official <em>Instagram</em></p>
-                <div>
+            <div class="insta">
+                <div class="icon">
+                    <a href="#"><img src="#" alt="에뛰드하우스 인스타그램 바로가기"></a>
+                    <a href="#"><img src="#" alt="에뛰드하우스 페이스북 바로가기"></a>
+                    <a href="#"><img src="#" alt="에뛰드하우스 유튜브 바로가기"></a>
+                    <a href="#"><img src="#" alt="에뛰드하우스 틱톡 바로가기"></a>
+                </div>
+                <div class="txt">
+                    <p>ETUDE Official <em>Instagram</em></p>
+                </div>
+                <div class="banner">
                     <a href="#"><img src="#" alt=""></a>
                     <a href="#"><img src="#" alt=""></a>
                     <a href="#"><img src="#" alt=""></a>
@@ -831,26 +883,24 @@
                     <a href="#"><img src="#" alt=""></a>
                 </div>
             </div>
-            <a href="#"><img src="#" alt="에뛰드하우스 인스타그램 바로가기"></a>
-            <a href="#"><img src="#" alt="에뛰드하우스 페이스북 바로가기"></a>
-            <a href="#"><img src="#" alt="에뛰드하우스 유튜브 바로가기"></a>
-            <a href="#"><img src="#" alt="에뛰드하우스 틱톡 바로가기"></a>
         </section>
         <section class="news_event_area">
+            <div class="top">
+                <p class="small_img"><img src="#" alt=""></p>
+                <h2>News & Event</h2>
+                <a href="#" class="icon_view">View More</a>
+            </div>
             <div class="container">
-                <div class="top">
-                    <p class="small_img"><img src="#" alt=""></p>
-                    <h2>News & Event</h2>
-                    <a href="#" class="icon_view">View More</a>
+                <div class="item">
+                    <a href="#">
+                        <!-- bg img -->
+                        <p>공병수거 캠페인</p>
+                    </a>
                 </div>
                 <div class="item">
                     <a href="#">
-                        <img src="#" alt="">
-                        <span>공병수거 캠페인</span>
-                    </a>
-                    <a href="#">
-                        <img src="#" alt="">
-                        <span>모두를 위한 비건 라이프</span>
+                        <!-- bg img -->
+                        <p>모두를 위한 비건 라이프</p>
                     </a>
                 </div>
             </div>
@@ -975,37 +1025,37 @@
         </div>
         <div class="info">
             <div class="info_left">
-                <div>
-                    <a href="#" class="footer_logo"><img src="#" alt=""></a>
-                </div>
-                <div>
+                <a href="#" class="footer_logo"><img src="#" alt="에뛰드하우스"></a>
+                <div class="info">
                     <p>(주)에뛰드 대표이사 : 이수연</p>
                     <p>개인정보보호책임자 : 이수연</p>
                     <p>사업자등록번호 : 135-81-05033</p>
                     <p>주소 : 서울특별시 용산구 한강대로 100 (한강로 2가)</p>
                 </div>
-                <p>© ETUDE CORPORATION. ALL RIGHTS RESERVED.</p>
+                <p>&copy; ETUDE CORPORATION. ALL RIGHTS RESERVED.</p>
             </div>
             <div class="info_right">
-                <div>
-                    <p>CONTACT</p>
-                </div>
-                <ul>
-                    <li>
-                        <img src="#" alt="">
+                <p>CONTACT</p>
+                <div class="container">
+                    <p><img src="#" alt=""></p>
+                    <div class="code">
                         <span>제품 문의 : 080-022-2285</span>
                         <span>고객 문의 : 1544-5418</span>
-                    </li>
-                    <li>
-                        <img src="#" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <p><img src="#" alt=""></p>
+                    <div class="code">
                         <span>운영 시간 : 평일 13:00 ~ 17:00 (주말 및 공휴일 휴무)</span>
                         <span>점심 시간 : 12:00 ~ 13:00</span>
-                    </li>
-                    <li>
-                        <img src="#" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <p><img src="#" alt=""></p>
+                    <div class="code">
                         <span>대표 이메일 : etude_master@etude.co.kr</span>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="bottom_icon">
