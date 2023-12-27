@@ -1,146 +1,187 @@
-/* 사이트 이동하기 버튼 */
-.btn {}
-.btn .btn_up {}
-.btn .btn_up img {}
-.btn .btn_plus {}
-.btn .btn_plus img {}
-.btn #plus_popup {}
-.btn #plus_popup a {}
-.btn #plus_popup a span {}
-.btn #plus_popup a img {}
-/* header 영역 */
-header {}
-header h1 {}
-header h1 a {}
-header h1 a img {}
-/* header > nav */
-header nav {}
-header nav .gnb {}
-header nav .gnb li {}
-header nav .gnb li a {}
-/* header > nav > product 의 lnb영역 */
-header nav .gnb li .lnb_bg {}
-header nav .gnb li .lnb_bg .lnb {}
-header nav .gnb li .lnb_bg .lnb .left {}
-header nav .gnb li .lnb_bg .lnb .left a {}
-header nav .gnb li .lnb_bg .lnb .left a img {}
-header nav .gnb li .lnb_bg .lnb .right {}
-header nav .gnb li .lnb_bg .lnb .right li {}
-header nav .gnb li .lnb_bg .lnb .right li > a {}
-header nav .gnb li .lnb_bg .lnb .right li > ul {}
-header nav .gnb li .lnb_bg .lnb .right li > ul > li {}
-header nav .gnb li .lnb_bg .lnb .right li > ul > li > a {}
-/* header > nav > brand 의 lnb영역 */
-header nav .gnb li .lnb_bg .lnb > a {}
-/* header > 오른쪽 검색 & 햄버거 아이콘 영역 */
-header .right {}
-header .right .btn_search {}
-header .right .btn_search img {}
-/* header > right > 검색할 때 열리는 창  */
-header .right .search_bg {}
-header .right .search_bg .src_head {}
-header .right .search_bg .src_head h1 {}
-header .right .search_bg .src_head h1 a {}
-header .right .search_bg .src_head h1 a img {}
-header .right .search_bg .src_head .btn_x {}
-header .right .search_bg .src_head .btn_x img {}
-header .right .search_bg .src_contens {}
-header .right .search_bg .src_contens h2 {}
-header .right .search_bg .src_contens h2 .search_form {}
-header .right .search_bg .src_contens h2 .search_form fieldset {}
-header .right .search_bg .src_contens h2 .search_form fieldset #search_form {}
-header .right .search_bg .src_contens h2 .search_form fieldset #src_btn {}
-header .right .search_bg .src_contens h2 .search_form fieldset #src_btn img {}
-header .right .search_bg .src_contens .src_comment {}
-header .right .search_bg .src_contens .src_comment h3 {}
-header .right .search_bg .src_contens .src_comment h3 > span {}
-header .right .search_bg .src_contens .src_comment a {}
-/* header > right > 햄버거바 클릭할 때 열리는 창 */
-header .right .btn_barmenu {}
-header .right .btn_barmenu > span {}
-header .right .menu_bg {}
-header .right .menu_bg .side_category {}
-header .right .menu_bg .side_category > li {}
-header .right .menu_bg .side_category > li > a {}
-header .right .menu_bg .side_category > li > ul {}
-header .right .menu_bg .side_category > li > ul > li {}
-header .right .menu_bg .side_category > li > ul > li > a {}
-header .right .menu_bg .side_category > li > ul > li > a > img {}
-header .right .menu_bg .naver_store_btn {}
-header .right .menu_bg .naver_store_btn .naver_store_list {}
-header .right .menu_bg .naver_store_btn .naver_store_list > a {}
-header .right .menu_bg .naver_store_btn > a {}
-header .right .menu_bg .naver_store_btn > a > span {}
-header .right .menu_bg .naver_store_btn > a > img {}
-/* 모바일용 전체 메뉴 */
-header .m_all_menu {}
-header .m_all_menu .top {}
-header .m_all_menu .top .search_form {}
-header .m_all_menu .top .search_form fieldset {}
-header .m_all_menu .top .search_form fieldset #m_search_form {}
-header .m_all_menu .top .search_form fieldset #m_src_btn {}
-header .m_all_menu .top .search_form fieldset #m_src_btn > img {}
-header .m_all_menu .top > .btn_barmenu {}
-header .m_all_menu .top > .btn_barmenu span {}
-header .m_all_menu .title_tap {}
-header .m_all_menu .title_tap > a {}
-header .m_all_menu .menu_gnb {}
-header .m_all_menu .menu_gnb > ul {}
-header .m_all_menu .menu_gnb > ul > li {}
-header .m_all_menu .menu_gnb > ul > li > a {}
-header .m_all_menu .menu_gnb > ul > li > a > p {}
-header .m_all_menu .menu_gnb > ul > li > a > .title {}
-header .m_all_menu .menu_gnb > ul > li > a > .icon_plus {}
-header .m_all_menu .menu_gnb > ul > li > a > .icon_plus > span {}
-header .m_all_menu .menu_gnb > ul > li > .m_lnb {}
-header .m_all_menu .menu_gnb > ul > li > .m_lnb > a {}
-header .m_all_menu .menu_gnb .m_naver_store_btn {}
-header .m_all_menu .menu_gnb .m_naver_store_btn .list {}
-header .m_all_menu .menu_gnb .m_naver_store_btn .list > a {}
-header .m_all_menu .menu_gnb .m_naver_store_btn > a {}
-header .m_all_menu .menu_gnb .m_naver_store_btn > a > span {}
-header .m_all_menu .menu_gnb .m_naver_store_btn > a > img {}
-header .m_all_menu .category_gnb {}
-header .m_all_menu .category_gnb .left {}
-header .m_all_menu .category_gnb .left > ul {}
-header .m_all_menu .category_gnb .left > ul > li {}
-header .m_all_menu .category_gnb .left > ul > li > a {}
-header .m_all_menu .category_gnb .left > ul > li > a > p {}
-header .m_all_menu .category_gnb .left > ul > li > a .title {}
-header .m_all_menu .category_gnb .left > ul > li > a .icon_plus {}
-header .m_all_menu .category_gnb .left > ul > li > a .icon_plus span {}
-header .m_all_menu .category_gnb .left > ul > li > .m_lnb {}
-header .m_all_menu .category_gnb .left > ul > li > .m_lnb > a {}
 /* main */
 main {}
 /* section.1 - 메인 배너 영역 */
+/* img -> background 로 처리 */
+/* 공통 */
 main .banner_area {}
-/* footer */
-footer {}
-footer .first {}
-footer .first .harf_left {}
-footer .first .harf_left > p {}
-footer .first .harf_left > p > a {}
-footer .first .harf_left > a {}
-footer .first .harf_right {}
-footer .first .harf_right .family_site {}
-footer .first .harf_right .family_site > a {}
-footer .first .harf_right .family_site > a > span {}
-footer .first .harf_right .family_site > a > .btn_arw {}
-footer .first .harf_right .family_site .btn_lnb1 {}
-footer .first .harf_right .family_site .btn_lnb1 > a {}
-footer .first .harf_right .site_map {}
-footer .first .harf_right .site_map > a {}
-footer .first .harf_right .site_map > a > span {}
-footer .first .harf_right .site_map > a > .btn_arw {}
-footer .first .harf_right .site_map .btn_lnb2 {}
-footer .first .harf_right .site_map .btn_lnb2 .left {}
-footer .first .harf_right .site_map .btn_lnb2 .left .title {}
-footer .first .harf_right .site_map .btn_lnb2 .left .title > li {}
-footer .first .harf_right .site_map .btn_lnb2 .left .title > li > a {}
-footer .first .harf_right .site_map .btn_lnb2 .left .sub {}
-footer .first .harf_right .site_map .btn_lnb2 .left .sub > li {}
-footer .first .harf_right .site_map .btn_lnb2 .left .sub > li > a {}
-footer .first .harf_right .site_map .btn_lnb2 .left .sub > li > ul {}
-footer .first .harf_right .site_map .btn_lnb2 .left .sub > li > ul > li {}
-footer .first .harf_right .site_map .btn_lnb2 .left .sub > li > ul > li > a {}
+main .banner_area .container {}
+main .banner_area .container .banner {}
+main .banner_area .container .banner > .txt {}
+main .banner_area .container .banner > .txt > h2 {}
+main .banner_area .container .banner > .txt > p {}
+/* 개별 */
+main .banner_area .container .banner1 {}
+main .banner_area .container .banner1 > .txt {}
+main .banner_area .container .banner1 > .txt > h2 {}
+main .banner_area .container .banner1 > .txt > p {}
+main .banner_area .container .banner2 {}
+main .banner_area .container .banner2 > .txt {}
+main .banner_area .container .banner2 > .txt > h2 {}
+main .banner_area .container .banner2 > .txt > p {}
+main .banner_area .container .banner3 {}
+main .banner_area .container .banner3 > .txt {}
+main .banner_area .container .banner3 > .txt > h2 {}
+main .banner_area .container .banner3 > .txt > p {}
+main .banner_area .container .banner4 {}
+main .banner_area .container .banner4 > .txt {}
+main .banner_area .container .banner4 > .txt > h2 {}
+main .banner_area .container .banner4 > .txt > p {}
+main .banner_area .container .banner5 {}
+main .banner_area .container .banner5 > .txt {}
+main .banner_area .container .banner5 > .txt > h2 {}
+main .banner_area .container .banner5 > .txt > p {}
+main .banner_area .container .banner6 {}
+main .banner_area .container .banner6 > .txt {}
+main .banner_area .container .banner6 > .txt > h2 {}
+main .banner_area .container .banner6 > .txt > p {}
+main .banner_area .container .banner7 {}
+main .banner_area .container .banner7 > .txt {}
+main .banner_area .container .banner7 > .txt > h2 {}
+main .banner_area .container .banner7 > .txt > p {}
+main .banner_area .container .banner8 {}
+main .banner_area .container .banner8 > .txt {}
+main .banner_area .container .banner8 > .txt > h2 {}
+main .banner_area .container .banner8 > .txt > p {}
+/* 공통 - bar  */
+main .banner_area .container .bar_area {}
+main .banner_area .container .bar_area .bar {}
+main .banner_area .container .bar_area .bar .bar_going {}
+/* section.2 - 베스트상품 영역 */
+main .best_product_area {}
+main .best_product_area > ul {}
+main .best_product_area > ul > li {}
+main .best_product_area > ul > li > a {}
+main .best_product_area > ul > li > a > p {}
+main .best_product_area > ul > li > a > .item_img {}
+main .best_product_area > ul > li > a > .item_img > img {}
+main .best_product_area > ul > li > a > h3 {}
+main .best_product_area > ul > li > a > .price {}
+/* section.3 - 메이크업 룩 영역 */
+main .makeup_area {}
+main .makeup_area .bg_img {}
+main .makeup_area .bg_img .top {}
+main .makeup_area .bg_img .top > p {}
+main .makeup_area .bg_img .top .small_img {}
+main .makeup_area .bg_img .top .small_img > img {}
+main .makeup_area .bg_img .top > h2 {}
+main .makeup_area .bg_img .top .icon_view {}
+main .makeup_area .bg_img > a {}
+main .makeup_area .bg_img > a > img {}
+main .makeup_area .bg_img .visual_txt_img {}
+main .makeup_area .bg_img .visual_txt_img img {}
+main .makeup_area .bg_img .item {}
+main .makeup_area .bg_img .item > a {}
+main .makeup_area .bg_img .item > a:nth-child(1) {}
+main .makeup_area .bg_img .item > a:nth-child(2) {}
+main .makeup_area .bg_img .item > a .photo {}
+main .makeup_area .bg_img .item > a > span {}
+main .makeup_area .bg_img .item > a .icon_eye {}
+main .makeup_area .bg_img .item > a .btn_arw {}
+main .makeup_area .bg_img .item > a > img {}
+/* section.4 - 순정 영역 */
+main .soonjung_area {}
+main .soonjung_area .contents {}
+main .soonjung_area .contents .top {}
+main .soonjung_area .contents .top > p {}
+main .soonjung_area .contents .top .small_img {}
+main .soonjung_area .contents .top .small_img img {}
+main .soonjung_area .contents .top > h2 {}
+main .soonjung_area .contents .top .icon_view {}
+main .soonjung_area .container {}
+main .soonjung_area .container .item {}
+main .soonjung_area .container .item > li {}
+main .soonjung_area .container .item > li > .thumb {}
+main .soonjung_area .container .item > li > .thumb > a {}
+main .soonjung_area .container .item > li > .thumb > a > img {}
+main .soonjung_area .container .item > li > .thumb > a > .icon_new {}
+main .soonjung_area .container .item > li > .item_info {}
+main .soonjung_area .container .item > li > .item_info > p {}
+main .soonjung_area .container .item > li > .item_info > h3 {}
+main .soonjung_area .container .item > li > .item_info > h3 > a {}
+main .soonjung_area .container .item > li > .item_info > .price {}
+main .soonjung_area .container .item > li > .item_info > .price > em {}
+main .soonjung_area .container .item > li > .item_info > .item_option {}
+main .soonjung_area .container .item > li > .item_info > .item_option > a {}
+main .soonjung_area .container .item > li > .item_info > .item_option > a > img {}
+/* section.5 - gift 영역 */
+main .gift_area {}
+main .gift_area .contents {}
+main .gift_area .contents .top {}
+main .gift_area .contents .top {}
+main .gift_area .contents .top > p {}
+main .gift_area .contents .top .small_img {}
+main .gift_area .contents .top .small_img img {}
+main .gift_area .contents .top h2 {}
+main .gift_area .contents .top .icon_view {}
+main .gift_area .contents .item {}
+main .gift_area .contents .item ul {}
+main .gift_area .contents .item ul li {}
+main .gift_area .contents .item ul li a {}
+main .gift_area .contents .item ul li a img {}
+main .gift_area .contents .item ul li a .icon_toxstar {}
+/* section.6 - 신상품 영역 */
+main .new_area {}
+main .new_area .bg_img {}
+main .new_area .bg_img .top {}
+main .new_area .bg_img .top > p {}
+main .new_area .bg_img .top .small_img {}
+main .new_area .bg_img .top .small_img img {}
+main .new_area .bg_img .top .icon_view {}
+main .new_area .bg_img .what_new_item {}
+main .new_area .bg_img .what_new_item > a {}
+main .new_area .bg_img .what_new_item .prev_btn {}
+main .new_area .bg_img .what_new_item .prev_btn > img {}
+main .new_area .bg_img .what_new_item .next_btn {}
+main .new_area .bg_img .what_new_item .next_btn > img {}
+main .new_area .bg_img .what_new_item ul {}
+main .new_area .bg_img .what_new_item ul li {}
+main .new_area .bg_img .what_new_item ul li .thumb {}
+main .new_area .bg_img .what_new_item ul li .thumb > a {}
+main .new_area .bg_img .what_new_item ul li .thumb > a > img {}
+main .new_area .bg_img .what_new_item ul li .thumb > a > .icon_new {}
+main .new_area .bg_img .what_new_item ul li .item_info {}
+main .new_area .bg_img .what_new_item ul li .item_info > p {}
+main .new_area .bg_img .what_new_item ul li .item_info > h3 {}
+main .new_area .bg_img .what_new_item ul li .item_info > h3 > a {}
+main .new_area .bg_img .what_new_item ul li .item_info .item_option {}
+main .new_area .bg_img .what_new_item ul li .item_info .item_option a {}
+main .new_area .bg_img .what_new_item ul li .item_info .item_option a img {}
+main .new_area .bg_img .what_new_item ul li .item_info .price {}
+main .new_area .bg_img .what_new_item ul li .item_info .price em {}
+/* section.7 - 오피셜 영역 */
+main .official_area {}
+/* tikiok */
+main .official_area .tiktok {}
+main .official_area .tiktok .left_txt {}
+main .official_area .tiktok .left_txt > p {}
+main .official_area .tiktok .left_txt > p > em {}
+main .official_area .tiktok .right {}
+main .official_area .tiktok .right > a {}
+main .official_area .tiktok .right > a > img {}
+main .official_area .tiktok .right > p {}
+main .official_area .tiktok .right > p > strong {}
+/* instagram */
+main .official_area .insta {}
+main .official_area .insta .txt {}
+main .official_area .insta .txt p {}
+main .official_area .insta .txt p em {}
+main .official_area .insta .banner {}
+main .official_area .insta .banner a {}
+main .official_area .insta .banner a img {}
+/* sns-icon */
+main .official_area .sns_icon {}
+main .official_area .sns_icon a {}
+main .official_area .sns_icon a img {}
+/* section.8 - 뉴스 & 이벤트 영역 */
+main .news_event_area {}
+main .news_event_area .top {}
+main .news_event_area .top > p {}
+main .news_event_area .top .small_img {}
+main .news_event_area .top .small_img img {}
+main .news_event_area .top h2 {}
+main .news_event_area .top .icon_view {}
+main .news_event_area .container {}
+main .news_event_area .container .item {}
+/* img background 로 처리 */
+main .news_event_area .container .item a {}
+main .news_event_area .container .item a p {}
