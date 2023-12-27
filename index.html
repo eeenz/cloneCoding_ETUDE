@@ -361,9 +361,28 @@
             </div>
         </div>
         <!-- 모바일 전체 메뉴 -->
-        <div class="m_menu">
-            <div class="menu">
-                <ul class="gnb">
+        <div class="m_all_menu">
+            <div class="top">
+                <form class="search_form" method="get">
+                    <fieldset>
+                        <legend class="skip">검색영역</legend>
+                        <input type="search" name="src" id="src" placeholder="#립케어 강자! 진저슈가">
+                        <button type="submit" name="src_btn" id="src_btn"><img src="#" alt=""></button>
+                    </fieldset>
+                </form>
+                <!-- 햄버거바 클릭할 때 열리는 창 -->
+                <a href="#" class="btn_barmenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="title_tap">
+                <a href="#">MENU</a>
+                <a href="#">CATEGORY</a>
+            </div>
+            <div class="menu_gnb">
+                <ul>
                     <li>
                         <a href="#">
                             <p class="title">BRAND</p>
@@ -372,11 +391,13 @@
                                 <span></span>
                             </p>
                         </a>
-                        <ul>
-                            <li><a href="#">About ETUDE</a></li>
-                            <li><a href="#">뷰티즌</a></li>
-                            <li><a href="#">지구를 위한 활동</a></li>
-                        </ul>
+                    </li>
+                    <li>
+                        <div class="m_lnb">
+                            <a href="#">About ETUDE</a>
+                            <a href="#">뷰티즌</a>
+                            <a href="#">지구를 위한 활동</a>
+                        </div>
                     </li>
                     <li>
                         <a href="#">
@@ -386,10 +407,10 @@
                                 <span></span>
                             </p>
                         </a>
-                        <ul>
-                            <li><a href="#">신제품</a></li>
-                            <li><a href="#">카테고리</a></li>
-                        </ul>
+                        <div class="m_lnb">
+                            <a href="#">신제품</a>
+                            <a href="#">카테고리</a>
+                        </div>
                     </li>
                     <li><a href="#">MAKEUP LOOK</a></li>
                     <li><a href="#">FOUNDATION FACTORY</a></li>
@@ -401,10 +422,10 @@
                                 <span></span>
                             </p>
                         </a>
-                        <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Tiktok</a></li>
-                        </ul>
+                        <div class="m_lnb">
+                            <a href="#">Instagram</a>
+                            <a href="#">Tiktok</a>
+                        </div>
                     </li>
                     <li>
                         <a href="#">
@@ -414,10 +435,10 @@
                                 <span></span>
                             </p>
                         </a>
-                        <ul>
-                            <li><a href="#">온라인</a></li>
-                            <li><a href="#">오프라인</a></li>
-                        </ul>
+                        <div class="m_lnb">
+                            <a href="#">온라인</a>
+                            <a href="#">오프라인</a>
+                        </div>
                     </li>
                     <li>
                         <a href="#">
@@ -427,11 +448,11 @@
                                 <span></span>
                             </p>
                         </a>
-                        <ul>
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">고객문의</a></li>
-                        </ul>
+                        <div class="m_lnb">
+                            <a href="#">공지사항</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">고객문의</a>
+                        </div>
                     </li>
                     <li>
                         <a href="#">
@@ -441,10 +462,10 @@
                                 <span></span>
                             </p>
                         </a>
-                        <ul>
-                            <li><a href="#">핑크멤버십</a></li>
-                            <li><a href="#">뷰티포인트</a></li>
-                        </ul>
+                        <div class="m_lnb">
+                            <a href="#">핑크멤버십</a>
+                            <a href="#">뷰티포인트</a>
+                        </div>
                     </li>
                     <li>
                         <a href="#">
@@ -454,10 +475,10 @@
                                 <span></span>
                             </p>
                         </a>
-                        <ul>
-                            <li><a href="#">About 뽀오얀</a></li>
-                            <li><a href="#">제품 보기</a></li>
-                        </ul>
+                        <div class="m_lnb">
+                            <a href="#">About 뽀오얀</a>
+                            <a href="#">제품 보기</a>
+                        </div>
                     </li>
                 </ul>
                 <div class="m_naver_store_btn">
@@ -474,33 +495,53 @@
                     </a>
                 </div>
             </div>
-            <div class="category">
-                <ul class="left">
-                    <li>
-                        <a href="#">
-                            <p class="title">아이</p>
-                            <p class="icon_plus">
-                                <span></span>
-                                <span></span>
-                            </p>
-                        </a>
-                        <ul class="lnb">
-                            <li class="lnb_left">
+            <div class="category_gnb">
+                <div class="left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p class="title">아이</p>
+                                <p class="icon_plus">
+                                    <span></span>
+                                    <span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="m_lnb">
                                 <a href="#">전체</a>
-                                <a href="#">아이팔레트</a>
-                                <a href="#">아이라이너</a>
-                            </li>
-                            <li class="lnb_right">
                                 <a href="#">싱글섀도우</a>
+                                <a href="#">아이팔레트</a>
                                 <a href="#">마스카라</a>
+                                <a href="#">아이라이너</a>
                                 <a href="#">아이브라우</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="right">
-                    
-                </ul>
+                            </div>
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p class="title">립</p>
+                                <p class="icon_plus">
+                                    <span></span>
+                                    <span></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="m_lnb">
+                                <a href="#">전체</a>
+                                <a href="#">립스틱</a>
+                                <a href="#">틴트</a>
+                                <a href="#">글로스</a>
+                                <a href="#">립펜슬</a>
+                                <a href="#">립케어</a>
+                            </div>
+                        </li>                       
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
