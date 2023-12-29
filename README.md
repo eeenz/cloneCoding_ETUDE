@@ -6,4 +6,7 @@
 --------------------
 ## INFO
 * 표기법 = 언더바 표기법으로 사용
-* font-family : 'sofia-pro', 'Noto sans KR', sans-serif;
+* font-family - 'sofia-pro', 'Noto sans KR', sans-serif;
+* font-size
+1. category menu : 16px
+2. category small menu : 14px
