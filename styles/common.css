@@ -9,11 +9,11 @@
 .btn #plus_popup a span {}
 .btn #plus_popup a img {}
 /* header 영역 */
-header {background-color: antiquewhite;
+header {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
     height: 100px; width:100%; margin: 0 auto;
-    padding: 33px 60px 0 70px;
+    padding: 33px 60px 0 70px; position: relative;
 }
 header > .left {display: flex; align-items: center;}
 header .left h1 {}
@@ -21,35 +21,38 @@ header .left h1 a {}
 header .left h1 a img {width:108px;}
 /* header > nav */
 header .left nav {}
-header .left nav .gnb {display: flex;}
+header .left nav .gnb {display: flex; z-index: 700;}
 header .left nav .gnb li {}
-header .left nav .gnb > li > a {
+header .left nav .gnb > li > a {z-index: 700;
     margin-left: 60px; color:#333;
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 800; letter-spacing: -0.02em;
 }
 /* header > nav > product 의 lnb영역 */
 header .left nav .gnb li .lnb_bg {
-    background-color:rgba(256, 256, 256, 0.4);
-    position: absolute; left:0; top:100px; width:100%; height: 320px;
-    display: flex; flex-flow:row nowrap; justify-content: space-between;
+    /* background-color:rgba(256, 256, 256, 0.4);  */
+    /* background-color: aquamarine;  */ 
+    position: absolute; left:0; top:0; width:100%; height: 460px; 
 }
 header .left nav .gnb li .lnb_bg .lnb {
-    display: flex; justify-content: space-between; margin-left: 120px;
-    z-index: 999; color:#111;
+    /* background-color: aqua; */
+    display: flex; flex-flow:row nowrap; justify-content: space-between; 
+    color:#111;  
+    width: 1400px;  position: absolute; left:120px; top:100px; 
 }
 header .left nav .gnb li .lnb_bg .lnb .left {
-    display: inline-block;
-    flex-flow:column nowrap;
-    width: 100px; 
+    /* background-color: chartreuse; */
+    display: inline-block; 
+    width: 100px; top:0px;
 }
 header .left nav .gnb li .lnb_bg .lnb .left a {display: block; margin-bottom: 20px; }
 header .left nav .gnb li .lnb_bg .lnb .left a:nth-child(1) img {margin-left: 30px;}
 header .left nav .gnb li .lnb_bg .lnb .left a:nth-child(2) img {margin-left: 16px;}
 header .left nav .gnb li .lnb_bg .lnb .right {
+    /* background-color: chocolate; */
     flex-flow:row nowrap; 
     align-items:flex-start; 
-    margin:0 20px;
+    margin:0 20px; position: absolute; left:200px; top:0px;
 }
 header .left nav .gnb li .lnb_bg .lnb .right > li {padding:0 20px;}
 header .left nav .gnb li .lnb_bg .lnb .right > li > a {font-weight: 500; color:#111;}
@@ -90,7 +93,7 @@ header .right .btn_barmenu {
     flex-flow: column nowrap;
     align-content: center;
 }
-header .right .btn_barmenu > span:nth-child(1) {height: 1px;}
+header .right .btn_barmenu > span:nth-child(1) {height: 2px;}
 header .right .btn_barmenu > span:nth-child(2) {height: 2px;}
 header .right .btn_barmenu > span:nth-child(3) {height: 2px;}
 header .right .btn_barmenu > span {
