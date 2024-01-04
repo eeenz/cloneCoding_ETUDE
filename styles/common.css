@@ -31,7 +31,7 @@ header .left nav .gnb > li > a {
 /* header > nav > product 의 lnb영역 */
 /* brand lnb영역 bg */
 header > .lnb_bg1 {
-    background-color:rgba(256, 256, 256, 0.4);
+    background-color:rgba(255, 255, 255, 0.5);
     position: absolute;
     top:0; left:0; width:100%; height: 460px; z-index: -100;
 }
@@ -70,7 +70,7 @@ header .left nav .gnb li .lnb_bg .lnb1 .right > li > ul > li > a {
 /* brand lnb영역 bg */
 header > .lnb_bg2 {
     display: none;
-    background-color:rgba(256, 256, 256, 0.4);
+    background-color:rgba(255, 255, 255, 0.5);
     width:100%; height: 150px;
     position: absolute; top:0; left:0;
     z-index: -200;
@@ -92,24 +92,70 @@ header .right {display: flex; align-items: center;}
 header .right .btn_search {}
 header .right .btn_search img {margin-right: 10px; width: 40px;}
 /* header > right > 검색할 때 열리는 창  */
-header .right .search_bg {display: none;}
-header .right .search_bg .src_head {}
+header .right .search_bg {
+    position: absolute;
+    left: 0; top:0;
+    /* background-color:rgba(255, 255, 255, 0.5); */
+    background-color: bisque;
+    width:100%; height: 395px ;
+    padding: 22px 60px 0px 60px;
+}
+header .right .search_bg .src_head {
+    display: flex; flex-flow:row nowrap; justify-content:space-between;
+    margin-top: 25px;
+}
 header .right .search_bg .src_head h1 {}
 header .right .search_bg .src_head h1 a {}
-header .right .search_bg .src_head h1 a img {}
+header .right .search_bg .src_head h1 a img {width:108px;}
 header .right .search_bg .src_head .btn_x {}
-header .right .search_bg .src_head .btn_x img {}
-header .right .search_bg .src_contens {}
-header .right .search_bg .src_contens h2 {}
-header .right .search_bg .src_contens h2 .search_form {}
-header .right .search_bg .src_contens h2 .search_form fieldset {}
-header .right .search_bg .src_contens h2 .search_form fieldset #search_form {}
-header .right .search_bg .src_contens h2 .search_form fieldset #src_btn {}
-header .right .search_bg .src_contens h2 .search_form fieldset #src_btn img {}
-header .right .search_bg .src_contens .src_comment {}
-header .right .search_bg .src_contens .src_comment h3 {}
-header .right .search_bg .src_contens .src_comment h3 > span {}
-header .right .search_bg .src_contens .src_comment a {}
+header .right .search_bg .src_head .btn_x span:nth-child(1) {width: 2px;transform:translate(5px) rotate(45deg) ;}
+header .right .search_bg .src_head .btn_x span:nth-child(2) {width: 2px;transform:rotate(-45deg);}
+header .right .search_bg .src_head .btn_x span {
+    content: ''; display: inline-block; 
+    height: 30px; background-color: #333;
+}
+header .right .search_bg .src_contens {
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+}
+header .right .search_bg .src_contens h2 {
+    font-size: 1.563rem; font-weight: 700;
+    color: #333;
+    letter-spacing: -0.02em;
+    margin: 50px auto 0;
+}
+header .right .search_bg .src_contens .search_form {
+    background-color: #fff; border-radius: 10px;
+    height: 40px; width: 950px;
+    margin: 30px auto;
+}
+header .right .search_bg .src_contens .search_form fieldset {
+    display: flex; margin: 0 auto;
+}
+header .right .search_bg .src_contens .search_form fieldset #search_form {
+    width:calc(100% - 40px); padding: 10px;
+}
+header .right .search_bg .src_contens .search_form fieldset #src_btn {}
+header .right .search_bg .src_contens .search_form fieldset #src_btn img {width: 80%;}
+header .right .search_bg .src_contens .src_comment {
+    margin:0 auto;
+    display: flex; flex-flow:row nowrap;
+    align-items: center;
+    width:900px;
+}
+header .right .search_bg .src_contens .src_comment h3 {
+    font-size: 1.375rem; font-weight: 200;
+}
+header .right .search_bg .src_contens .src_comment h3 > span {
+    font-size: 1.375rem; font-weight: 700;
+}
+header .right .search_bg .src_contens .src_comment a {
+    margin-left:15px; 
+}
+header .right .search_bg .src_contens .src_comment a span {
+    padding:6px 15px; font-size: 0.875rem;
+    border: 1px solid #aaa; border-radius: 20px;
+}
 /* header > right > 햄버거바 클릭할 때 열리는 창 */
 header .right .btn_barmenu {
     display: flex;
