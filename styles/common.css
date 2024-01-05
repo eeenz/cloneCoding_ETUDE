@@ -11,7 +11,8 @@
 /* header 영역 */
 header {
     display: flex; flex-flow: row nowrap;
-    justify-content: space-between; align-items: center;
+    /* justify-content: space-between; */
+    align-items: center;
     height: 100px; width:100%; margin: 0 auto;
     padding: 33px 60px 0 70px; position:relative;
 }
@@ -29,163 +30,161 @@ header .left nav .gnb > li > a {
     font-weight: 800; letter-spacing: -0.02em;
 }
 /* header > nav > product 의 lnb영역 */
-/* brand lnb영역 bg */
-header > .lnb_bg1 {
+/* product lnb영역 bg */
+header .left nav .gnb li:nth-child(1):hover .lnb_bg,
+header .left nav .gnb li:nth-child(1):hover .lnb1 {display: block;}
+header > .lnb_bg1 {}
+header .left nav .gnb li:nth-child(1) .lnb_bg {
+    display: none;
     background-color:rgba(255, 255, 255, 0.5);
     position: absolute;
-    top:0; left:0; width:100%; height: 460px; z-index: -100;
-}
-header .left nav .gnb li .lnb_bg {}
-header .left nav .gnb li .lnb_bg .lnb1 { 
+    top:0; left:0; width:100%; height: 460px; z-index: -100;}
+header .left nav .gnb li .lnb1 { 
     display: none;
-    /* display: flex; flex-flow:row nowrap; justify-content: space-between; 
     color:#111; 
-    width: 1400px;  position: absolute; left:236px; top:100px;  */
+    width: 1400px;  position: absolute; left:236px; top:100px; 
 }
-header .left nav .gnb li .lnb_bg .lnb1 .left {
+header .left nav .gnb li .lnb1 .left {
     display: inline-block; 
     width: 100px; top:0px; 
 }
-header .left nav .gnb li .lnb_bg .lnb1 .left a:hover {color:#666;}
-header .left nav .gnb li .lnb_bg .lnb1 .left a {
+header .left nav .gnb li .lnb1 .left a:hover {color:#666;}
+header .left nav .gnb li .lnb1 .left a {
     display: block; margin-bottom: 20px;
     font-weight: 500;
 }
-header .left nav .gnb li .lnb_bg .lnb1 .left a:nth-child(1) img {margin-left: 32px;}
-header .left nav .gnb li .lnb_bg .lnb1 .left a:nth-child(2) img {margin-left: 18px;}
-header .left nav .gnb li .lnb_bg .lnb1 .right {
+header .left nav .gnb li .lnb1 .left a:nth-child(1) img {margin-left: 32px;}
+header .left nav .gnb li .lnb1 .left a:nth-child(2) img {margin-left: 18px;}
+header .left nav .gnb li .lnb1 .right {
     flex-flow:row nowrap; 
     align-items:flex-start; 
     margin:0 20px; position: absolute; left:95px; top:0px;
 }
-header .left nav .gnb li .lnb_bg .lnb1 .right > li {padding:0 20px;}
-header .left nav .gnb li .lnb_bg .lnb1 .right > li > a {font-weight: 500; color:#111;}
-header .left nav .gnb li .lnb_bg .lnb1 .right > li > ul {margin-top:20px;}
-header .left nav .gnb li .lnb_bg .lnb1 .right > li > ul > li {margin-bottom: 10px;}
-header .left nav .gnb li .lnb_bg .lnb1 .right > li > ul > li > a {
+header .left nav .gnb li .lnb1 .right > li {padding:0 20px;}
+header .left nav .gnb li .lnb1 .right > li > a {font-weight: 500; color:#111;}
+header .left nav .gnb li .lnb1 .right > li > ul {margin-top:20px;}
+header .left nav .gnb li .lnb1 .right > li > ul > li {margin-bottom: 10px;}
+header .left nav .gnb li .lnb1 .right > li > ul > li > a {
     font-weight: normal;
     font-size: 0.875rem;
 }
 /* header > nav > brand 의 lnb영역 */
 /* brand lnb영역 bg */
-header > .lnb_bg2 {
-    display: none;
-    background-color:rgba(255, 255, 255, 0.5);
+header .left nav .gnb li:nth-child(2):hover > .lnb2,
+header .left nav .gnb li:nth-child(2):hover .lnb_bg{display: block;}
+header .left nav .gnb li:nth-child(2) .lnb_bg {
+    display:none; 
+    /* background-color:rgba(255, 255, 255, 0.5); */
     width:100%; height: 150px;
     position: absolute; top:0; left:0;
-    z-index: -200;
+    z-index: -100;
 }
-header .left nav .gnb li .lnb_bg .lnb2 {
-    display: none;
-    position: absolute; top:100px; left:365px;
+header .left nav .gnb li .lnb2 {
+    display: none; 
+    position: absolute; top:100px; left:365px; 
 } 
-header .left nav .gnb li .lnb_bg .lnb2 > a:first-child {
+header .left nav .gnb li .lnb2 > a:first-child {
     font-family: 'Sofia Sans', sans-serif;
     letter-spacing: -0.02rem; font-weight: 600;
 }
-header .left nav .gnb li .lnb_bg .lnb2 > a:last-child {margin-right: 0;}
-header .left nav .gnb li .lnb_bg .lnb2 > a {
+header .left nav .gnb li .lnb2 > a:last-child {margin-right: 0;}
+header .left nav .gnb li .lnb2 > a {
     margin-right: 30px;
 }
 /* header > 오른쪽 검색 & 햄버거 아이콘 영역 */
-header .right {display: flex; align-items: center;}
+header .right {display: flex; align-items: center; position: absolute; right: 80px;}
 header .right .btn_search {}
 header .right .btn_search img {margin-right: 10px; width: 40px;}
-/* header > right > 검색할 때 열리는 창  */
-header .right .search_bg {
-    position: absolute;
-    left: 0; top:0;
-    /* background-color:rgba(255, 255, 255, 0.5); */
-    background-color: bisque;
-    width:100%; height: 395px ;
-    padding: 22px 60px 0px 60px;
-}
-header .right .search_bg .src_head {
-    display: flex; flex-flow:row nowrap; justify-content:space-between;
-    margin-top: 25px;
-}
-header .right .search_bg .src_head h1 {}
-header .right .search_bg .src_head h1 a {}
-header .right .search_bg .src_head h1 a img {width:108px;}
-header .right .search_bg .src_head .btn_x {}
-header .right .search_bg .src_head .btn_x span:nth-child(1) {width: 2px;transform:translate(5px) rotate(45deg) ;}
-header .right .search_bg .src_head .btn_x span:nth-child(2) {width: 2px;transform:rotate(-45deg);}
-header .right .search_bg .src_head .btn_x span {
-    content: ''; display: inline-block; 
-    height: 30px; background-color: #333;
-}
-header .right .search_bg .src_contens {
-    display: flex; flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin:0 auto;
-}
-header .right .search_bg .src_contens h2 {
-    font-size: 1.563rem; font-weight: 700;
-    color: #333;
-    letter-spacing: -0.02em;
-    margin: 50px auto 0;
-}
-header .right .search_bg .src_contens .search_form {
-    background-color: #fff; border-radius: 10px;
-    height: 40px; width: 1000px;
-    margin: 30px auto;
-}
-header .right .search_bg .src_contens .search_form fieldset {
-    display: flex; margin: 0 auto;
-}
-header .right .search_bg .src_contens .search_form fieldset #search_form {
-    width:calc(100% - 40px); padding: 10px;
-}
-header .right .search_bg .src_contens .search_form fieldset #src_btn {}
-header .right .search_bg .src_contens .search_form fieldset #src_btn img {width: 80%;}
-header .right .search_bg .src_contens .src_comment {
-    margin:0 auto;
-    display: flex; flex-flow:row nowrap;
-    align-items: center;
-    width:80%;
-}
-header .right .search_bg .src_contens .src_comment h3 {
-    font-size: 1.375rem; font-weight: 200;
-}
-header .right .search_bg .src_contens .src_comment h3 > span {
-    font-size: 1.375rem; font-weight: 700;
-}
-header .right .search_bg .src_contens .src_comment a {
-    margin-left:15px; 
-}
-header .right .search_bg .src_contens .src_comment a span {
-    padding: 4px 15px; font-size: 0.875rem;
-    border: 1px solid #abb8c3; border-radius: 20px;
-}
-/* header > right > 햄버거바 클릭할 때 열리는 창 */
 header .right .btn_barmenu {
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
 }
-header .right .btn_barmenu > span:nth-child(1) {height: 2px;}
-header .right .btn_barmenu > span:nth-child(2) {height: 2px;}
-header .right .btn_barmenu > span:nth-child(3) {height: 2px;}
-header .right .btn_barmenu > span {
+header .right .btn_barmenu span {
     content: ''; display: inline-block; 
     width:21px; background-color: #333;
-    margin:4px 0;
+    margin:4px 0; height: 2px;
 }
-header .right .menu_bg {display: none;}
-header .right .menu_bg .side_category {}
-header .right .menu_bg .side_category > li {}
-header .right .menu_bg .side_category > li > a {}
-header .right .menu_bg .side_category > li > ul {}
-header .right .menu_bg .side_category > li > ul > li {}
-header .right .menu_bg .side_category > li > ul > li > a {}
-header .right .menu_bg .side_category > li > ul > li > a > img {}
-header .right .menu_bg .naver_store_btn {}
-header .right .menu_bg .naver_store_btn .naver_store_list {}
-header .right .menu_bg .naver_store_btn .naver_store_list > a {}
-header .right .menu_bg .naver_store_btn > a {}
-header .right .menu_bg .naver_store_btn > a > span {}
-header .right .menu_bg .naver_store_btn > a > img {}
+/* header > right > 검색할 때 열리는 창  */
+header .search_bg {
+    position: absolute;
+    left: 0; top:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    width:100%; height: 395px ;
+    padding: 22px 80px 0px 70px;
+}
+header .search_bg .src_head {
+    display: flex; flex-flow:row nowrap; justify-content:space-between;
+    margin-top: 31px;
+}
+header .search_bg .src_head h1 {}
+header .search_bg .src_head h1 a {}
+header .search_bg .src_head h1 a img {width:108px;}
+header .search_bg .src_head .btn_x {}
+header .search_bg .src_head .btn_x span:nth-child(1) {width: 2px;transform:translate(5px) rotate(45deg) ;}
+header .search_bg .src_head .btn_x span:nth-child(2) {width: 2px;transform:rotate(-45deg);}
+header .search_bg .src_head .btn_x span {
+    content: ''; display: inline-block; 
+    height: 30px; background-color: #333;
+}
+header .search_bg .src_contens {
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+header .search_bg .src_contens h2 {
+    font-size: 1.8133rem; font-weight: 700;
+    color: #191919;
+    letter-spacing: -0.02em;
+    margin: 60px auto 0;
+}
+header .search_bg .src_contens .search_form {
+    background: rgba(231, 232, 234, 0.5); border-radius: 10px;
+    height: 40px; width: 1000px;
+    margin: 30px auto 35px; outline: none;
+}
+header .search_bg .src_contens .search_form fieldset {
+    display: flex; margin: 0 auto;
+}
+header .search_bg .src_contens .search_form fieldset #search_form {
+    width:calc(100% - 44px); padding:0 15px; outline: none;
+}
+header .search_bg .src_contens .search_form fieldset #src_btn {}
+header .search_bg .src_contens .search_form fieldset #src_btn img {width: 90%;}
+header .search_bg .src_contens .src_comment {
+    display: flex; flex-flow:row wrap;
+    align-items: center;
+    /* width:80%; */
+}
+header .search_bg .src_contens .src_comment h3 {
+    font-size: 1.563rem; font-weight: 200;
+}
+header .search_bg .src_contens .src_comment h3 > span {
+    font-size: 1.563rem; font-weight: 700;
+}
+header .search_bg .src_contens .src_comment a {
+    margin-left:20px; 
+}
+header .search_bg .src_contens .src_comment a span {
+    padding: 3px 15px; 
+    border: 1px solid #abb8c3; border-radius: 20px;
+}
+/* header > right > 햄버거바 클릭할 때 열리는 창 */
+header .menu_bg {}
+header .side_category {display: none;}
+header .side_category > li {}
+header .side_category > li > a {}
+header .side_category > li > ul {}
+header .side_category > li > ul > li {}
+header .side_category > li > ul > li > a {}
+header .side_category > li > ul > li > a > img {}
+header .naver_store_btn {display: none;}
+header .naver_store_btn .naver_store_list {}
+header .naver_store_btn .naver_store_list > a {}
+header .naver_store_btn > a {}
+header .naver_store_btn > a > span {}
+header .naver_store_btn > a > img {}
 /* 모바일용 전체 메뉴 */
 header .m_all_menu {display: none;}
 header .m_all_menu .top {}
