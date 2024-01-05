@@ -117,6 +117,8 @@ header .right .search_bg .src_head .btn_x span {
 header .right .search_bg .src_contens {
     display: flex; flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
 }
 header .right .search_bg .src_contens h2 {
     font-size: 1.563rem; font-weight: 700;
@@ -126,7 +128,7 @@ header .right .search_bg .src_contens h2 {
 }
 header .right .search_bg .src_contens .search_form {
     background-color: #fff; border-radius: 10px;
-    height: 40px; width: 950px;
+    height: 40px; width: 1000px;
     margin: 30px auto;
 }
 header .right .search_bg .src_contens .search_form fieldset {
@@ -141,7 +143,7 @@ header .right .search_bg .src_contens .src_comment {
     margin:0 auto;
     display: flex; flex-flow:row nowrap;
     align-items: center;
-    width:900px;
+    width:80%;
 }
 header .right .search_bg .src_contens .src_comment h3 {
     font-size: 1.375rem; font-weight: 200;
@@ -153,8 +155,8 @@ header .right .search_bg .src_contens .src_comment a {
     margin-left:15px; 
 }
 header .right .search_bg .src_contens .src_comment a span {
-    padding:6px 15px; font-size: 0.875rem;
-    border: 1px solid #aaa; border-radius: 20px;
+    padding: 4px 15px; font-size: 0.875rem;
+    border: 1px solid #abb8c3; border-radius: 20px;
 }
 /* header > right > 햄버거바 클릭할 때 열리는 창 */
 header .right .btn_barmenu {
