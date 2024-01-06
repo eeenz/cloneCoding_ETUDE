@@ -10,3 +10,4 @@
 * font-size
 1. category menu : 16px
 2. category small menu : 14px
+3. letter-spacing: -0.02rem;
