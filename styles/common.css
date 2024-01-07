@@ -172,12 +172,12 @@ header .search_bg .src_contens .src_comment a span {
     border: 1px solid rgba(166,166,166,0.5); border-radius: 20px;
 }
 /* header > right > 햄버거바 클릭할 때 열리는 창 */
-header .menu_bg {
+/* header .menu_bg {
     display: none;
     position: absolute; top:0;
     width: 100%; left: 0;
     height: 100vh; z-index: -200;
-}
+} */
 header .side_category {
     /* display: none; */
     z-index: -100;

@@ -1,16 +1,20 @@
 /* main */
-main {display: none;}
+main {}
 /* section.1 - 메인 배너 영역 */
 /* img -> background 로 처리 */
 /* 공통 */
 main .banner_area {}
 main .banner_area .container {}
 main .banner_area .container .banner {}
-main .banner_area .container .banner > .txt {}
+main .banner_area .container .banner > .txt {display: none;}
 main .banner_area .container .banner > .txt > h2 {}
 main .banner_area .container .banner > .txt > p {}
 /* 개별 */
-main .banner_area .container .banner1 {}
+main .banner_area .container .banner1 {
+    background-image:url('../images/banner/main_replay_PC_01.jpg');
+    position: absolute;top: 0; left: 0;
+    width: 100%; height: 100vh; z-index: -300;
+}
 main .banner_area .container .banner1 > .txt {}
 main .banner_area .container .banner1 > .txt > h2 {}
 main .banner_area .container .banner1 > .txt > p {}
@@ -47,7 +51,7 @@ main .banner_area .container .bar_area {}
 main .banner_area .container .bar_area .bar {}
 main .banner_area .container .bar_area .bar .bar_going {}
 /* section.2 - 베스트상품 영역 */
-main .best_product_area {}
+main .best_product_area {display: none;}
 main .best_product_area > ul {}
 main .best_product_area > ul > li {}
 main .best_product_area > ul > li > a {}
@@ -57,7 +61,7 @@ main .best_product_area > ul > li > a > .item_img > img {}
 main .best_product_area > ul > li > a > h3 {}
 main .best_product_area > ul > li > a > .price {}
 /* section.3 - 메이크업 룩 영역 */
-main .makeup_area {}
+main .makeup_area {display: none;}
 main .makeup_area .bg_img {}
 main .makeup_area .bg_img .top {}
 main .makeup_area .bg_img .top > p {}
@@ -79,7 +83,7 @@ main .makeup_area .bg_img .item > a .icon_eye {}
 main .makeup_area .bg_img .item > a .btn_arw {}
 main .makeup_area .bg_img .item > a > img {}
 /* section.4 - 순정 영역 */
-main .soonjung_area {}
+main .soonjung_area {display: none;}
 main .soonjung_area .contents {}
 main .soonjung_area .contents .top {}
 main .soonjung_area .contents .top > p {}
@@ -104,7 +108,7 @@ main .soonjung_area .container .item > li > .item_info > .item_option {}
 main .soonjung_area .container .item > li > .item_info > .item_option > a {}
 main .soonjung_area .container .item > li > .item_info > .item_option > a > img {}
 /* section.5 - gift 영역 */
-main .gift_area {}
+main .gift_area {display: none;}
 main .gift_area .contents {}
 main .gift_area .contents .top {}
 main .gift_area .contents .top {}
@@ -120,7 +124,7 @@ main .gift_area .contents .item ul li a {}
 main .gift_area .contents .item ul li a img {}
 main .gift_area .contents .item ul li a .icon_toxstar {}
 /* section.6 - 신상품 영역 */
-main .new_area {}
+main .new_area {display: none;}
 main .new_area .bg_img {}
 main .new_area .bg_img .top {}
 main .new_area .bg_img .top > p {}
@@ -149,7 +153,7 @@ main .new_area .bg_img .what_new_item ul li .item_info .item_option a img {}
 main .new_area .bg_img .what_new_item ul li .item_info .price {}
 main .new_area .bg_img .what_new_item ul li .item_info .price em {}
 /* section.7 - 오피셜 영역 */
-main .official_area {}
+main .official_area {display: none;}
 /* tikiok */
 main .official_area .tiktok {}
 main .official_area .tiktok .left_txt {}
@@ -161,7 +165,7 @@ main .official_area .tiktok .right > a > img {}
 main .official_area .tiktok .right > p {}
 main .official_area .tiktok .right > p > strong {}
 /* instagram */
-main .official_area .insta {}
+main .official_area .insta {display: none;}
 main .official_area .insta .txt {}
 main .official_area .insta .txt p {}
 main .official_area .insta .txt p em {}
@@ -169,11 +173,11 @@ main .official_area .insta .banner {}
 main .official_area .insta .banner a {}
 main .official_area .insta .banner a img {}
 /* sns-icon */
-main .official_area .sns_icon {}
+main .official_area .sns_icon {display: none;}
 main .official_area .sns_icon a {}
 main .official_area .sns_icon a img {}
 /* section.8 - 뉴스 & 이벤트 영역 */
-main .news_event_area {}
+main .news_event_area {display: none;}
 main .news_event_area .top {}
 main .news_event_area .top > p {}
 main .news_event_area .top .small_img {}
