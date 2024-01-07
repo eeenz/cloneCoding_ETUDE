@@ -109,7 +109,8 @@ header .right .btn_barmenu span {
 header .search_bg {
     position: absolute;
     left: 0; top:0;
-    background-color:rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12px);
     width:100%; height: 395px ;
     padding: 22px 80px 0px 70px;
 }
@@ -168,7 +169,7 @@ header .search_bg .src_contens .src_comment a {
 }
 header .search_bg .src_contens .src_comment a span {
     padding: 3px 15px; 
-    border: 1px solid #abb8c3; border-radius: 20px;
+    border: 1px solid rgba(166,166,166,0.5); border-radius: 20px;
 }
 /* header > right > 햄버거바 클릭할 때 열리는 창 */
 header .menu_bg {
@@ -178,22 +179,16 @@ header .menu_bg {
     height: 100vh; z-index: -200;
 }
 header .side_category {
-    display: none;
+    /* display: none; */
     z-index: -100;
-    /* background: linear-gradient(180deg, rgba(245, 226, 226, 0.65) 0%, rgba(242, 198, 207, 0.65) 127.47%); backdrop-filter: blur(12px); */
-    /* margin: 200px auto; 
-    position: absolute; top:0; left: 40vw;
-    display: flex; flex-flow: column wrap;
-    align-items: flex-end; align-content: space-around; */
-
-/*     padding: 0 50% 16px 0 ; text-align: right; 
+    background: linear-gradient(180deg, rgba(245, 226, 226, 0.65) 0%, rgba(242, 198, 207, 0.65) 127.47%); backdrop-filter: blur(12px);
+    padding: 0 50% 16px 0 ; text-align: right; 
     opacity: 1; top:0; left: 0; position: absolute;
     display: flex; flex-flow: column wrap; justify-content: center; width: 100%;
-    height: 100vh;  */
+    height: 100vh; 
 }
 header .side_category > li {}
 header .side_category > li > a {
-    background-color: chartreuse;
     font-size: 1.875rem; font-weight: 600;
     line-height: 2; position: relative;
 }
@@ -203,27 +198,36 @@ header .side_category li .side_lnb {
     padding: 0 0 16px 50% ; 
     margin-left: 50px;
 }
+header .side_category li .side_lnb a {
+    text-align: left;
+    display: flex; justify-content: space-between; flex-flow:row nowrap; 
+    align-items: center;
+    width:200px; 
+}
 /* 햄버거메뉴 > brand-lnb */
-header .side_category li:nth-child(1) > .side_lnb {display: none; top:200px;}
-header .side_category li:nth-child(1) > .side_lnb > a {font-size: 1.4rem; margin-bottom: 20px;}
-header .side_category li:nth-child(1) > .side_lnb > a > img {height: 20px;}
+header .side_category li:nth-child(1):hover .side_lnb { display: block;}
+header .side_category li:nth-child(1) .side_lnb { display: none; top:210px;}
+header .side_category li:nth-child(1) .side_lnb a {
+    font-size: 1.4rem; margin-bottom: 20px; font-weight: 500;
+
+
+}
+header .side_category li:nth-child(1) .side_lnb a img {height: 20px;}
 /* 햄버거메뉴 > product-lnb */
-header .side_category li:nth-child(2) > .side_lnb {display: none; top:270px; }
-header .side_category li:nth-child(2) > .side_lnb a:nth-child(1) {
+header .side_category li:nth-child(2):hover .side_lnb {display: block;}
+header .side_category li:nth-child(2) .side_lnb {display: none; top:270px; }
+header .side_category li:nth-child(2) .side_lnb a:nth-child(1) {
     position: relative; font-size: 1.4rem; margin-bottom: 20px;
-    font-weight: 400; color:#111;
+    font-weight: 400; color:#111; font-weight: 500;
 }
-header .side_category li:nth-child(2) > .side_lnb a:nth-child(2) {
-    position: relative; font-size: 1.4rem; margin-bottom: 12px; color:#111;
+header .side_category li:nth-child(2) .side_lnb a:nth-child(2) {
+    position: relative; font-size: 1.4rem; margin-bottom: 12px; color:#111; font-weight: 500;
 }
-header .side_category li:nth-child(2) > .side_lnb > a {margin-bottom: 12px; color: #666;}
-header .side_category li:nth-child(2) > .side_lnb > a > img {height: 20px;}
-/* 햄버거메뉴 > official-lnb */
-header .side_category li:nth-child(5) > .side_lnb {/* display: none; */ top:300px;}
-header .side_category li:nth-child(5) > .side_lnb > a {font-size: 1.4rem; margin-bottom: 20px;}
-header .side_category li:nth-child(5) > .side_lnb > a > img {height: 20px;}
+header .side_category li:nth-child(2) .side_lnb a {margin-bottom: 12px; color: #666;}
+header .side_category li:nth-child(2) .side_lnb a img {height: 20px;}
 /* 햄버거 사이드 메뉴 */
 /* ---------  product-lnb의 아이 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(4):hover + .side_sub_eye {display: block;}
 header .side_category li:nth-child(2) .side_lnb .side_sub_eye {
     display: none;
     position: absolute; right: -180px; top: 120px;
@@ -233,6 +237,7 @@ header .side_category li:nth-child(2) .side_lnb .side_sub_eye a {
 }
 /* 햄버거 사이드 메뉴 */
 /* ---------  product-lnb의 립 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(5):hover + .side_sub_lip {display: block;}
 header .side_category li:nth-child(2) .side_lnb .side_sub_lip {
     display: none;
     position: absolute; right: -180px; top: 150px;
@@ -241,7 +246,8 @@ header .side_category li:nth-child(2) .side_lnb .side_sub_lip a {
     font-size: 1rem; margin-bottom: 10px; color: #666;
 }
 /* 햄버거 사이드 메뉴 */
-/* ---------  product-lnb의 페이스 ★sub lnb★ */
+/* ---------  product-lnb의 페이스 ★sub lnb★ */ 
+header .side_category li:nth-child(2) .side_lnb:nth-child(6):hover + .side_sub_face {display: block;}
 header .side_category li:nth-child(2) .side_lnb .side_sub_face {
     display: none;
     position: absolute; right: -180px; top: 180px;
@@ -251,8 +257,9 @@ header .side_category li:nth-child(2) .side_lnb .side_sub_face a {
 }
 /* 햄버거 사이드 메뉴 */
 /* ---------  product-lnb의 네일 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(7):hover + .side_sub_nail {display: block;}
 header .side_category li:nth-child(2) .side_lnb .side_sub_nail {
-    /* display: none; */
+    display: none;
     position: absolute; right: -180px; top: 210px;
 }
 header .side_category li:nth-child(2) .side_lnb .side_sub_nail a {
@@ -260,47 +267,99 @@ header .side_category li:nth-child(2) .side_lnb .side_sub_nail a {
 }
 /* 햄버거 사이드 메뉴 */
 /* ---------  product-lnb의 스킨케어 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(8):hover + .side_sub_skin {display: block;}
 header .side_category li:nth-child(2) .side_lnb .side_sub_skin {
-    /* display: none; */
+    display: none;
     position: absolute; right: -180px; top: 240px; 
 }
 header .side_category li:nth-child(2) .side_lnb .side_sub_skin a {
     font-size: 1rem; margin-bottom: 10px; color: #666;
 }
-/* official-lnb */
-/* store-lnb */
-/* contact-lnb */
-/* membership-lnb */
-/* 뽀오얀-lnb */
-header .side_category li .side_lnb a {
-    text-align: left;
-    display: flex; justify-content: space-between; flex-flow:row nowrap; 
-    align-items: center;
-    width:200px; 
-}
-header .side_category > li > ul > li {
+/* 햄버거 사이드 메뉴 */
+/* ---------  product-lnb의 마스크팩 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(9):hover + .side_sub_mask {display: block;}
+header .side_category li:nth-child(2) .side_lnb .side_sub_mask {
     display: none;
-    /* background-color: aqua;  */
-    /* text-align: left; */
-    /* display: flex; justify-content: space-between; flex-flow:row nowrap; 
-    width:200px; */
+    position: absolute; right: -180px; top: 270px; 
 }
-header .side_category li .side_lnb .side_sub_face {display: none;}
-header .side_category li .side_lnb .side_sub_face a {font-size: 0.85rem;}
-header .side_category li .side_lnb .side_sub_nail {display: none;}
-header .side_category li .side_lnb .side_sub_nail a {font-size: 0.85rem;}
-header .side_category li .side_lnb .side_sub_skin {display: none;}
-header .side_category li .side_lnb .side_sub_skin a {font-size: 0.85rem;}
-header .side_category li .side_lnb .side_sub_mask {display: none;}
-header .side_category li .side_lnb .side_sub_mask a {font-size: 0.85rem;}
-header .side_category li .side_lnb .side_sub_cleansing {display: none;}
-header .side_category li .side_lnb .side_sub_cleansing a {font-size: 0.85rem;}
-header .side_category li .side_lnb .side_sub_body {display: none;}
-header .side_category li .side_lnb .side_sub_body a {font-size: 0.85rem;}
-header .side_category li .side_lnb .side_sub_hair {display: none;}
-header .side_category li .side_lnb .side_sub_hair a {font-size: 0.85rem;}
-header .side_category li .side_lnb .side_sub_tool {display: none;}
-header .side_category li .side_lnb .side_sub_tool a {font-size: 0.85rem;}
+header .side_category li:nth-child(2) .side_lnb .side_sub_mask a {
+    font-size: 1rem; margin-bottom: 10px; color: #666;
+}
+/* 햄버거 사이드 메뉴 */
+/* ---------  product-lnb의 클렌저 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(10):hover + .side_sub_cleansing {display: block;}
+header .side_category li:nth-child(2) .side_lnb .side_sub_cleansing {
+    display: none;
+    position: absolute; right: -180px; top: 305px; 
+}
+header .side_category li:nth-child(2) .side_lnb .side_sub_cleansing a {
+    font-size: 1rem; margin-bottom: 10px; color: #666;
+}
+/* 햄버거 사이드 메뉴 */
+/* ---------  product-lnb의 바디 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(11):hover + .side_sub_body {display: block;}
+header .side_category li:nth-child(2) .side_lnb .side_sub_body {
+    display: none;
+    position: absolute; right: -180px; top: 335px; 
+}
+header .side_category li:nth-child(2) .side_lnb .side_sub_body a {
+    font-size: 1rem; margin-bottom: 10px; color: #666;
+}
+/* 햄버거 사이드 메뉴 */
+/* ---------  product-lnb의 헤어 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(12):hover + .side_sub_hair {display: block;}
+header .side_category li:nth-child(2) .side_lnb .side_sub_hair {
+    display: none;
+    position: absolute; right: -180px; top: 370px; 
+}
+header .side_category li:nth-child(2) .side_lnb .side_sub_hair a {
+    font-size: 1rem; margin-bottom: 10px; color: #666;
+}
+/* 햄버거 사이드 메뉴 */
+/* ---------  product-lnb의 툴 ★sub lnb★ */
+header .side_category li:nth-child(2) .side_lnb:nth-child(13):hover + .side_sub_tool {display: block;}
+header .side_category li:nth-child(2) .side_lnb .side_sub_tool {
+    display: none;
+    position: absolute; right: -180px; top: 400px; 
+}
+header .side_category li:nth-child(2) .side_lnb .side_sub_tool a {
+    font-size: 1rem; margin-bottom: 10px; color: #666;
+}
+/* 햄버거메뉴 > official-lnb */
+header .side_category li:nth-child(5):hover .side_lnb {display: block;}
+header .side_category li:nth-child(5) .side_lnb {display: none; top:450px;}
+header .side_category li:nth-child(5) .side_lnb a {
+    font-size: 1.4rem; margin-bottom: 20px; width:140px; font-weight: 500;
+}
+header .side_category li:nth-child(5) .side_lnb a img {height: 19px;}
+/* 햄버거메뉴 > store-lnb */
+header .side_category li:nth-child(6):hover .side_lnb {display: block;}
+header .side_category li:nth-child(6) .side_lnb {display: none; top:510px;}
+header .side_category li:nth-child(6) .side_lnb a {
+    font-size: 1.4rem; margin-bottom: 20px; width:140px; font-weight: 500;
+}
+header .side_category li:nth-child(6) .side_lnb a img {height: 20px;}
+/* 햄버거메뉴 > contact-lnb */
+header .side_category li:nth-child(7):hover .side_lnb {display: block;}
+header .side_category li:nth-child(7) .side_lnb {display: none; top:570px;}
+header .side_category li:nth-child(7) .side_lnb a {
+    font-size: 1.4rem; margin-bottom: 20px; width:140px; font-weight: 500;
+}
+header .side_category li:nth-child(7) .side_lnb a img {height: 20px;}
+/* 햄버거메뉴 > membership-lnb */
+header .side_category li:nth-child(8):hover .side_lnb {display: block;}
+header .side_category li:nth-child(8) .side_lnb {display: none; top:630px;}
+header .side_category li:nth-child(8) .side_lnb a {
+    font-size: 1.4rem; margin-bottom: 20px; width:140px; font-weight: 500;
+}
+header .side_category li:nth-child(8) .side_lnb a img {height: 20px;}
+/* 햄버거메뉴 > 뽀오얀-lnb  */
+header .side_category li:nth-child(9):hover .side_lnb {display: block;}
+header .side_category li:nth-child(9) .side_lnb {display: none; top:690px;}
+header .side_category li:nth-child(9) .side_lnb a {
+    font-size: 1.4rem; margin-bottom: 20px; width:160px; font-weight: 500;
+}
+header .side_category li:nth-child(9) .side_lnb a img {height: 20px;}
 /* 햄버거메뉴 - 네이버버튼 */
 header .naver_store_btn {display: none;}
 header .naver_store_btn .naver_store_list {}

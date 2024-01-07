@@ -23,3 +23,15 @@ close_btn.addEventListener('click',function(){
     header_left.style = 'display:flex';
     header_right.style = 'display:flex';
 })
+
+/* header - 햄버거영역 */
+// 햄버거 버튼 클릭 했을 때 영역 나타나기
+const burger_btn = header_right.querySelector('.btn_barmenu')
+const burger_area = document.querySelector('.side_category')
+console.log(burger_btn,burger_area);
+
+burger_area.style = 'display:none';
+
+burger_btn.addEventListener('click',function(){
+    burger_area.style = 'display:flex';
+})
