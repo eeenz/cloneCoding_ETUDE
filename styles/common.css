@@ -206,7 +206,7 @@ header .side_category li .side_lnb a {
 }
 /* 햄버거메뉴 > brand-lnb */
 header .side_category li:nth-child(1):hover .side_lnb { display: block;}
-header .side_category li:nth-child(1) .side_lnb { display: none; top:210px;}
+header .side_category li:nth-child(1) .side_lnb { display: none; top:200px;}
 header .side_category li:nth-child(1) .side_lnb a {
     font-size: 1.4rem; margin-bottom: 20px; font-weight: 500;
 
@@ -215,7 +215,7 @@ header .side_category li:nth-child(1) .side_lnb a {
 header .side_category li:nth-child(1) .side_lnb a img {height: 20px;}
 /* 햄버거메뉴 > product-lnb */
 header .side_category li:nth-child(2):hover .side_lnb {display: block;}
-header .side_category li:nth-child(2) .side_lnb {display: none; top:270px; }
+header .side_category li:nth-child(2) .side_lnb {display: none; top:260px; }
 header .side_category li:nth-child(2) .side_lnb a:nth-child(1) {
     position: relative; font-size: 1.4rem; margin-bottom: 20px;
     font-weight: 400; color:#111; font-weight: 500;
@@ -227,7 +227,7 @@ header .side_category li:nth-child(2) .side_lnb a {margin-bottom: 12px; color: #
 header .side_category li:nth-child(2) .side_lnb a img {height: 20px;}
 /* 햄버거 사이드 메뉴 */
 /* ---------  product-lnb의 아이 ★sub lnb★ */
-header .side_category li:nth-child(2) .side_lnb:nth-child(4):hover + .side_sub_eye {display: block;}
+header .side_category li:nth-child(2) .side_lnb:nth-child(4):hover .side_sub_eye {display: block;}
 header .side_category li:nth-child(2) .side_lnb .side_sub_eye {
     display: none;
     position: absolute; right: -180px; top: 120px;
@@ -327,35 +327,35 @@ header .side_category li:nth-child(2) .side_lnb .side_sub_tool a {
 }
 /* 햄버거메뉴 > official-lnb */
 header .side_category li:nth-child(5):hover .side_lnb {display: block;}
-header .side_category li:nth-child(5) .side_lnb {display: none; top:450px;}
+header .side_category li:nth-child(5) .side_lnb {display: none; top:440px;}
 header .side_category li:nth-child(5) .side_lnb a {
     font-size: 1.4rem; margin-bottom: 20px; width:140px; font-weight: 500;
 }
 header .side_category li:nth-child(5) .side_lnb a img {height: 19px;}
 /* 햄버거메뉴 > store-lnb */
 header .side_category li:nth-child(6):hover .side_lnb {display: block;}
-header .side_category li:nth-child(6) .side_lnb {display: none; top:510px;}
+header .side_category li:nth-child(6) .side_lnb {display: none; top:500px;}
 header .side_category li:nth-child(6) .side_lnb a {
     font-size: 1.4rem; margin-bottom: 20px; width:140px; font-weight: 500;
 }
 header .side_category li:nth-child(6) .side_lnb a img {height: 20px;}
 /* 햄버거메뉴 > contact-lnb */
 header .side_category li:nth-child(7):hover .side_lnb {display: block;}
-header .side_category li:nth-child(7) .side_lnb {display: none; top:570px;}
+header .side_category li:nth-child(7) .side_lnb {display: none; top:560px;}
 header .side_category li:nth-child(7) .side_lnb a {
     font-size: 1.4rem; margin-bottom: 20px; width:140px; font-weight: 500;
 }
 header .side_category li:nth-child(7) .side_lnb a img {height: 20px;}
 /* 햄버거메뉴 > membership-lnb */
 header .side_category li:nth-child(8):hover .side_lnb {display: block;}
-header .side_category li:nth-child(8) .side_lnb {display: none; top:630px;}
+header .side_category li:nth-child(8) .side_lnb {display: none; top:620px;}
 header .side_category li:nth-child(8) .side_lnb a {
     font-size: 1.4rem; margin-bottom: 20px; width:140px; font-weight: 500;
 }
 header .side_category li:nth-child(8) .side_lnb a img {height: 20px;}
 /* 햄버거메뉴 > 뽀오얀-lnb  */
 header .side_category li:nth-child(9):hover .side_lnb {display: block;}
-header .side_category li:nth-child(9) .side_lnb {display: none; top:690px;}
+header .side_category li:nth-child(9) .side_lnb {display: none; top:680px;}
 header .side_category li:nth-child(9) .side_lnb a {
     font-size: 1.4rem; margin-bottom: 20px; width:160px; font-weight: 500;
 }

@@ -1,74 +1,76 @@
 /* main */
-main {}
+main {height: 300vh;}
 /* section.1 - 메인 배너 영역 */
 /* img -> background 로 처리 */
 /* 공통 */
 main .banner_area {}
 main .banner_area .container {}
-main .banner_area .container .banner {}
-main .banner_area .container .banner > .txt {display: none;}
+main .banner_area .container .banner {position: relative;}
+main .banner_area .container .banner > .txt {}
 main .banner_area .container .banner > .txt > h2 {}
 main .banner_area .container .banner > .txt > p {}
 /* 개별 */
 main .banner_area .container .banner1 {
-    background-image:url('../images/banner/main_replay_PC_01.jpg');
-    position: absolute;top: 0; left: 0;
+    background-image:url('../images/banner/main_replay_PC_01.jpg'),url('../images/banner/main_replay_PC_02.jpg');
+    position: absolute; top: 0; left: 0;
     width: 100%; height: 100vh; z-index: -300;
 }
-main .banner_area .container .banner1 > .txt {}
-main .banner_area .container .banner1 > .txt > h2 {}
-main .banner_area .container .banner1 > .txt > p {}
+main .banner_area .container .banner1 > .txt {position: absolute; bottom: 170px; left: 140px; }
+main .banner_area .container .banner1 > .txt > h2 {font-size: 2.188rem; font-weight: 700;margin-bottom: 15px;}
+main .banner_area .container .banner1 > .txt > p {font-size: 1.063rem;}
 main .banner_area .container .banner2 {}
-main .banner_area .container .banner2 > .txt {}
+main .banner_area .container .banner2 > .txt {display: none;}
 main .banner_area .container .banner2 > .txt > h2 {}
 main .banner_area .container .banner2 > .txt > p {}
 main .banner_area .container .banner3 {}
-main .banner_area .container .banner3 > .txt {}
+main .banner_area .container .banner3 > .txt {display: none;}
 main .banner_area .container .banner3 > .txt > h2 {}
 main .banner_area .container .banner3 > .txt > p {}
 main .banner_area .container .banner4 {}
-main .banner_area .container .banner4 > .txt {}
+main .banner_area .container .banner4 > .txt {display: none;}
 main .banner_area .container .banner4 > .txt > h2 {}
 main .banner_area .container .banner4 > .txt > p {}
 main .banner_area .container .banner5 {}
-main .banner_area .container .banner5 > .txt {}
+main .banner_area .container .banner5 > .txt {display: none;}
 main .banner_area .container .banner5 > .txt > h2 {}
 main .banner_area .container .banner5 > .txt > p {}
 main .banner_area .container .banner6 {}
-main .banner_area .container .banner6 > .txt {}
+main .banner_area .container .banner6 > .txt {display: none;}
 main .banner_area .container .banner6 > .txt > h2 {}
 main .banner_area .container .banner6 > .txt > p {}
 main .banner_area .container .banner7 {}
-main .banner_area .container .banner7 > .txt {}
+main .banner_area .container .banner7 > .txt {display: none;}
 main .banner_area .container .banner7 > .txt > h2 {}
 main .banner_area .container .banner7 > .txt > p {}
 main .banner_area .container .banner8 {}
-main .banner_area .container .banner8 > .txt {}
+main .banner_area .container .banner8 > .txt {display: none;}
 main .banner_area .container .banner8 > .txt > h2 {}
 main .banner_area .container .banner8 > .txt > p {}
 /* 공통 - bar  */
-main .banner_area .container .bar_area {}
-main .banner_area .container .bar_area .bar {}
+main .banner_area .container .bar_area {position: absolute; left: 0; bottom:100px;}
+main .banner_area .container .bar_area .bar {border:1px solid #fff; }
 main .banner_area .container .bar_area .bar .bar_going {}
 /* section.2 - 베스트상품 영역 */
-main .best_product_area {display: none;}
-main .best_product_area > ul {}
+main .best_product_area {background: #fbf3eb; padding: 166px 0 163px; }
+main .best_product_area > ul {display: flex; flex-flow:row nowrap; align-items: center;}
 main .best_product_area > ul > li {}
-main .best_product_area > ul > li > a {}
+main .best_product_area > ul > li > a {text-align: center;}
 main .best_product_area > ul > li > a > p {}
 main .best_product_area > ul > li > a > .item_img {}
-main .best_product_area > ul > li > a > .item_img > img {}
-main .best_product_area > ul > li > a > h3 {}
-main .best_product_area > ul > li > a > .price {}
+main .best_product_area > ul > li > a > .item_img > img {width: 372px;}
+main .best_product_area > ul > li > a > h3 {margin-bottom: 35px;}
+main .best_product_area > ul > li > a > .price {font-size: 1.125rem; font-weight: 600;}
 /* section.3 - 메이크업 룩 영역 */
-main .makeup_area {display: none;}
+main .makeup_area {
+    /* background-image:url('../images/banner/main_replay_PC_01.jpg'); */
+}
 main .makeup_area .bg_img {}
-main .makeup_area .bg_img .top {}
-main .makeup_area .bg_img .top > p {}
+main .makeup_area .bg_img .top {text-align: center;}
+main .makeup_area .bg_img .top p:nth-child(3) {margin: 20px 0 20px;}
 main .makeup_area .bg_img .top .small_img {}
-main .makeup_area .bg_img .top .small_img > img {}
-main .makeup_area .bg_img .top > h2 {}
-main .makeup_area .bg_img .top .icon_view {}
+main .makeup_area .bg_img .top .small_img > img {height: 42px;}
+main .makeup_area .bg_img .top > h2 {font-size: 2.375rem; font-weight: 600;}
+main .makeup_area .bg_img .top .icon_view {padding: 15px 30px; background-color: #111; border-radius: 4px; color: #fff; font-weight: 700; letter-spacing: -0.02; opacity: 2;}
 main .makeup_area .bg_img > a {}
 main .makeup_area .bg_img > a > img {}
 main .makeup_area .bg_img .visual_txt_img {}
