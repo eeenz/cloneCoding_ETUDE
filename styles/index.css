@@ -50,55 +50,120 @@ main .banner_area .container .bar_area .bar {border:1px solid #fff; }
 main .banner_area .container .bar_area .bar .bar_going {}
 /* section.2 - 베스트상품 영역 */
 main .best_product_area {background: #fbf3eb; padding: 166px 0 163px; }
-main .best_product_area > ul {display: flex; flex-flow:row nowrap; align-items: center;}
+main .best_product_area > ul {
+    display: flex; flex-flow:row nowrap; justify-content: space-between; align-items: center;
+}
 main .best_product_area > ul > li {}
 main .best_product_area > ul > li > a {text-align: center;}
 main .best_product_area > ul > li > a > p {}
 main .best_product_area > ul > li > a > .item_img {}
 main .best_product_area > ul > li > a > .item_img > img {width: 372px;}
-main .best_product_area > ul > li > a > h3 {margin-bottom: 35px;}
-main .best_product_area > ul > li > a > .price {font-size: 1.125rem; font-weight: 600;}
+main .best_product_area > ul > li > a > h3 {
+    margin-bottom: 35px; color: #111; font-weight: 500;
+}
+main .best_product_area > ul > li > a > .price {
+    font-size: 1.125rem; font-weight: 600;  color: #111;
+}
 /* section.3 - 메이크업 룩 영역 */
 main .makeup_area {
-    /* background-image:url('../images/banner/main_replay_PC_01.jpg'); */
+    background-image:url('../images/main_img/makeup/makeup_look_main_bg_2208.jpg') ;
+    background-size: cover;
+    padding:64px 0 150px;
 }
-main .makeup_area .bg_img {}
+main .makeup_area .bg_img { 
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: space-between; align-items: center;
+}
 main .makeup_area .bg_img .top {text-align: center;}
-main .makeup_area .bg_img .top p:nth-child(3) {margin: 20px 0 20px;}
 main .makeup_area .bg_img .top .small_img {}
 main .makeup_area .bg_img .top .small_img > img {height: 42px;}
-main .makeup_area .bg_img .top > h2 {font-size: 2.375rem; font-weight: 600;}
-main .makeup_area .bg_img .top .icon_view {padding: 15px 30px; background-color: #111; border-radius: 4px; color: #fff; font-weight: 700; letter-spacing: -0.02; opacity: 2;}
-main .makeup_area .bg_img > a {}
-main .makeup_area .bg_img > a > img {}
+main .makeup_area .bg_img .top h2 {color: #111; font-size: 2.375rem; font-weight: 700;}
+main .makeup_area .bg_img .top p:nth-child(3) {color: #111; margin: 30px auto 40px; }
+main .makeup_area .bg_img .top .icon_view {
+    display: inline-block;
+    padding: 14px 30px; background-color: #111; border-radius: 4px; 
+    color: #fff; font-weight: 700; font-size: 1.125rem;
+    opacity: 0.8;
+}
+main .makeup_area .bg_img > a {margin: 100px 0;}
+main .makeup_area .bg_img > a > img {width: 475px; border-radius: 4px;}
 main .makeup_area .bg_img .visual_txt_img {}
 main .makeup_area .bg_img .visual_txt_img img {}
-main .makeup_area .bg_img .item {}
-main .makeup_area .bg_img .item > a {}
-main .makeup_area .bg_img .item > a:nth-child(1) {}
-main .makeup_area .bg_img .item > a:nth-child(2) {}
-main .makeup_area .bg_img .item > a .photo {}
-main .makeup_area .bg_img .item > a > span {}
-main .makeup_area .bg_img .item > a .icon_eye {}
-main .makeup_area .bg_img .item > a .btn_arw {}
-main .makeup_area .bg_img .item > a > img {}
+main .makeup_area .bg_img .item {
+    margin-top: 100px;
+    display:flex; flex-flow:row nowrap;
+}
+main .makeup_area .bg_img .item > a {
+    position: relative; margin-right: 20px;
+}
+main .makeup_area .bg_img .item > a:nth-child(2) {margin-right: 0;}
+main .makeup_area .bg_img .item > a .photo {border-radius: 4px;}
+main .makeup_area .bg_img .item > a .icon_eye,
+main .makeup_area .bg_img .item > a .icon_lip {
+    padding: 6px 12px; 
+    color: #f5e2e2; background-color: #333; 
+    border-radius: 2px; font-size: 0.813rem; font-weight: 700;
+    position:absolute; left: 10px; top: 10px;
+}
+main .makeup_area .bg_img .item > a .btn_arw {
+    background: #171C8F url(../images/icon-arrow-banner-1.svg) no-repeat center;
+    width: 45px; height: 45px; border-radius: 50%; position:absolute; right: 20px; bottom: 25px;
+}
 /* section.4 - 순정 영역 */
-main .soonjung_area {display: none;}
-main .soonjung_area .contents {}
-main .soonjung_area .contents .top {}
-main .soonjung_area .contents .top > p {}
+main .soonjung_area {
+    background-color: pink;
+    padding:64px 0 150px;
+}
+main .soonjung_area .contents {
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: space-between; align-items: center;
+}
+main .soonjung_area .contents .top {text-align: center;}
+main .soonjung_area .contents .top > p:nth-child(3) {color: #111; margin: 30px auto 40px;}
 main .soonjung_area .contents .top .small_img {}
 main .soonjung_area .contents .top .small_img img {}
-main .soonjung_area .contents .top > h2 {}
-main .soonjung_area .contents .top .icon_view {}
-main .soonjung_area .container {}
-main .soonjung_area .container .item {}
-main .soonjung_area .container .item > li {}
-main .soonjung_area .container .item > li > .thumb {}
+main .soonjung_area .contents .top > h2 {color: #111; font-size: 2.375rem; font-weight: 700;}
+main .soonjung_area .contents .top .icon_view {
+    display: inline-block;
+    padding: 14px 30px; background-color: #111; border-radius: 4px; 
+    color: #fff; font-weight: 700; font-size: 1.125rem;
+    opacity: 0.8;
+}
+main .soonjung_area .container {
+    background-image:url('../images/main_img/soonjung/EP01_002_main_playwithETUDE_2306.jpg') ;
+    background-position:left top;
+    background-size:contain;
+    background-repeat:no-repeat;
+    width: 100%; height: 1150px;
+    margin:100px 0 10px; 
+}
+main .soonjung_area .container .item {
+    width: 50%; 
+    display: flex; flex-flow: row wrap; justify-content:flex-end;
+}
+main .soonjung_area .container .item > li {
+    width: 490px;
+}
+main .soonjung_area .container .item > li > .thumb {
+    width: 490px; height: 490px; position: relative;
+    background-color: palegreen;
+}
 main .soonjung_area .container .item > li > .thumb > a {}
-main .soonjung_area .container .item > li > .thumb > a > img {}
-main .soonjung_area .container .item > li > .thumb > a > .icon_new {}
-main .soonjung_area .container .item > li > .item_info {}
+main .soonjung_area .container .item > li > .thumb > a > img {
+    width: 100%; border-radius: 6px;
+}
+main .soonjung_area .container .item > li > .thumb > a > .icon_new {
+    padding: 6px 12px; 
+    color: #f5e2e2; background-color: #333; 
+    border-radius: 2px; font-size: 0.813rem; font-weight: 700;
+    position:absolute; left: 10px; top: 10px;
+}
+main .soonjung_area .container .item > li > .item_info {
+    height: 150px;
+    background-color: palevioletred;
+}
 main .soonjung_area .container .item > li > .item_info > p {}
 main .soonjung_area .container .item > li > .item_info > h3 {}
 main .soonjung_area .container .item > li > .item_info > h3 > a {}

@@ -15,6 +15,7 @@ address,details,mark,time,video,img,summary,div {
     color:#000;
     text-decoration:none;
     font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.02rem;
 }
 ul,ol,li {list-style:none;}
 button {cursor:pointer; background: 0; border: 0;}
