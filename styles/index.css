@@ -198,19 +198,28 @@ main .soonjung_area .container .item > li > .item_info > .item_option > a > img 
 /* section.5 - gift 영역 */
 main .gift_area {display: none;}
 main .gift_area .contents {}
-main .gift_area .contents .top {}
-main .gift_area .contents .top {}
-main .gift_area .contents .top > p {}
+main .gift_area .contents .top {text-align: center;}
+main .gift_area .contents .top > p:nth-child(3) {color: #111; margin: 30px auto 40px;}
 main .gift_area .contents .top .small_img {}
 main .gift_area .contents .top .small_img img {}
-main .gift_area .contents .top h2 {}
-main .gift_area .contents .top .icon_view {}
+main .gift_area .contents .top h2 {color: #111; font-size: 2.375rem; font-weight: 700;}
+main .gift_area .contents .top .icon_view {
+    display: inline-block;
+    padding: 14px 30px; background-color: #111; border-radius: 4px; 
+    color: #fff; font-weight: 700; font-size: 1.125rem;
+    opacity: 0.8;
+}
 main .gift_area .contents .item {}
 main .gift_area .contents .item ul {}
 main .gift_area .contents .item ul li {}
-main .gift_area .contents .item ul li a {}
+main .gift_area .contents .item ul li a {position: relative;}
 main .gift_area .contents .item ul li a img {}
-main .gift_area .contents .item ul li a .icon_toxstar {}
+main .gift_area .contents .item ul li a .icon_toxstar {
+    padding: 6px 12px; 
+    color: #f5e2e2; background-color: #333; 
+    border-radius: 2px; font-size: 0.813rem; font-weight: 700;
+    position:absolute; left: 10px; top: 10px;
+}
 /* section.6 - 신상품 영역 */
 main .new_area {display: none;}
 main .new_area .bg_img {}
