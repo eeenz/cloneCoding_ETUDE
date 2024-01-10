@@ -4,14 +4,26 @@ main {}
 /* img -> background 로 처리 */
 /* 공통 */
 main .banner_area {}
-main .banner_area .container {}
+main .banner_area .container {position: relative;}
 main .banner_area .container .banner {
-    background-size: cover; position: relative;
-    width: 100%; height: 100vh; z-index: -200;
+    background-size: cover; 
+    width: 100%; height: 100vh; /* z-index: -200; */
 }
 main .banner_area .container .banner > .txt {position: absolute; bottom: 170px; left: 140px; }
-main .banner_area .container .banner > .txt > h2 {font-size: 2.188rem; font-weight: 700;margin-bottom: 15px;}
-main .banner_area .container .banner > .txt > p {font-size: 1.063rem;}
+main .banner_area .container .banner > .txt > h2 {
+    font-size: 2.188rem; font-weight: 700;
+    margin-bottom: 15px; color: #111;
+}
+main .banner_area .container .banner > .txt > p {font-size: 1.063rem; color: #333;}
+main .banner_area .container .banner2,
+main .banner_area .container .banner3,
+main .banner_area .container .banner4,
+main .banner_area .container .banner5,
+main .banner_area .container .banner6,
+main .banner_area .container .banner7,
+main .banner_area .container .banner8 {
+    position: absolute; top:0; left: 0;
+}
 /* 개별 */
 main .banner_area .container .banner1 {
     /* display: none; */
@@ -45,31 +57,29 @@ main .banner_area .container .banner8 {
     background-image:url('../images/banner/main_08_pc.jpg');   
 }
 /* 공통 - bar  */
-main .banner_area .container .bar_area {
+main .banner_area .bar {
+    content: ''; display: flex; /* 필수 속성 */
+    height: 1px; background-color: rgba(255,255,255,0.3);
     position: absolute; z-index: 300; 
     bottom: 90px; left: 130px; width: 85%;
+    margin: 0 a;
 }
-main .banner_area .container .bar_area .bar {
-    content: ''; display: flex; /* 필수 속성 */
-    height: 1px; background-color: #fff;
-    margin: 0 auto; opacity: 0.3;
-    justify-content: space-between; align-content: center;
-}
-main .banner_area .container .bar_area .bar .bar_going {
+main .banner_area .bar .bar_going {
     content: ''; display: inline-block; /* 필수 속성 */
     height: 3px; width: 200px; background-color: #fff;
-    opacity: none;
+    transform: translateY(-1px);
+    border-radius: 2px;
 }
 /* section.2 - 베스트상품 영역 */
 main .best_product_area {background: #fbf3eb; padding: 166px 0 163px; }
 main .best_product_area > ul {
     display: flex; flex-flow:row nowrap; justify-content: space-between; align-items: center;
 }
-main .best_product_area > ul > li {}
+main .best_product_area > ul > li {width:20%}
 main .best_product_area > ul > li > a {text-align: center;}
 main .best_product_area > ul > li > a > p {}
 main .best_product_area > ul > li > a > .item_img {}
-main .best_product_area > ul > li > a > .item_img > img {width: 372px;}
+main .best_product_area > ul > li > a > .item_img > img {width: 100%;}
 main .best_product_area > ul > li > a > h3 {
     margin-bottom: 35px; color: #111; font-weight: 500;
 }
@@ -124,8 +134,8 @@ main .makeup_area .bg_img .item > a .btn_arw {
 }
 /* section.4 - 순정 영역 */
 main .soonjung_area {
-    background-color: pink;
-    padding:64px 0 30px;
+    /* background-color: pink; */
+    padding:64px 0 50px;
 }
 main .soonjung_area .contents {
     display: flex;
@@ -191,31 +201,36 @@ main .soonjung_area .container .item > li > .item_info > p {
     font-size: 0.875rem; color:#777;
     margin-bottom: 5px;
 }
-main .soonjung_area .container .item > li > .item_info > h3 {}
+main .soonjung_area .container .item > li > .item_info > h3 {margin-bottom: 40px;}
 main .soonjung_area .container .item > li > .item_info > h3 > a {
     /* font-family: 'Sofia Sans', sans-serif; */
     font-size: 1.125rem; font-weight: 600; color:#111;
 }
 main .soonjung_area .container .item > li > .item_info > .price {
     font-size: 1.125rem; padding: 6px 12px; background-color: #fff;
-    border: 1px solid #d9d9d9; margin: 30px 0 10px; font-size: 0.875rem;
+    border: 1px solid #d9d9d9; font-size: 0.875rem;
     color:#111; align-content: center;
 }
 main .soonjung_area .container .item > li > .item_info > .price > em {
     /* font-family: 'Sofia Sans', sans-serif; */
     font-size: 1.125rem; font-weight: 700; margin-right: 2px;
 }
-main .soonjung_area .container .item > li > .item_info > .item_option {}
+main .soonjung_area .container .item > li > .item_info > .item_option {padding-bottom: 10px;}
 main .soonjung_area .container .item > li > .item_info > .item_option > a {}
-main .soonjung_area .container .item > li > .item_info > .item_option > a > img {}
+main .soonjung_area .container .item > li > .item_info > .item_option > a > img {
+    max-width: 27px; height: 27px; border: 1px solid #111; border-radius: 50%;
+}
 /* section.5 - gift 영역 */
-main .gift_area {display: none;}
-main .gift_area .contents {}
+main .gift_area {padding: 0 6%;}
+main .gift_area .contents {border-top: 1px solid #d9d9d9; padding: 60px 0px 40px;}
 main .gift_area .contents .top {text-align: center;}
 main .gift_area .contents .top > p:nth-child(3) {color: #111; margin: 30px auto 40px;}
 main .gift_area .contents .top .small_img {}
 main .gift_area .contents .top .small_img img {}
-main .gift_area .contents .top h2 {color: #111; font-size: 2.375rem; font-weight: 700;}
+main .gift_area .contents .top h2 {
+    font-family: 'Sofia Sans', sans-serif;
+    color: #111; font-size: 2.375rem; font-weight: 700;
+}
 main .gift_area .contents .top .icon_view {
     display: inline-block;
     padding: 14px 30px; background-color: #111; border-radius: 4px; 
@@ -223,45 +238,64 @@ main .gift_area .contents .top .icon_view {
     opacity: 0.8;
 }
 main .gift_area .contents .item {}
-main .gift_area .contents .item ul {}
-main .gift_area .contents .item ul li {}
-main .gift_area .contents .item ul li a {position: relative;}
-main .gift_area .contents .item ul li a img {}
+main .gift_area .contents .item ul {
+    display: flex; flex-flow:row nowrap; 
+    justify-content: space-between; align-items: center;
+    padding-top: 100px;
+}
+main .gift_area .contents .item ul li {width: calc(100% / 4 - 8px); position: relative;}
+main .gift_area .contents .item ul li a {}
+main .gift_area .contents .item ul li a img {width: 100%;}
 main .gift_area .contents .item ul li a .icon_toxstar {
-    padding: 6px 12px; 
-    color: #f5e2e2; background-color: #333; 
-    border-radius: 2px; font-size: 0.813rem; font-weight: 700;
-    position:absolute; left: 10px; top: 10px;
+    padding: 4px 10px; 
+    color: #111; background-color: #feda00; 
+    border-radius: 2px; font-size: 0.813rem; font-weight: 500;
+    position:absolute; right: 10px; top: 10px;
 }
 /* section.6 - 신상품 영역 */
-main .new_area {display: none;}
+main .new_area {
+    background-color: palegreen;
+    padding: 70px 0;
+}
 main .new_area .bg_img {}
-main .new_area .bg_img .top {}
-main .new_area .bg_img .top > p {}
-main .new_area .bg_img .top .small_img {}
-main .new_area .bg_img .top .small_img img {}
-main .new_area .bg_img .top .icon_view {}
-main .new_area .bg_img .what_new_item {}
-main .new_area .bg_img .what_new_item > a {}
-main .new_area .bg_img .what_new_item .prev_btn {}
-main .new_area .bg_img .what_new_item .prev_btn > img {}
-main .new_area .bg_img .what_new_item .next_btn {}
-main .new_area .bg_img .what_new_item .next_btn > img {}
-main .new_area .bg_img .what_new_item ul {}
-main .new_area .bg_img .what_new_item ul li {}
-main .new_area .bg_img .what_new_item ul li .thumb {}
-main .new_area .bg_img .what_new_item ul li .thumb > a {}
-main .new_area .bg_img .what_new_item ul li .thumb > a > img {}
-main .new_area .bg_img .what_new_item ul li .thumb > a > .icon_new {}
-main .new_area .bg_img .what_new_item ul li .item_info {}
-main .new_area .bg_img .what_new_item ul li .item_info > p {}
-main .new_area .bg_img .what_new_item ul li .item_info > h3 {}
-main .new_area .bg_img .what_new_item ul li .item_info > h3 > a {}
-main .new_area .bg_img .what_new_item ul li .item_info .item_option {}
-main .new_area .bg_img .what_new_item ul li .item_info .item_option a {}
-main .new_area .bg_img .what_new_item ul li .item_info .item_option a img {}
-main .new_area .bg_img .what_new_item ul li .item_info .price {}
-main .new_area .bg_img .what_new_item ul li .item_info .price em {}
+main .new_area .top {text-align: center;}
+main .new_area .top > p:nth-child(3) {color: #111; margin: 30px auto 40px;}
+main .new_area .top .small_img {margin-bottom: 10px;}
+main .new_area .top .small_img img {}
+main .new_area .top h2 {
+    font-family: 'Sofia Sans', sans-serif;
+    color: #111; font-size: 2.375rem; font-weight: 800;
+}
+main .new_area .top .icon_view {
+    display: inline-block;
+    padding: 14px 30px; background-color: #111; border-radius: 4px; 
+    color: #fff; font-weight: 700; font-size: 1.125rem;
+    opacity: 0.8;
+}
+main .new_area .what_new_item {
+    display: flex; flex-flow:row nowrap; 
+    justify-content: space-between; align-items: center;
+}
+main .new_area .what_new_item > a {}
+main .new_area .what_new_item .prev_btn {}
+main .new_area .what_new_item .prev_btn > img {}
+main .new_area .what_new_item .next_btn {}
+main .new_area .what_new_item .next_btn > img {}
+main .new_area .what_new_item ul {}
+main .new_area .what_new_item ul li {}
+main .new_area .what_new_item ul li .thumb {}
+main .new_area .what_new_item ul li .thumb > a {}
+main .new_area .what_new_item ul li .thumb > a > img {}
+main .new_area .what_new_item ul li .thumb > a > .icon_new {}
+main .new_area .what_new_item ul li .item_info {}
+main .new_area .what_new_item ul li .item_info > p {}
+main .new_area .what_new_item ul li .item_info > h3 {}
+main .new_area .what_new_item ul li .item_info > h3 > a {}
+main .new_area .what_new_item ul li .item_info .item_option {}
+main .new_area .what_new_item ul li .item_info .item_option a {}
+main .new_area .what_new_item ul li .item_info .item_option a img {}
+main .new_area .what_new_item ul li .item_info .price {}
+main .new_area .what_new_item ul li .item_info .price em {}
 /* section.7 - 오피셜 영역 */
 main .official_area {display: none;}
 /* tikiok */

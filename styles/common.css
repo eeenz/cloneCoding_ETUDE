@@ -12,7 +12,7 @@
 .header_bg {
     display: none;
     background:rgba(255, 255, 255, 0.5); width:100%; height: 100px;
-    position: absolute; z-index: -100; left: 0; top:0;
+    position: absolute; left: 0; top:0;
 }
 header {
     display: flex; flex-flow: row nowrap;
@@ -20,8 +20,9 @@ header {
     align-items: center;
     height: 100px; width:100%; margin: 0 auto;
     padding: 33px 60px 0 70px; position:fixed;
+    left: 0; top:0; z-index: 900;
 }
-header > .left {display: flex; align-items: center;}
+header > .left {display: flex; align-items: center; }
 header .left h1 {}
 header .left h1 a {}
 header .left h1 a img {width:108px;}
@@ -38,7 +39,6 @@ header .left nav .gnb > li > a {
 /* product lnb영역 bg */
 header .left nav .gnb li:nth-child(1):hover .lnb_bg,
 header .left nav .gnb li:nth-child(1):hover .lnb1 {display: block;}
-header > .lnb_bg1 {}
 header .left nav .gnb li:nth-child(1) .lnb_bg {
     display: none;
     background-color:rgba(255, 255, 255, 0.5);
@@ -79,7 +79,7 @@ header .left nav .gnb li:nth-child(2):hover > .lnb2,
 header .left nav .gnb li:nth-child(2):hover .lnb_bg{display: block;}
 header .left nav .gnb li:nth-child(2) .lnb_bg {
     display:none; 
-    /* background-color:rgba(255, 255, 255, 0.5); */
+    background-color:rgba(255, 255, 255, 0.5);
     width:100%; height: 150px;
     position: absolute; top:0; left:0;
     z-index: -100;
