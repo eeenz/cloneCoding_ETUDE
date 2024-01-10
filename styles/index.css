@@ -1,5 +1,5 @@
 /* main */
-main {height: 300vh;}
+main {}
 /* section.1 - 메인 배너 영역 */
 /* img -> background 로 처리 */
 /* 공통 */
@@ -125,7 +125,7 @@ main .makeup_area .bg_img .item > a .btn_arw {
 /* section.4 - 순정 영역 */
 main .soonjung_area {
     background-color: pink;
-    padding:64px 0 150px;
+    padding:64px 0 30px;
 }
 main .soonjung_area .contents {
     display: flex;
@@ -143,37 +143,48 @@ main .soonjung_area .contents .top .icon_view {
     color: #fff; font-weight: 700; font-size: 1.125rem;
     opacity: 0.8;
 }
-main .soonjung_area .container {
+main .soonjung_area .container::before {
     background-image:url('../images/main_img/soonjung/EP01_002_main_playwithETUDE_2306.jpg') ;
-    background-position:left top;
-    background-size:contain;
+    background-position:center right;
+    background-size:cover;
     background-repeat:no-repeat;
-    margin:100px 0 10px; 
+    content:'';
+    display: block;
+    width: 50%;
     position: relative;
+    border-radius: 4px;
+}
+main .soonjung_area .container {
+    display: flex; 
+    margin: 100px 0 10px;
 }
 main .soonjung_area .container .item {
-    width:calc(50% - 10px);
-    display: flex; flex-flow: row wrap; justify-content:space-between;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 49%;
+    padding: 0 50px 0 34px;
 }
 main .soonjung_area .container .item > li {
-    width: 490px;
+    width:calc(100% / 2 - 10px);
+    padding: 0 12px 5px;
 }
 main .soonjung_area .container .item > li > .thumb {
-    width: 100%; position: relative;
-    background-color: palegreen;
+    position: relative;
 }
 main .soonjung_area .container .item > li > .thumb > a {}
 main .soonjung_area .container .item > li > .thumb > a > img {
-    width: 100%; border-radius: 6px;
+    width: 100%; 
+    border-top-left-radius: 4px; border-top-right-radius: 4px;
 }
 main .soonjung_area .container .item > li > .thumb > a > .icon_new {
-    padding: 6px 12px; 
-    color: #f5e2e2; background-color: #333; 
+    padding: 2px 6px; 
+    color: #f5e2e2; background-color: #111; 
     border-radius: 2px; font-size: 0.813rem; font-weight: 700;
     position:absolute; left: 10px; top: 10px;
 }
 main .soonjung_area .container .item > li > .item_info {
-    background-color: lemonchiffon; 
+    background-color: #fafafa;
     padding: 15px 20px;
 }
 main .soonjung_area .container .item > li > .item_info > p {
@@ -182,15 +193,17 @@ main .soonjung_area .container .item > li > .item_info > p {
 }
 main .soonjung_area .container .item > li > .item_info > h3 {}
 main .soonjung_area .container .item > li > .item_info > h3 > a {
+    /* font-family: 'Sofia Sans', sans-serif; */
     font-size: 1.125rem; font-weight: 600; color:#111;
 }
 main .soonjung_area .container .item > li > .item_info > .price {
-    font-size: 1.125rem; padding: 10px 12px; background-color: #fff;
+    font-size: 1.125rem; padding: 6px 12px; background-color: #fff;
     border: 1px solid #d9d9d9; margin: 30px 0 10px; font-size: 0.875rem;
-    color:#111;
+    color:#111; align-content: center;
 }
 main .soonjung_area .container .item > li > .item_info > .price > em {
-    font-size: 1.125rem; font-weight: 700;
+    /* font-family: 'Sofia Sans', sans-serif; */
+    font-size: 1.125rem; font-weight: 700; margin-right: 2px;
 }
 main .soonjung_area .container .item > li > .item_info > .item_option {}
 main .soonjung_area .container .item > li > .item_info > .item_option > a {}
