@@ -222,7 +222,7 @@ main .soonjung_area .container .item > li > .item_info > .item_option > a > img 
 }
 /* section.5 - gift 영역 */
 main .gift_area {padding: 0 6%;}
-main .gift_area .contents {border-top: 1px solid #d9d9d9; padding: 60px 0px 40px;}
+main .gift_area .contents {border-top: 1px solid #d9d9d9; padding: 60px 0px 0px;}
 main .gift_area .contents .top {text-align: center;}
 main .gift_area .contents .top > p:nth-child(3) {color: #111; margin: 30px auto 40px;}
 main .gift_area .contents .top .small_img {}
@@ -255,20 +255,18 @@ main .gift_area .contents .item ul li a .icon_toxstar {
 /* section.6 - 신상품 영역 */
 main .new_area {
     /* background-color: palegreen; */
-    padding: 70px 0;
+    padding: 70px 0px 0px 0px;
+    width: 100%; position: relative; 
 }
 main .new_area .bg_img { 
     background-image:url('../images/main_img/whatnew/whatsnew-bg.jpg');
-    background-position:center top;
+    background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
-    content:'';
     position: absolute; z-index: -100;
-    width: 150%; overflow: hidden;
-    height: 1000px;
-    border-radius: 4px;
+    width: 100%; height: 1000px;
 }
-main .new_area .top {text-align: center;}
+main .new_area .top {text-align: center; margin-top: 70px;}
 main .new_area .top > p:nth-child(3) {color: #111; margin: 30px auto 40px;}
 main .new_area .top .small_img {margin-bottom: 10px;}
 main .new_area .top .small_img img {}
@@ -283,21 +281,34 @@ main .new_area .top .icon_view {
     opacity: 0.8;
 }
 main .new_area .what_new_item {
-    
+    margin: 100px auto 50px;
+    width:80%
 }
-main .new_area .what_new_item > a {}
+main .new_area .what_new_item > a > img {
+    height: 27px; position:absolute; top: 180px;
+    z-index: 800;
+}
 main .new_area .what_new_item .prev_btn {}
-main .new_area .what_new_item .prev_btn > img {}
+main .new_area .what_new_item .prev_btn > img {
+    transform:rotate(180deg); left: 140px; top: 750px;
+}
 main .new_area .what_new_item .next_btn {}
-main .new_area .what_new_item .next_btn > img {}
+main .new_area .what_new_item .next_btn > img {
+    right: 140px; top: 750px;
+}
 main .new_area .what_new_item ul {
     display: flex; flex-flow:row wrap; 
-    justify-content: space-between; align-items: center;
+    justify-content: space-between; align-items: flex-start;
 }
-main .new_area .what_new_item ul li {width: calc(100% / 6);}
+main .new_area .what_new_item ul > li:nth-child(5),
+main .new_area .what_new_item ul > li:nth-child(6) {display: none;}
+main .new_area .what_new_item ul > li:last-child {margin-right: 0px;}
+main .new_area .what_new_item ul > li {width:24.5%; margin-right: 6px;}
 main .new_area .what_new_item ul li .thumb {position:relative;}
 main .new_area .what_new_item ul li .thumb > a {}
-main .new_area .what_new_item ul li .thumb > a > img {width:100%;}
+main .new_area .what_new_item ul li .thumb > a > img {
+    width:100%; border-top-right-radius:4px; border-top-left-radius: 4px;
+}
 main .new_area .what_new_item ul li .thumb > a > .icon_new {
     padding: 2px 6px; 
     color: #f5e2e2; background-color: #111; 
@@ -306,56 +317,125 @@ main .new_area .what_new_item ul li .thumb > a > .icon_new {
 }
 main .new_area .what_new_item ul li .item_info {
     background-color: rgba(250, 250, 250, 0.4);
+    padding: 15px 20px;
 }
-main .new_area .what_new_item ul li .item_info > p {}
-main .new_area .what_new_item ul li .item_info > h3 {}
+main .new_area .what_new_item ul li .item_info > p {
+    font-size: 0.875rem; color:#777;
+    margin-bottom: 5px;
+}
+main .new_area .what_new_item ul li:nth-child(1) .item_info > h3,
+main .new_area .what_new_item ul li:nth-child(5) .item_info > h3 {
+    margin-bottom: 40px;
+}
+main .new_area .what_new_item ul li .item_info > h3 {
+    min-height: 52px;
+}
 main .new_area .what_new_item ul li .item_info > h3 > a {
     /* font-family: 'Sofia Sans', sans-serif; */
-    font-size: 1.125rem; font-weight: 600; color:#111;
+    font-size: 1.125rem; font-weight: 500; color:#111;
 }
 main .new_area .what_new_item ul li .item_info .item_option {
     display: flex;
 }
-main .new_area .what_new_item ul li .item_info .item_option a {}
-main .new_area .what_new_item ul li .item_info .item_option a img {
-    width:27px; height:27px; border-radius: 50%;
+main .new_area .what_new_item ul li .item_info .item_option a {
+    margin: 2px 6px 12px 0;
 }
-main .new_area .what_new_item ul li .item_info .price {}
-main .new_area .what_new_item ul li .item_info .price em {}
+main .new_area .what_new_item ul li .item_info .item_option a img {
+    width:24px; height:24px; border-radius: 50%;
+}
+main .new_area .what_new_item ul li .item_info .price {
+    font-size: 1.125rem; padding: 6px 12px; background-color: #fff;
+    border: 1px solid #d9d9d9; font-size: 0.875rem;
+    color:#111; align-content: center;
+}
+main .new_area .what_new_item ul li .item_info .price em {
+    font-size: 1.125rem; font-weight: 700; margin-right: 2px;
+}
 /* section.7 - 오피셜 영역 */
-main .official_area {display: none;}
+main .official_area {
+    position: relative; display: flex;
+    justify-content: space-between;
+}
+main .official_area::before {
+    background: linear-gradient(180deg, #F5E2E2 0%, #F2C6CF 100%);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    z-index: -100;
+}
 /* tikiok */
-main .official_area .tiktok {}
-main .official_area .tiktok .left_txt {}
-main .official_area .tiktok .left_txt > p {}
-main .official_area .tiktok .left_txt > p > em {}
+main .official_area .tiktok {
+    display: flex; flex-flow:row nowrap; 
+    justify-content:right;
+    align-items: center;
+    width: 50%;
+}
+main .official_area .tiktok .left_txt {
+    text-align: right; transform: rotate(-90deg);
+}
+main .official_area .tiktok .left_txt > p {font-size: 1.875rem;}
+main .official_area .tiktok .left_txt > p > em {font-size: 1.875rem;}
 main .official_area .tiktok .right {}
 main .official_area .tiktok .right > a {}
 main .official_area .tiktok .right > a > img {}
-main .official_area .tiktok .right > p {}
-main .official_area .tiktok .right > p > strong {}
+main .official_area .tiktok .right > p {font-size: 2.375rem;}
+main .official_area .tiktok .right > p > strong {font-size: 2.375rem;}
 /* instagram */
-main .official_area .insta {display: none;}
-main .official_area .insta .txt {}
-main .official_area .insta .txt p {}
-main .official_area .insta .txt p em {}
+main .official_area .insta {
+    display: flex; flex-flow: column nowrap;
+    justify-content: flex-end; align-items: center;
+}
+main .official_area .insta .txt {text-align: left;}
+main .official_area .insta .txt p {font-size: 1.875rem;}
+main .official_area .insta .txt p em {font-size: 1.875rem;}
 main .official_area .insta .banner {}
 main .official_area .insta .banner a {}
 main .official_area .insta .banner a img {}
 /* sns-icon */
-main .official_area .sns_icon {display: none;}
+main .official_area .sns_icon {}
 main .official_area .sns_icon a {}
 main .official_area .sns_icon a img {}
 /* section.8 - 뉴스 & 이벤트 영역 */
-main .news_event_area {display: none;}
-main .news_event_area .top {}
+main .news_event_area {}
+main .news_event_area .top {text-align: center; margin-top: 70px;}
 main .news_event_area .top > p {}
-main .news_event_area .top .small_img {}
+main .news_event_area .top .small_img {margin-bottom: 10px;}
 main .news_event_area .top .small_img img {}
-main .news_event_area .top h2 {}
-main .news_event_area .top .icon_view {}
-main .news_event_area .container {}
-main .news_event_area .container .item {}
+main .news_event_area .top h2 {
+    font-family: 'Sofia Sans', sans-serif;
+    color: #111; font-size: 2.375rem; font-weight: 700;
+    margin-bottom: 26px;
+}
+main .news_event_area .top .icon_view {
+    display: inline-block;
+    padding: 14px 30px; background-color: #111; border-radius: 4px; 
+    color: #fff; font-weight: 700; font-size: 1.125rem;
+    opacity: 0.8; margin-bottom: 64px;
+}
+main .news_event_area .container {display: flex;}
+main .news_event_area .container .item {max-width:720px; position: relative;}
 /* img background 로 처리 */
+main .news_event_area .container .item:nth-child(1) a {
+    background-image:url('../images/main_img/news/EP01_002_main_news_01_recycle.jpg');
+    background-repeat:no-repeat;
+    content:''; width: 100%;
+}
+main .news_event_area .container .item:nth-child(2) a {
+    background-image:url('../images/main_img/news/EP01_002_main_news_02_vegan.jpg');
+    background-repeat:no-repeat;
+    content:''; width: 100%;
+}
 main .news_event_area .container .item a {}
-main .news_event_area .container .item a p {}
+main .news_event_area .container .item a p {   
+    position: absolute;
+    bottom: 7%;
+    left: 4%;
+    line-height: 45px;
+    font-size: 31px;
+    font-weight: 400;
+    color: #fff;
+}
