@@ -254,10 +254,20 @@ main .gift_area .contents .item ul li a .icon_toxstar {
 }
 /* section.6 - 신상품 영역 */
 main .new_area {
-    background-color: palegreen;
+    /* background-color: palegreen; */
     padding: 70px 0;
 }
-main .new_area .bg_img {}
+main .new_area .bg_img { 
+    background-image:url('../images/main_img/whatnew/whatsnew-bg.jpg');
+    background-position:center top;
+    background-size:cover;
+    background-repeat:no-repeat;
+    content:'';
+    position: absolute; z-index: -100;
+    width: 150%; overflow: hidden;
+    height: 1000px;
+    border-radius: 4px;
+}
 main .new_area .top {text-align: center;}
 main .new_area .top > p:nth-child(3) {color: #111; margin: 30px auto 40px;}
 main .new_area .top .small_img {margin-bottom: 10px;}
@@ -273,27 +283,43 @@ main .new_area .top .icon_view {
     opacity: 0.8;
 }
 main .new_area .what_new_item {
-    display: flex; flex-flow:row nowrap; 
-    justify-content: space-between; align-items: center;
+    
 }
 main .new_area .what_new_item > a {}
 main .new_area .what_new_item .prev_btn {}
 main .new_area .what_new_item .prev_btn > img {}
 main .new_area .what_new_item .next_btn {}
 main .new_area .what_new_item .next_btn > img {}
-main .new_area .what_new_item ul {}
-main .new_area .what_new_item ul li {}
-main .new_area .what_new_item ul li .thumb {}
+main .new_area .what_new_item ul {
+    display: flex; flex-flow:row wrap; 
+    justify-content: space-between; align-items: center;
+}
+main .new_area .what_new_item ul li {width: calc(100% / 6);}
+main .new_area .what_new_item ul li .thumb {position:relative;}
 main .new_area .what_new_item ul li .thumb > a {}
-main .new_area .what_new_item ul li .thumb > a > img {}
-main .new_area .what_new_item ul li .thumb > a > .icon_new {}
-main .new_area .what_new_item ul li .item_info {}
+main .new_area .what_new_item ul li .thumb > a > img {width:100%;}
+main .new_area .what_new_item ul li .thumb > a > .icon_new {
+    padding: 2px 6px; 
+    color: #f5e2e2; background-color: #111; 
+    border-radius: 2px; font-size: 0.813rem; font-weight: 700;
+    position:absolute; left: 10px; top: 10px;
+}
+main .new_area .what_new_item ul li .item_info {
+    background-color: rgba(250, 250, 250, 0.4);
+}
 main .new_area .what_new_item ul li .item_info > p {}
 main .new_area .what_new_item ul li .item_info > h3 {}
-main .new_area .what_new_item ul li .item_info > h3 > a {}
-main .new_area .what_new_item ul li .item_info .item_option {}
+main .new_area .what_new_item ul li .item_info > h3 > a {
+    /* font-family: 'Sofia Sans', sans-serif; */
+    font-size: 1.125rem; font-weight: 600; color:#111;
+}
+main .new_area .what_new_item ul li .item_info .item_option {
+    display: flex;
+}
 main .new_area .what_new_item ul li .item_info .item_option a {}
-main .new_area .what_new_item ul li .item_info .item_option a img {}
+main .new_area .what_new_item ul li .item_info .item_option a img {
+    width:27px; height:27px; border-radius: 50%;
+}
 main .new_area .what_new_item ul li .item_info .price {}
 main .new_area .what_new_item ul li .item_info .price em {}
 /* section.7 - 오피셜 영역 */
