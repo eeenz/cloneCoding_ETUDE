@@ -400,7 +400,7 @@ main .official_area .sns_icon {}
 main .official_area .sns_icon a {}
 main .official_area .sns_icon a img {}
 /* section.8 - 뉴스 & 이벤트 영역 */
-main .news_event_area {}
+main .news_event_area {margin-bottom: 200px;}
 main .news_event_area .top {text-align: center; margin-top: 70px;}
 main .news_event_area .top > p {}
 main .news_event_area .top .small_img {margin-bottom: 10px;}
@@ -416,32 +416,80 @@ main .news_event_area .top .icon_view {
     color: #fff; font-weight: 700; font-size: 1.125rem;
     opacity: 0.8; margin-bottom: 64px;
 }
-main .news_event_area .container {display: flex;}
-main .news_event_area .container .item {max-width:720px; position: relative;}
+main .news_event_area .container {
+    display: flex; justify-content: center; align-items: center; 
+}
+main .news_event_area .container .item {
+    max-width:720px; position: relative; margin: 0 10px;
+}
 /* img background 로 처리 */
 main .news_event_area .container .item:nth-child(1) > a {
-    background: url('../images/main_img/news/EP01_002_main_news_01_recycle.jpg');
-    background-position:center center;
+    background-image: url('../images/main_img/news/EP01_002_main_news_01_recycle.jpg');
+    background-position:center right;
     background-repeat:no-repeat;
-    content:''; width: 800px; height: 495px;
+    content:''; width:720px; height: 430px;
     background-size:cover;
     display: inline-block;
 }
 main .news_event_area .container .item:nth-child(2) > a {
-    background: url('../images/main_img/news/EP01_002_main_news_02_vegan.jpg');
+    background: url('../images/main_img/news/EP01_002_main_news_02_vegan.jpg') ;
     background-repeat:no-repeat;
-    content:''; width: 800px; height: 495px;
+    background-position:center right;
+    content:''; width: 720px; height: 430px;
     background-size:cover;
     display: inline-block;
 }
-main .news_event_area .container .item a {}
+/* main .news_event_area .container .item:nth-child(3) > a {
+    display: none;
+    background-image: url('../images/main_img/news/EP01_002_main_news_03_foundationFactory.jpg');
+    background-position:center right;
+    background-repeat:no-repeat;
+    content:''; width: 720px; height: 430px;
+    background-size:cover;
+    display: inline-block;
+} */
+/* main .news_event_area .container .item:nth-child(4) > a {
+    display: none;
+    background: url('../images/main_img/news/EP01_002_main_news_04_brand.jpg') ;
+    background-repeat:no-repeat;
+    background-position:center right;
+    content:''; width: 720px; height: 430px;
+    background-size:cover;
+    display: inline-block;
+} */
+main .news_event_area .container .item a {
+    border-radius: 5px; 
+}
+main .news_event_area .container .item > a::after {
+    background: linear-gradient(0.87deg, rgba(0, 0, 0, 0.4) 1.04%, rgba(0, 0, 0, 0.4) 1.04%, rgba(0, 0, 0, 0.4) 1.04%, rgba(0, 0, 0, 0) 31.73%); position: relative;
+    background-position:center right;
+    background-size:cover;
+    content:''; width: 720px; height: 430px;
+    z-index: 200; 
+    display: inline-block;
+}
+main .news_event_area .container .item:nth-child(1) > a > p {}
+main .news_event_area .container .item:nth-child(2) > a > p {}
+main .news_event_area .container .item:nth-child(3) > a > p {display: none;}
+main .news_event_area .container .item:nth-child(4) > a > p {display: none;}
 main .news_event_area .container .item > a > p { 
     text-align: left;  
     position: absolute;
-    bottom: 7%;
+    bottom: 6%;
     left: 4%;
     line-height: 45px;
     font-size: 31px;
     font-weight: 400;
     color: #fff;
+    z-index: 300;
+}
+main .news_event_area .container .prev_btn {background-color: aquamarine;}
+main .news_event_area .container .next_btn {}
+main .news_event_area .container .prev_btn img {transform:rotate(180deg); left: 140px; top: 750px;}
+main .news_event_area .container .next_btn img {right: 140px; top: 750px;
+    background-color: lawngreen;}
+main .news_event_area .container .prev_btn img,
+main .news_event_area .container .next_btn img {
+    height: 27px; position:absolute; top: 180px;
+    z-index: 400;
 }
