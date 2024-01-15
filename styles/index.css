@@ -264,7 +264,7 @@ main .new_area .bg_img {
     background-size:cover;
     background-repeat:no-repeat;
     position: absolute; z-index: -100;
-    width: 100%; height: 1000px;
+    width: 100%; height: 1020px;
 }
 main .new_area .top {text-align: center; margin-top: 70px;}
 main .new_area .top > p:nth-child(3) {color: #111; margin: 30px auto 40px;}
@@ -353,8 +353,11 @@ main .new_area .what_new_item ul li .item_info .price em {
 }
 /* section.7 - 오피셜 영역 */
 main .official_area {
-    position: relative; display: flex;
+    position: relative; 
+    display: flex; flex-flow:row nowrap;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px;
 }
 main .official_area::before {
     background: linear-gradient(180deg, #F5E2E2 0%, #F2C6CF 100%);
@@ -371,37 +374,74 @@ main .official_area::before {
 main .official_area .tiktok {
     display: flex; flex-flow:row nowrap; 
     justify-content:right;
-    align-items: center;
-    width: 50%;
+    align-items:flex-start;
+    width: 50%; padding-right: 100px; padding-bottom: 10px;
 }
 main .official_area .tiktok .left_txt {
-    text-align: right; transform: rotate(-90deg);
+    transform: rotate(-90deg); 
+    transform-origin:right top; margin-right: 70px;
 }
-main .official_area .tiktok .left_txt > p {font-size: 1.875rem;}
-main .official_area .tiktok .left_txt > p > em {font-size: 1.875rem;}
-main .official_area .tiktok .right {}
+main .official_area .tiktok .left_txt > p {
+    font-size: 1.875rem; font-weight: 300;
+    font-family: 'Sofia Sans', sans-serif;
+}
+main .official_area .tiktok .left_txt > p > em {
+    font-size: 1.875rem; font-weight: 800;
+    font-family: 'Sofia Sans', sans-serif;
+}
+main .official_area .tiktok .right {text-align: right; position: relative;}
 main .official_area .tiktok .right > a {}
 main .official_area .tiktok .right > a > img {}
-main .official_area .tiktok .right > p {font-size: 2.375rem;}
-main .official_area .tiktok .right > p > strong {font-size: 2.375rem;}
+main .official_area .tiktok .right > .play > img {
+    position: absolute; left: 42%; top:42%;
+}
+main .official_area .tiktok .right > p {
+    font-size: 2.375rem; font-weight: 300; margin: 5px 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+main .official_area .tiktok .right > p > strong {
+    font-size: 2.375rem; font-weight: 700;
+    font-family: 'Sofia Sans', sans-serif;
+}
 /* instagram */
 main .official_area .insta {
     display: flex; flex-flow: column nowrap;
-    justify-content: flex-end; align-items: center;
+    justify-content: flex-end; align-items: flex-start;
+    position: relative; padding-right:280px;
 }
-main .official_area .insta .txt {text-align: left;}
-main .official_area .insta .txt p {font-size: 1.875rem;}
-main .official_area .insta .txt p em {font-size: 1.875rem;}
-main .official_area .insta .banner {}
+main .official_area .insta .txt {
+    text-align: left; margin: 200px 0 30px;
+}
+main .official_area .insta .txt p {
+    font-size: 1.875rem; font-weight: 300;
+    font-family: 'Sofia Sans', sans-serif;
+}
+main .official_area .insta .txt p em {
+    font-size: 1.875rem; font-weight: 800;
+    font-family: 'Sofia Sans', sans-serif;
+}
+main .official_area .insta .banner {display: flex; flex-flow: column nowrap;}
 main .official_area .insta .banner a {}
-main .official_area .insta .banner a img {}
+main .official_area .insta .banner a img {max-width: 545px;}
+main .official_area .insta .banner a:nth-child(2) img {display: none;}
+main .official_area .insta .banner a:nth-child(3) img {display: none;}
+main .official_area .insta .banner a:nth-child(4) img {display: none;}
+main .official_area .insta .banner a:nth-child(5) img {display: none;}
 /* sns-icon */
-main .official_area .sns_icon {}
-main .official_area .sns_icon a {}
-main .official_area .sns_icon a img {}
+main .official_area .sns_icon {
+    display: flex; flex-flow: column nowrap; 
+    position: absolute;
+    right: 380px; 
+}
+main .official_area .sns_icon a {margin-bottom: 10px;}
+main .official_area .sns_icon a img {width: 38px;}
 /* section.8 - 뉴스 & 이벤트 영역 */
 main .news_event_area {margin-bottom: 200px;}
-main .news_event_area .top {text-align: center; margin-top: 70px;}
+main .news_event_area .top {
+    text-align: center; margin-top: 70px;
+    border-top: 1px solid #ccc;
+    padding: 100px 0 0; width: 90%; margin: 0 auto;
+}
 main .news_event_area .top > p {}
 main .news_event_area .top .small_img {margin-bottom: 10px;}
 main .news_event_area .top .small_img img {}
@@ -418,9 +458,10 @@ main .news_event_area .top .icon_view {
 }
 main .news_event_area .container {
     display: flex; justify-content: center; align-items: center; 
+    position: relative;
 }
 main .news_event_area .container .item {
-    max-width:720px; position: relative; margin: 0 10px;
+    max-width:720px; margin: 0 10px;
 }
 /* img background 로 처리 */
 main .news_event_area .container .item:nth-child(1) > a {
@@ -439,29 +480,29 @@ main .news_event_area .container .item:nth-child(2) > a {
     background-size:cover;
     display: inline-block;
 }
-/* main .news_event_area .container .item:nth-child(3) > a {
-    display: none;
+main .news_event_area .container .item:nth-child(3) > a {
     background-image: url('../images/main_img/news/EP01_002_main_news_03_foundationFactory.jpg');
     background-position:center right;
     background-repeat:no-repeat;
     content:''; width: 720px; height: 430px;
     background-size:cover;
     display: inline-block;
-} */
-/* main .news_event_area .container .item:nth-child(4) > a {
-    display: none;
+}
+main .news_event_area .container .item:nth-child(4) > a {
     background: url('../images/main_img/news/EP01_002_main_news_04_brand.jpg') ;
     background-repeat:no-repeat;
     background-position:center right;
     content:''; width: 720px; height: 430px;
     background-size:cover;
     display: inline-block;
-} */
+}
 main .news_event_area .container .item a {
-    border-radius: 5px; 
+    border-radius: 5px; position: relative;
 }
 main .news_event_area .container .item > a::after {
-    background: linear-gradient(0.87deg, rgba(0, 0, 0, 0.4) 1.04%, rgba(0, 0, 0, 0.4) 1.04%, rgba(0, 0, 0, 0.4) 1.04%, rgba(0, 0, 0, 0) 31.73%); position: relative;
+    background: linear-gradient(0.87deg, rgba(0, 0, 0, 0.4) 1.04%, rgba(0, 0, 0, 0.4) 1.04%,
+    rgba(0, 0, 0, 0.4) 1.04%, rgba(0, 0, 0, 0) 31.73%);
+    position: relative;
     background-position:center right;
     background-size:cover;
     content:''; width: 720px; height: 430px;
@@ -483,13 +524,16 @@ main .news_event_area .container .item > a > p {
     color: #fff;
     z-index: 300;
 }
-main .news_event_area .container .prev_btn {background-color: aquamarine;}
+main .news_event_area .container .prev_btn {}
 main .news_event_area .container .next_btn {}
-main .news_event_area .container .prev_btn img {transform:rotate(180deg); left: 140px; top: 750px;}
-main .news_event_area .container .next_btn img {right: 140px; top: 750px;
-    background-color: lawngreen;}
-main .news_event_area .container .prev_btn img,
-main .news_event_area .container .next_btn img {
-    height: 27px; position:absolute; top: 180px;
-    z-index: 400;
+main .news_event_area .container .prev_btn > img {
+    transform:rotate(180deg); left: 150px; position:absolute;
+}
+main .news_event_area .container .next_btn > img {
+    right: 150px; position:absolute;
+}
+main .news_event_area .container .prev_btn > img,
+main .news_event_area .container .next_btn > img {
+    height: 27px; position:absolute; top: 200px;
+    z-index: 900;
 }

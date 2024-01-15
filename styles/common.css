@@ -412,8 +412,17 @@ header .m_all_menu .category_gnb .left > ul > li > a .icon_plus span {}
 header .m_all_menu .category_gnb .left > ul > li > .m_lnb {}
 header .m_all_menu .category_gnb .left > ul > li > .m_lnb > a {}
 /* footer */
-footer {display: none;}
-footer .first {}
+footer {
+    width:1500px; margin: 0 auto;
+}
+footer .footer_bg {
+    background: #f7f7f7; width: 100%; height: 500px; padding: 20px 0 100px;
+    position: absolute; z-index: -100; margin: 0 auto; left: 0;
+}
+footer .first {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
 footer .first .harf_left {}
 footer .first .harf_left > p {}
 footer .first .harf_left > p > a {}
@@ -422,14 +431,18 @@ footer .first .harf_right {}
 footer .first .harf_right .family_site {}
 footer .first .harf_right .family_site > a {}
 footer .first .harf_right .family_site > a > span {}
-footer .first .harf_right .family_site > a > .btn_arw {}
-footer .first .harf_right .family_site .btn_lnb1 {}
+footer .first .harf_right .family_site > a > .btn_arw {
+    transform: rotate(-90deg);
+}
+footer .first .harf_right .family_site .btn_lnb1 {display: none;}
 footer .first .harf_right .family_site .btn_lnb1 > a {}
 footer .first .harf_right .site_map {}
 footer .first .harf_right .site_map > a {}
 footer .first .harf_right .site_map > a > span {}
-footer .first .harf_right .site_map > a > .btn_arw {}
-footer .first .harf_right .site_map .btn_lnb2 {}
+footer .first .harf_right .site_map > a > .btn_arw {
+    transform: rotate(-90deg);
+}
+footer .first .harf_right .site_map .btn_lnb2 {display: none;}
 footer .first .harf_right .site_map .btn_lnb2 .left {}
 footer .first .harf_right .site_map .btn_lnb2 .left .title {}
 footer .first .harf_right .site_map .btn_lnb2 .left .title > li {}
@@ -467,4 +480,4 @@ footer .info .info_right .container .info_guide .email > span {}
 footer .info .info_right .container .info_guide .email > span {}
 footer .sns_icon {}
 footer .sns_icon > a {}
-footer .sns_icon > a > img {}
+footer .sns_icon > a > img {width: 24px;}
