@@ -419,23 +419,29 @@ main .news_event_area .top .icon_view {
 main .news_event_area .container {display: flex;}
 main .news_event_area .container .item {max-width:720px; position: relative;}
 /* img background 로 처리 */
-main .news_event_area .container .item:nth-child(1) a {
-    background-image:url('../images/main_img/news/EP01_002_main_news_01_recycle.jpg');
+main .news_event_area .container .item:nth-child(1) > a {
+    background: url('../images/main_img/news/EP01_002_main_news_01_recycle.jpg');
+    background-position:center center;
     background-repeat:no-repeat;
-    content:''; width: 100%;
+    content:''; width: 800px; height: 495px;
+    background-size:cover;
+    display: inline-block;
 }
-main .news_event_area .container .item:nth-child(2) a {
-    background-image:url('../images/main_img/news/EP01_002_main_news_02_vegan.jpg');
+main .news_event_area .container .item:nth-child(2) > a {
+    background: url('../images/main_img/news/EP01_002_main_news_02_vegan.jpg');
     background-repeat:no-repeat;
-    content:''; width: 100%;
+    content:''; width: 800px; height: 495px;
+    background-size:cover;
+    display: inline-block;
 }
 main .news_event_area .container .item a {}
-main .news_event_area .container .item a p {   
+main .news_event_area .container .item > a > p { 
+    text-align: left;  
     position: absolute;
     bottom: 7%;
     left: 4%;
     line-height: 45px;
     font-size: 31px;
     font-weight: 400;
-    color: #fff;
+    color: #ff0000;
 }
