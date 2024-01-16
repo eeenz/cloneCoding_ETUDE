@@ -181,6 +181,7 @@ main .soonjung_area .container .item > li {
 }
 main .soonjung_area .container .item > li > .thumb {
     position: relative;
+    height: 380px; overflow: hidden;
 }
 main .soonjung_area .container .item > li > .thumb > a {}
 main .soonjung_area .container .item > li > .thumb > a > img {
@@ -254,7 +255,6 @@ main .gift_area .contents .item ul li a .icon_toxstar {
 }
 /* section.6 - 신상품 영역 */
 main .new_area {
-    /* background-color: palegreen; */
     padding: 70px 0px 0px 0px;
     width: 100%; position: relative; 
 }
@@ -263,7 +263,6 @@ main .new_area .bg_img {
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
-    position: relative; z-index: -100;
     width: 100%; height: 1020px;
     display: inline-block;
 }
@@ -305,7 +304,9 @@ main .new_area .bg_img .what_new_item ul > li:nth-child(5),
 main .new_area .bg_img .what_new_item ul > li:nth-child(6) {display: none;}
 main .new_area .bg_img .what_new_item ul > li:last-child {margin-right: 0px;}
 main .new_area .bg_img .what_new_item ul > li {width:24.5%; margin-right: 6px;}
-main .new_area .bg_img .what_new_item ul li .thumb {position:relative;}
+main .new_area .bg_img .what_new_item ul li .thumb {
+    position:relative; height: 360px; overflow: hidden;
+}
 main .new_area .bg_img .what_new_item ul li .thumb > a {}
 main .new_area .bg_img .what_new_item ul li .thumb > a > img {
     width:100%; border-top-right-radius:4px; border-top-left-radius: 4px;
@@ -356,7 +357,7 @@ main .new_area .bg_img .what_new_item ul li .item_info .price em {
 main .official_area {
     position: relative; 
     display: flex; flex-flow:row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 100px;
 }
@@ -423,11 +424,14 @@ main .official_area .insta .txt p em {
 }
 main .official_area .insta .banner {display: flex; flex-flow: column nowrap;}
 main .official_area .insta .banner a {}
-main .official_area .insta .banner a img {max-width: 545px;}
-main .official_area .insta .banner a:nth-child(2) img {display: none;}
-main .official_area .insta .banner a:nth-child(3) img {display: none;}
-main .official_area .insta .banner a:nth-child(4) img {display: none;}
-main .official_area .insta .banner a:nth-child(5) img {display: none;}
+main .official_area .insta .banner a img {
+    max-width: 545px; 
+}
+main .official_area .insta .banner a:nth-child(1) img {/* display: none; */ position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(2) img {display: none; position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(3) img {display: none; position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(4) img {display: none; position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(5) img {display: none; position: absolute; left: 0;}
 /* sns-icon */
 main .official_area .sns_icon {
     display: flex; flex-flow: column nowrap; 
@@ -437,7 +441,7 @@ main .official_area .sns_icon {
 main .official_area .sns_icon a {margin-bottom: 10px;}
 main .official_area .sns_icon a img {width: 38px;}
 /* section.8 - 뉴스 & 이벤트 영역 */
-main .news_event_area {margin-bottom: 200px;}
+main .news_event_area {margin-bottom: 240px;}
 main .news_event_area .top {
     text-align: center; margin-top: 70px;
     border-top: 1px solid #ccc;
@@ -448,7 +452,7 @@ main .news_event_area .top .small_img {margin-bottom: 10px;}
 main .news_event_area .top .small_img img {}
 main .news_event_area .top h2 {
     font-family: 'Sofia Sans', sans-serif;
-    color: #111; font-size: 2.375rem; font-weight: 700;
+    color: #111; font-size: 2.375rem; font-weight: 800;
     margin-bottom: 26px;
 }
 main .news_event_area .top .icon_view {
@@ -510,6 +514,8 @@ main .news_event_area .container .item > a::after {
     z-index: 200; 
     display: inline-block;
 }
+main .news_event_area .container .item:nth-child(3),
+main .news_event_area .container .item:nth-child(4) {display:none;}
 main .news_event_area .container .item:nth-child(1) > a > p {}
 main .news_event_area .container .item:nth-child(2) > a > p {}
 main .news_event_area .container .item:nth-child(3) > a > p {display: none;}

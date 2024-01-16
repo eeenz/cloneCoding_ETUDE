@@ -14,7 +14,7 @@ address,details,mark,time,video,img,summary,div {
     /* 웹사이트 본문 80~90% 이상 동일한 글자색은 reset에서 처리한다! */
     color:#000;
     text-decoration:none;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Sofia Sans','Noto Sans KR', sans-serif;
     letter-spacing: -0.02rem;
 }
 ul,ol,li {list-style:none;}
