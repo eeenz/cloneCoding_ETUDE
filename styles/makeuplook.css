@@ -1,0 +1,77 @@
+/* header ----- 메인페이지에 오른쪽 검색 아이콘 없애는 선택자 */
+header > .right .btn_search {display: none;}
+/* -------  makeuplook category 시작  ------- */
+main {}
+main .list_container {}
+main .list_container ul {}
+main .list_container ul li {}
+main .list_container ul li a {}
+main .list_container ul li a .txt {}
+main .list_container ul li a .txt .title {}
+main .list_container ul li a .txt .sub {}
+main .list_container ul li a .img_bg {}
+main .list_container ul li a .bg1 {
+    background-image:url('../images/category/makeuplook/1.jpg');
+    content: ''; display: block; 
+    width:100%; 
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10px;
+}
+main .list_container ul li a .bg2 {
+    background-image:url('../images/category/makeuplook/2.jpg');
+}
+main .list_container ul li a .bg3 {
+    background-image:url('../images/category/makeuplook/3.jpg');
+}
+main .list_container ul li a .bg4 {
+    background-image:url('../images/category/makeuplook/4.jpg');
+}
+main .list_container ul li a .bg5 {
+    background-image:url('../images/category/makeuplook/5.jpg');
+}
+main .list_container ul li a .bg6 {
+    background-image:url('../images/category/makeuplook/6.jpg');
+}
+main .list_container ul li a .bg7 {
+    background-image:url('../images/category/makeuplook/7.jpg');
+}
+main .list_container ul li a .bg8 {
+    background-image:url('../images/category/makeuplook/8.jpg');
+}
+main .list_container ul li a .bg9 {
+    background-image:url('../images/category/makeuplook/9.jpg');
+}
+main .list_container ul li a .bg10 {
+    background-image:url('../images/category/makeuplook/10.jpg');
+}
+main .list_container ul li a .bg11 {
+    background-image:url('../images/category/makeuplook/11.jpg');
+}
+main .list_container ul li a .bg12 {
+    background-image:url('../images/category/makeuplook/12.jpg');
+}
+main .list_container ul li a .bg13 {
+    background-image:url('../images/category/makeuplook/13.jpg');
+}
+main .list_container ul li a .bg14 {
+    background-image:url('../images/category/makeuplook/14.jpg');
+}
+main .list_container ul li a .bg15 {
+    background-image:url('../images/category/makeuplook/15.jpg');
+}
+main .list_container ul li a .bg16 {
+    background-image:url('../images/category/makeuplook/16.jpg');
+}
+main .list_container ul li a .bg17 {
+    background-image:url('../images/category/makeuplook/17.jpg');
+}
+main .list_container ul li a .bg18 {
+    background-image:url('../images/category/makeuplook/18.jpg');
+}
+main .list_container ul li a .bg19 {
+    background-image:url('../images/category/makeuplook/19.jpg');
+}
+main .list_container ul li a .bg20 {
+    background-image:url('../images/category/makeuplook/20.jpg');
+}

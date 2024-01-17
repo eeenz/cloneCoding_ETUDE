@@ -106,7 +106,7 @@ header .left nav .gnb li .lnb2 > a {
     margin-right: 30px;
 }
 /* headr > 다른 카테고리에 검색 영역 ------- */
-header > .right .search_other {width:400px; display: none;}
+header > .right .search_other {width:400px; margin-right: 10px;}
 header > .right .search_other .search_fm {
     background: rgba(231, 232, 234, 0.5); 
     backdrop-filter: blur(20px);
@@ -116,7 +116,7 @@ header > .right .search_other .search_fm {
 }
 header > .right .search_other .search_fm fieldset {
     display: flex; justify-content: space-between; align-items: center; 
-    margin: 0 auto; padding-top: 2px;
+    margin: 0 auto; transform: translateY(-2px);
 }
 header > .right .search_other .search_fm fieldset label {width: 100%;}
 header > .right .search_other .search_fm fieldset label #search_fm::placeholder {font-size: 0.85rem;}
@@ -124,7 +124,7 @@ header > .right .search_other .search_fm fieldset label #search_fm {
     padding: 0px 20px; outline: none; width: 100%;
 }
 header > .right .search_other .search_fm fieldset #other_search_btn {}
-header > .right .search_other .search_fm fieldset #other_search_btn img {width: 100%;}
+header > .right .search_other .search_fm fieldset #other_search_btn img {width: 45px;}
 /* header > 오른쪽 검색 & 햄버거 아이콘 영역 */
 header > .right {display: flex; align-items: center; position: absolute; right: 80px;}
 header > .right .btn_search {}
@@ -142,6 +142,7 @@ header > .right .btn_barmenu span {
 }
 /* header > right > 검색할 때 열리는 창  */
 header .search_bg {
+    display: none !important;
     position: absolute;
     left: 0; top:0;
     background: rgba(255, 255, 255, 0.5);
@@ -150,6 +151,7 @@ header .search_bg {
     padding: 22px 80px 0px 70px;
 }
 header .search_bg .src_head {
+    display: none !important;
     display: flex; flex-flow:row nowrap; justify-content:space-between;
     margin-top: 31px;
 }
@@ -208,7 +210,7 @@ header .search_bg .src_contens .src_comment a span {
 }
 /* header > right > 햄버거바 클릭할 때 열리는 창 */
 header .side_category {
-    /* display: none; */
+    display: none !important;
     z-index: -100;
     background: linear-gradient(180deg, rgba(245, 226, 226, 0.65) 0%, rgba(242, 198, 207, 0.65) 127.47%); backdrop-filter: blur(12px);
     padding: 0 50% 16px 0 ; text-align: right; 
