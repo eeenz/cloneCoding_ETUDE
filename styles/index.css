@@ -513,6 +513,7 @@ main .news_event_area .container .item > a::after {
     content:''; width: 720px; height: 430px;
     z-index: 200; 
     display: inline-block;
+    border-radius: 5px;
 }
 main .news_event_area .container .item:nth-child(3),
 main .news_event_area .container .item:nth-child(4) {display:none;}
