@@ -105,6 +105,26 @@ header .left nav .gnb li .lnb2 > a:last-child {margin-right: 0;}
 header .left nav .gnb li .lnb2 > a {
     margin-right: 30px;
 }
+/* headr > 다른 카테고리에 검색 영역 ------- */
+header > .right .search_other {width:400px; display: none;}
+header > .right .search_other .search_fm {
+    background: rgba(231, 232, 234, 0.5); 
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    height: 44px; outline: none;
+    width:100%; 
+}
+header > .right .search_other .search_fm fieldset {
+    display: flex; justify-content: space-between; align-items: center; 
+    margin: 0 auto; padding-top: 2px;
+}
+header > .right .search_other .search_fm fieldset label {width: 100%;}
+header > .right .search_other .search_fm fieldset label #search_fm::placeholder {font-size: 0.85rem;}
+header > .right .search_other .search_fm fieldset label #search_fm {
+    padding: 0px 20px; outline: none; width: 100%;
+}
+header > .right .search_other .search_fm fieldset #other_search_btn {}
+header > .right .search_other .search_fm fieldset #other_search_btn img {width: 100%;}
 /* header > 오른쪽 검색 & 햄버거 아이콘 영역 */
 header > .right {display: flex; align-items: center; position: absolute; right: 80px;}
 header > .right .btn_search {}
