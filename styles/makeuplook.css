@@ -16,14 +16,27 @@ main .list_container ul {
     'bg11 bg11 bg14 bg15'
     'bg16 bg17 bg20 bg20'
     'bg18 bg19 bg20 bg20';
-    /* grid-template-rows: 50% 25% 25%;
-    grid-template-columns: 50% 25% 25%;  */
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 3px;
+    /* grid-template-rows: 1fr 1fr; */
+    /* grid-template-columns: 1fr 1fr; */
 }
 main .list_container ul li {}
-main .list_container ul li a {}
-main .list_container ul li a .txt {position: absolute; display: none;}
-main .list_container ul li a .txt .title {}
-main .list_container ul li a .txt .sub {}
+main .list_container ul li a {
+    position: relative; 
+    display: flex; justify-content: center; align-items: center;
+}
+main .list_container ul li a .txt {
+    position: absolute; /* display: none; */
+    z-index: 200; 
+    display: flex; flex-flow:column nowrap;
+}
+main .list_container ul li a .txt .title,
+main .list_container ul li a .txt .sub {
+    color:#fff;text-align: center; line-height: 1.4; font-weight: 600;
+}
+main .list_container ul li a .txt .title {font-size: 1.25rem;}
+main .list_container ul li a .txt .sub {font-size: 1.125rem;}
 main .list_container ul li a .img_bg {}
 main .list_container ul li a .bg1 {
     background-image:url('../images/category/makeuplook/1.jpg');
@@ -31,7 +44,7 @@ main .list_container ul li a .bg1 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg1;
 }
 main .list_container ul li a .bg2 {
@@ -40,7 +53,7 @@ main .list_container ul li a .bg2 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg2;
 }
 main .list_container ul li a .bg3 {
@@ -49,7 +62,7 @@ main .list_container ul li a .bg3 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg3;
 }
 main .list_container ul li a .bg4 {
@@ -58,7 +71,7 @@ main .list_container ul li a .bg4 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg4;
 }
 main .list_container ul li a .bg5 {
@@ -67,7 +80,7 @@ main .list_container ul li a .bg5 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg5;
 }
 main .list_container ul li a .bg6 {
@@ -76,7 +89,7 @@ main .list_container ul li a .bg6 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg6;
 }
 main .list_container ul li a .bg7 {
@@ -85,7 +98,7 @@ main .list_container ul li a .bg7 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg7;
 }
 main .list_container ul li a .bg8 {
@@ -94,7 +107,7 @@ main .list_container ul li a .bg8 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg8;
 }
 main .list_container ul li a .bg9 {
@@ -103,7 +116,7 @@ main .list_container ul li a .bg9 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg9;
 }
 main .list_container ul li a .bg10 {
@@ -112,7 +125,7 @@ main .list_container ul li a .bg10 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg10;
 }
 main .list_container ul li a .bg11 {
@@ -121,7 +134,7 @@ main .list_container ul li a .bg11 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg11;
 }
 main .list_container ul li a .bg12 {
@@ -130,7 +143,7 @@ main .list_container ul li a .bg12 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg12;
 }
 main .list_container ul li a .bg13 {
@@ -139,7 +152,7 @@ main .list_container ul li a .bg13 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg13;
 }
 main .list_container ul li a .bg14 {
@@ -148,7 +161,7 @@ main .list_container ul li a .bg14 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg14;
 }
 main .list_container ul li a .bg15 {
@@ -157,7 +170,7 @@ main .list_container ul li a .bg15 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg15;
 }
 main .list_container ul li a .bg16 {
@@ -166,7 +179,7 @@ main .list_container ul li a .bg16 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg16;
 }
 main .list_container ul li a .bg17 {
@@ -175,7 +188,7 @@ main .list_container ul li a .bg17 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg17;
 }
 main .list_container ul li a .bg18 {
@@ -184,7 +197,7 @@ main .list_container ul li a .bg18 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg18;
 }
 main .list_container ul li a .bg19 {
@@ -193,7 +206,7 @@ main .list_container ul li a .bg19 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg19;
 }
 main .list_container ul li a .bg20 {
@@ -202,6 +215,6 @@ main .list_container ul li a .bg20 {
     background-size: cover;
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
-    width: 100%; height: 0;
+    width: 100%; height: auto;
     grid-area: bg20;
 }

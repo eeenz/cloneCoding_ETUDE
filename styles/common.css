@@ -662,6 +662,25 @@ header .m_all_menu .category_gnb .right > ul > li > .m_lnb {
     grid-template-columns: 50% 50%; border-top: 1px solid #ccc;
 }
 header .m_all_menu .category_gnb .right > ul > li > .m_lnb > a {margin: 5px 0; font-size: 0.8135rem;}
+/* header category 영역 */
+header .cate_h {display: none;}
+header .cate_h .cate_h_main {}
+header .cate_h .cate_h_main .cate_h_left {}
+header .cate_h .cate_h_main .cate_h_left a {}
+header .cate_h .cate_h_main .cate_h_center {}
+header .cate_h .cate_h_main .cate_h_center .cate_main_title {}
+header .cate_h .cate_h_main .cate_h_center a {}
+header .cate_h .cate_h_main .cate_h_center a img {}
+header .cate_h .cate_h_main .cate_h_right {}
+header .cate_h .cate_h_main .cate_h_right .cate_search_icon {}
+header .cate_h .cate_h_main .cate_h_right .cate_search_icon img {}
+header .cate_h .cate_h_main .cate_h_right .btn_barmenu {}
+header .cate_h .cate_h_main .cate_h_right .btn_barmenu span {}
+/* header category */
+header .cate_h .cate_h_sub {}
+header .cate_h .cate_h_sub .h_sub_title {}
+header .cate_h .cate_h_sub a {}
+/* footer 시작----------------------------------------- */
 /* footer .footer_bg .container */
 footer {
     background: #f7f7f7; width:100%; margin: 0 auto;
