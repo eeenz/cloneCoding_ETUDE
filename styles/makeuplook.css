@@ -1,5 +1,9 @@
 /* header ----- 메인페이지에 오른쪽 검색 아이콘 없애는 선택자 */
-header > .right .btn_search {display: none;}
+.header_bg {/* display: none; */}
+header {/* padding:10px 0; height: 60px; */}
+header > .left {/* display: none; */}
+header > .right {/* display: none; */}
+header > .right > .btn_search {display: none;}
 /* -------  makeuplook category 시작  ------- */
 main {}
 main .list_container {
@@ -21,7 +25,7 @@ main .list_container ul {
     /* grid-template-rows: 1fr 1fr; */
     /* grid-template-columns: 1fr 1fr; */
 }
-main .list_container ul li {}
+main .list_container ul li {background-color: #000;   }
 main .list_container ul li:nth-child(1) {grid-area: bg1;}
 main .list_container ul li:nth-child(2) {grid-area: bg2;}
 main .list_container ul li:nth-child(3) {grid-area: bg3;}
@@ -43,11 +47,17 @@ main .list_container ul li:nth-child(19) {grid-area: bg19;}
 main .list_container ul li:nth-child(20) {grid-area: bg20;}
 main .list_container ul li a {
     position: relative; 
-    display: flex; justify-content: center; align-items: center;
+    display: flex; justify-content: center; align-items: center;  
+}
+main .list_container ul li a:hover .img_bg {
+    opacity: 0.7; transition-duration: 0.3s;
+}
+main .list_container ul li a:hover .txt {
+    display: flex!important; transition-duration: 0.3s;
 }
 main .list_container ul li a .txt {
     position: absolute; display: none !important;
-    z-index: 200; 
+    z-index: 200; transition-duration: 0.3s;
     display: flex; flex-flow:column nowrap;
 }
 main .list_container ul li a .txt .title,
@@ -222,6 +232,7 @@ main .btn_area {
     display: flex; justify-content: center;
     margin: 0 auto; width: 100%; margin-bottom: 40px;
 }
-main .btn_area a {margin: 50px 10px;}
+main .btn_area a {margin: 50px 20px;}
 main .btn_area a img {height: 15px;}
-main .btn_area a span {}
+main .btn_area a:nth-child(4) span {color: #777;}
+main .btn_area a span {font-weight: 600;}
