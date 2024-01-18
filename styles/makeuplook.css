@@ -17,17 +17,36 @@ main .list_container ul {
     'bg16 bg17 bg20 bg20'
     'bg18 bg19 bg20 bg20';
     grid-template-columns: auto auto auto auto;
-    grid-gap: 3px;
+    grid-gap: 6px;
     /* grid-template-rows: 1fr 1fr; */
     /* grid-template-columns: 1fr 1fr; */
 }
 main .list_container ul li {}
+main .list_container ul li:nth-child(1) {grid-area: bg1;}
+main .list_container ul li:nth-child(2) {grid-area: bg2;}
+main .list_container ul li:nth-child(3) {grid-area: bg3;}
+main .list_container ul li:nth-child(4) {grid-area: bg4;}
+main .list_container ul li:nth-child(5) {grid-area: bg5;}
+main .list_container ul li:nth-child(6) {grid-area: bg6;}
+main .list_container ul li:nth-child(7) {grid-area: bg7;}
+main .list_container ul li:nth-child(8) {grid-area: bg8;}
+main .list_container ul li:nth-child(9) {grid-area: bg9;}
+main .list_container ul li:nth-child(10) {grid-area: bg10;}
+main .list_container ul li:nth-child(11) {grid-area: bg11;}
+main .list_container ul li:nth-child(13) {grid-area: bg13;}
+main .list_container ul li:nth-child(14) {grid-area: bg14;}
+main .list_container ul li:nth-child(15) {grid-area: bg15;}
+main .list_container ul li:nth-child(16) {grid-area: bg16;}
+main .list_container ul li:nth-child(17) {grid-area: bg17;}
+main .list_container ul li:nth-child(18) {grid-area: bg18;}
+main .list_container ul li:nth-child(19) {grid-area: bg19;}
+main .list_container ul li:nth-child(20) {grid-area: bg20;}
 main .list_container ul li a {
     position: relative; 
     display: flex; justify-content: center; align-items: center;
 }
 main .list_container ul li a .txt {
-    position: absolute; /* display: none; */
+    position: absolute; display: none !important;
     z-index: 200; 
     display: flex; flex-flow:column nowrap;
 }
@@ -45,7 +64,6 @@ main .list_container ul li a .bg1 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg1;
 }
 main .list_container ul li a .bg2 {
     background-image:url('../images/category/makeuplook/2.jpg');
@@ -54,7 +72,6 @@ main .list_container ul li a .bg2 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg2;
 }
 main .list_container ul li a .bg3 {
     background-image:url('../images/category/makeuplook/3.jpg');
@@ -63,7 +80,6 @@ main .list_container ul li a .bg3 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg3;
 }
 main .list_container ul li a .bg4 {
     background-image:url('../images/category/makeuplook/4.jpg');
@@ -72,7 +88,6 @@ main .list_container ul li a .bg4 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg4;
 }
 main .list_container ul li a .bg5 {
     background-image:url('../images/category/makeuplook/5.jpg');
@@ -81,7 +96,6 @@ main .list_container ul li a .bg5 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg5;
 }
 main .list_container ul li a .bg6 {
     background-image:url('../images/category/makeuplook/6.jpg');
@@ -90,7 +104,6 @@ main .list_container ul li a .bg6 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg6;
 }
 main .list_container ul li a .bg7 {
     background-image:url('../images/category/makeuplook/7.jpg');
@@ -99,7 +112,6 @@ main .list_container ul li a .bg7 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg7;
 }
 main .list_container ul li a .bg8 {
     background-image:url('../images/category/makeuplook/8.jpg');
@@ -108,7 +120,6 @@ main .list_container ul li a .bg8 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg8;
 }
 main .list_container ul li a .bg9 {
     background-image:url('../images/category/makeuplook/9.jpg');
@@ -117,7 +128,6 @@ main .list_container ul li a .bg9 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg9;
 }
 main .list_container ul li a .bg10 {
     background-image:url('../images/category/makeuplook/10.jpg');
@@ -126,7 +136,6 @@ main .list_container ul li a .bg10 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg10;
 }
 main .list_container ul li a .bg11 {
     background-image:url('../images/category/makeuplook/11.jpg');
@@ -135,7 +144,6 @@ main .list_container ul li a .bg11 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg11;
 }
 main .list_container ul li a .bg12 {
     background-image:url('../images/category/makeuplook/12.jpg');
@@ -144,7 +152,6 @@ main .list_container ul li a .bg12 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg12;
 }
 main .list_container ul li a .bg13 {
     background-image:url('../images/category/makeuplook/13.jpg');
@@ -153,7 +160,6 @@ main .list_container ul li a .bg13 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg13;
 }
 main .list_container ul li a .bg14 {
     background-image:url('../images/category/makeuplook/14.jpg');
@@ -162,7 +168,6 @@ main .list_container ul li a .bg14 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg14;
 }
 main .list_container ul li a .bg15 {
     background-image:url('../images/category/makeuplook/15.jpg');
@@ -171,7 +176,6 @@ main .list_container ul li a .bg15 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg15;
 }
 main .list_container ul li a .bg16 {
     background-image:url('../images/category/makeuplook/16.jpg');
@@ -180,7 +184,6 @@ main .list_container ul li a .bg16 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg16;
 }
 main .list_container ul li a .bg17 {
     background-image:url('../images/category/makeuplook/17.jpg');
@@ -189,7 +192,6 @@ main .list_container ul li a .bg17 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg17;
 }
 main .list_container ul li a .bg18 {
     background-image:url('../images/category/makeuplook/18.jpg');
@@ -198,7 +200,6 @@ main .list_container ul li a .bg18 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg18;
 }
 main .list_container ul li a .bg19 {
     background-image:url('../images/category/makeuplook/19.jpg');
@@ -207,7 +208,6 @@ main .list_container ul li a .bg19 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg19;
 }
 main .list_container ul li a .bg20 {
     background-image:url('../images/category/makeuplook/20.jpg');
@@ -216,5 +216,12 @@ main .list_container ul li a .bg20 {
     background-position: center center;
     padding-top: calc(438 / 346 * 100%);
     width: 100%; height: auto;
-    grid-area: bg20;
 }
+/* 하단 prv 아이콘 영역 */
+main .btn_area {
+    display: flex; justify-content: center;
+    margin: 0 auto; width: 100%; margin-bottom: 40px;
+}
+main .btn_area a {margin: 50px 10px;}
+main .btn_area a img {height: 15px;}
+main .btn_area a span {}
