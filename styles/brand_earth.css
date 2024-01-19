@@ -1,24 +1,18 @@
-/* header ----- 메인페이지에 오른쪽 검색 아이콘 없애는 선택자 */
-.header_bg {/* display: none; */}
-header {/* padding:10px 0; height: 60px; */}
-header > .left {/* display: none; */}
-header > .right {/* display: none; */}
-header > .right > .btn_search {display: none;}
 /* -------  brend gnb의 지구를 위한 활동 페이지 시작  ------- */
 main {}
 /* 상단영역 - 이미지 백그라운드로 처리 */
 main .top {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_1_top.jpg') ;
-    background-position:center center;
+    background-position:center;
     background-size:cover;
     content:'';
     display: block;
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     position: relative;
 }
 main .top p {
-    position: absolute; top: 25vh; left: calc(100% / 3);
+    position: absolute; top: 28vh; left: calc(100% / 3);
     display: flex; flex-flow: column nowrap; 
     align-items: center; justify-content: center; 
 }
@@ -53,56 +47,69 @@ main .container > .fsc_earth > p {
 main .container .fsc_earth p em {font-size: 1.125rem; color: #047f05;}
 /* 사진영역 */
 main .container .fsc_earth .photo1 {
-    display: grid; margin:0 auto;
-    grid-template-areas:
-    'i1 i1 i1 i1 i2 i2'
-    'i1 i1 i1 i1 i3 i3'
-    'i4 i4 i4 i5 i5 i5';
+    width: 100%; 
+    position: relative;
 }
-main .container .fsc_earth > .photo1 > span {margin: 10px; position: relative;}
-main .container .fsc_earth > .photo1 > span:nth-child(1) {
+main .container .fsc_earth .photo1 .bg1 {
+    display: grid; grid-template-areas: 'i1 i2' 'i1 i3';
+    grid-template-columns: 60% 40%;
+}
+main .container .fsc_earth .photo1 .bg2 {
+    display: grid; grid-template-areas: 'i4 i5';
+    grid-template-columns: 50% 50%; margin-top: 15px;
+}
+main .container .fsc_earth > .photo1 > .bg1 span:nth-child(1) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_2-1.jpg') ;
     background-size:cover;
     content:'';
     display: block;
-    width: 860px; height: 700px;
+    width: calc(100% - 15px);  height: 800px;
     grid-area: i1;
 }
-main .container .fsc_earth > .photo1 > span:nth-child(2) {
+main .container .fsc_earth > .photo1 > .bg1 span:nth-child(2) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_3-1.jpg') ;
     background-size:cover;
     content:'';
     display: block;
-    width: 552px; height: 346px;
-    grid-area: i2;
+    width: calc(100% - 10px); height: auto;
+    grid-area: i2; 
 }
-main .container .fsc_earth > .photo1 > span:nth-child(3) {
+main .container .fsc_earth > .photo1 > .bg1 span:nth-child(3) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_4-1.jpg') ;
     background-size:cover;
     content:'';
     display: block;
-    width: 552px; height: 346px;
-    grid-area: i3;
+    width: calc(100% - 10px); height: auto;
+    grid-area: i3; margin-top: 15px;
 }
-main .container .fsc_earth > .photo1 > span:nth-child(4) {
+main .container .fsc_earth > .photo1 > .bg2 span:nth-child(1) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_5.jpg') ;
     background-size:cover;
     content:'';
     display: block;
-    width: 100%; height: 600px;
+    width: calc(100% - 15px); height: 600px;
     grid-area: i4;
 }
-main .container .fsc_earth > .photo1 > span:nth-child(5) {
+main .container .fsc_earth > .photo1 > .bg2 span:nth-child(2) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_6.jpg') ;
     background-size:cover;
     content:'';
     display: block;
-    width: 100%; height: 600px;
-    grid-area: i5;
+    width: calc(100% - 15px); height: auto;
+    grid-area: i5; 
 }
-main .container > .fsc_earth > .photo1 > .text > span {position: absolute; top:0; left:0;}
-main .container .fsc_earth .photo1 .text span em {}
-main .container .fsc_earth .photo1 .text span strong {}
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(1) {left: -960px; bottom: 60px;}
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(2) {left: -380px; bottom: 240px;}
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(3) {left: -380px; bottom: 100px;}
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(4) {right: 390px; bottom: 70px;}
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(5) {right: 90px; bottom: 240px;}
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(6) {right: 70px; bottom: 120px;}
+main .container > .fsc_earth > .photo1 > .text > span i[class^=arrow] {}
+main .container > .fsc_earth > .photo1 > .text > span {
+    position: absolute; bottom: 100px; right: 0; color:#333; font-weight: 600;
+}
+main .container .fsc_earth .photo1 .text span em {color: #777; font-weight: 600;}
+main .container .fsc_earth .photo1 .text span strong {color: #171C8F; font-weight: 600;}
 /* 산림 보호를 위한 노력 - FSC 인증 지류 사용 */
 main .container > .fsc_forest {
     padding: 100px 0px;
@@ -131,7 +138,7 @@ main > .container > .fsc_forest > .photo2 {
 main .container .fsc_forest .photo2 span {margin: 10px 10px;}
 main .container > .fsc_forest > .photo2 > span:nth-child(1) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_7.jpg');
-    background-size:cover left;
+    background-size:cover;
     background-position: center;
     content:'';
     display: block;
@@ -144,7 +151,7 @@ main .container .fsc_forest > .photo2 > span:nth-child(2) {
     background-position: center;
     content:'';
     display: block;
-    width:100%; height: auto;
+    width:calc(100% - 15px); height: auto;
     grid-area: box2;
 }
 main .container .fsc_forest > .photo2 > span:nth-child(3) {
@@ -153,7 +160,7 @@ main .container .fsc_forest > .photo2 > span:nth-child(3) {
     background-position: center;
     content:'';
     display: block;
-    width:100%; height:auto;
+    width: calc(100% - 15px); height:auto;
     grid-area: box3;
 }
 main .container .fsc_forest > .photo2 > span:nth-child(4) {
