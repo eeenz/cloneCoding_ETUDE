@@ -27,34 +27,36 @@ main .banner_area .container .banner8 {
 /* 개별 */
 main .banner_area .container .banner1 {
     /* display: none; */
-    background-image:url('../images/banner/main_replay_PC_01.jpg');
+    background-image:url('../images/banner/main_deardarling_tint_1920.jpg');   
 }
 main .banner_area .container .banner2 {
     display: none;
-    background-image:url('../images/banner/main_replay_PC_02.jpg');
+    background-image:url('../images/banner/main_replay_PC_01.jpg');
 }
 main .banner_area .container .banner3 {
     display: none;
-    background-image:url('../images/banner/lashup_comb_mascara_PC.jpg');}
+    background-image:url('../images/banner/main_replay_PC_02.jpg');
+}
 main .banner_area .container .banner4 {
     display: none;
-    background-image:url('../images/banner/pinkarchive_main_PC.jpg');
+    background-image:url('../images/banner/lashup_comb_mascara_PC.jpg');
 }
 main .banner_area .container .banner5 {
     display: none;
-    background-image:url('../images/banner/rebornmaker_main_PC.jpg');    
+    background-image:url('../images/banner/pinkarchive_main_PC.jpg');   
 }
 main .banner_area .container .banner6 {
     display: none;
-    background-image:url('../images/banner/main_06_pc.jpg');   
+    background-image:url('../images/banner/rebornmaker_main_PC.jpg'); 
 }
 main .banner_area .container .banner7 {
     display: none;
-    background-image:url('../images/banner/main_07_pc.jpg');   
+    background-image:url('../images/banner/main_06_pc.jpg');    
 }
 main .banner_area .container .banner8 {
     display: none;
-    background-image:url('../images/banner/main_08_pc.jpg');   
+    background-image:url('../images/banner/main_07_pc.jpg');  
+    /* background-image:url('../images/banner/main_08_pc.jpg');    */
 }
 /* 공통 - bar  */
 main .banner_area .bar {

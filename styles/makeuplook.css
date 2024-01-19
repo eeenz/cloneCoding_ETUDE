@@ -21,11 +21,11 @@ main .list_container ul {
     'bg16 bg17 bg20 bg20'
     'bg18 bg19 bg20 bg20';
     grid-template-columns: auto auto auto auto;
-    grid-gap: 6px;
+    grid-gap: 7px;
     /* grid-template-rows: 1fr 1fr; */
     /* grid-template-columns: 1fr 1fr; */
 }
-main .list_container ul li {background-color: #000;   }
+main .list_container ul li {background-color: #000; height:max-content;}
 main .list_container ul li:nth-child(1) {grid-area: bg1;}
 main .list_container ul li:nth-child(2) {grid-area: bg2;}
 main .list_container ul li:nth-child(3) {grid-area: bg3;}
@@ -47,7 +47,7 @@ main .list_container ul li:nth-child(19) {grid-area: bg19;}
 main .list_container ul li:nth-child(20) {grid-area: bg20;}
 main .list_container ul li a {
     position: relative; 
-    display: flex; justify-content: center; align-items: center;  
+    display: flex; justify-content: center; align-items: center; 
 }
 main .list_container ul li a:hover .img_bg {
     opacity: 0.7; transition-duration: 0.3s;
@@ -80,7 +80,7 @@ main .list_container ul li a .bg2 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg3 {
@@ -88,7 +88,7 @@ main .list_container ul li a .bg3 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg4 {
@@ -96,7 +96,7 @@ main .list_container ul li a .bg4 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg5 {
@@ -104,7 +104,7 @@ main .list_container ul li a .bg5 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg6 {
@@ -112,7 +112,7 @@ main .list_container ul li a .bg6 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg7 {
@@ -120,7 +120,7 @@ main .list_container ul li a .bg7 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg8 {
@@ -128,7 +128,7 @@ main .list_container ul li a .bg8 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg9 {
@@ -136,7 +136,7 @@ main .list_container ul li a .bg9 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg10 {
@@ -160,7 +160,7 @@ main .list_container ul li a .bg12 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg13 {
@@ -168,7 +168,7 @@ main .list_container ul li a .bg13 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg14 {
@@ -176,7 +176,7 @@ main .list_container ul li a .bg14 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg15 {
@@ -184,7 +184,7 @@ main .list_container ul li a .bg15 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg16 {
@@ -192,7 +192,7 @@ main .list_container ul li a .bg16 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg17 {
@@ -200,7 +200,7 @@ main .list_container ul li a .bg17 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg18 {
@@ -208,7 +208,7 @@ main .list_container ul li a .bg18 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg19 {
@@ -216,7 +216,7 @@ main .list_container ul li a .bg19 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(439 / 346 * 100%);
     width: 100%; height: auto;
 }
 main .list_container ul li a .bg20 {
@@ -224,7 +224,7 @@ main .list_container ul li a .bg20 {
     content: ''; display: inline-block; 
     background-size: cover;
     background-position: center center;
-    padding-top: calc(438 / 346 * 100%);
+    padding-top: calc(438 / 346 * 100% );
     width: 100%; height: auto;
 }
 /* 하단 prv 아이콘 영역 */

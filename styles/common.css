@@ -1,10 +1,22 @@
 /* 사이트 이동하기 버튼 */
-.btn {display: none;}
+body {}
+body, html {scroll-behavior: smooth;}
+.btn {display: flex; margin: 0 auto;}
 .btn .btn_up {}
-.btn .btn_up img {}
-.btn .btn_plus {}
+.btn .btn_up i[class$=up] {
+    color:#333; font-size: 22px; 
+    background: #fff; 
+    width: 55px; height: 55px;
+    border-radius: 50%;
+    position: fixed; z-index: 999;
+    box-shadow: 0 0 5px rgba(0,0,0,0.16);
+    bottom: 40px; right: 40px;
+    text-align: center; 
+    line-height: 55px;
+}
+.btn .btn_plus {display: none;}
 .btn .btn_plus img {}
-.btn #plus_popup {}
+.btn #plus_popup {display: none;}
 .btn #plus_popup a {}
 .btn #plus_popup a span {}
 .btn #plus_popup a img {}
@@ -127,8 +139,8 @@ header > .right .search_other .search_fm fieldset #other_search_btn {}
 header > .right .search_other .search_fm fieldset #other_search_btn img {width: 45px;}
 /* header > 오른쪽 검색 & 햄버거 아이콘 영역 */
 header > .right {display: flex; align-items: center; position: absolute; right: 80px;}
-header > .right .btn_search {}
-header > .right .btn_search img {margin-right: 10px; width: 40px;}
+header > .right .btn_search {margin-right: 3px;}
+header > .right .btn_search img { width: 42px;}
 header > .right .btn_barmenu {
     display: flex;
     flex-flow: column nowrap;
@@ -140,6 +152,10 @@ header > .right .btn_barmenu span {
     width:21px; background-color: #333;
     margin:4px 0; height: 2px;
 }
+header > .right .btn_user {margin-right: 12px;}
+header > .right .btn_user img {width: 24px;}
+header > .right .btn_cart {display: none; margin-right: 8px;}
+header > .right .btn_cart img {width: 34px;}
 /* header > right > 검색할 때 열리는 창  */
 header .search_bg {
     display: none !important;
