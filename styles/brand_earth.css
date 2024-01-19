@@ -30,7 +30,8 @@ main .container {
 }
 main .container .cate {}
 main .container .cate1 {padding: 30px 0; box-shadow: 0 0 6px rgba(0,0,0,0.1);}
-main .container .cate1 a {}
+main .container .cate1 a {padding: 15px 80px; font-weight: 700; color: #333;}
+main .container .cate1 a:nth-child(1) {font-weight: 800; font-size: 1.1rem;}
 /* 지구를 위한 활동 - 1번 컨테이너 */
 main .container .fsc_earth {
     padding: 100px 0;
@@ -51,14 +52,21 @@ main .container > .fsc_earth > p {
 }
 main .container .fsc_earth p em {font-size: 1.125rem; color: #047f05;}
 /* 사진영역 */
-main .container .fsc_earth .photo1 {}
-main .container .fsc_earth .photo1 span {}
+main .container .fsc_earth .photo1 {
+    display: grid; margin:0 auto;
+    grid-template-areas:
+    'i1 i1 i1 i1 i2 i2'
+    'i1 i1 i1 i1 i3 i3'
+    'i4 i4 i4 i5 i5 i5';
+}
+main .container .fsc_earth > .photo1 > span {margin: 10px; position: relative;}
 main .container .fsc_earth > .photo1 > span:nth-child(1) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_2-1.jpg') ;
     background-size:cover;
     content:'';
     display: block;
     width: 860px; height: 700px;
+    grid-area: i1;
 }
 main .container .fsc_earth > .photo1 > span:nth-child(2) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_3-1.jpg') ;
@@ -66,6 +74,7 @@ main .container .fsc_earth > .photo1 > span:nth-child(2) {
     content:'';
     display: block;
     width: 552px; height: 346px;
+    grid-area: i2;
 }
 main .container .fsc_earth > .photo1 > span:nth-child(3) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_4-1.jpg') ;
@@ -73,29 +82,31 @@ main .container .fsc_earth > .photo1 > span:nth-child(3) {
     content:'';
     display: block;
     width: 552px; height: 346px;
+    grid-area: i3;
 }
 main .container .fsc_earth > .photo1 > span:nth-child(4) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_5.jpg') ;
     background-size:cover;
     content:'';
     display: block;
-    width: calc(1420px / 2); height: 600px;
+    width: 100%; height: 600px;
+    grid-area: i4;
 }
 main .container .fsc_earth > .photo1 > span:nth-child(5) {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_6.jpg') ;
     background-size:cover;
     content:'';
     display: block;
-    width: calc(1420px / 2); height: 600px;
+    width: 100%; height: 600px;
+    grid-area: i5;
 }
-main .container .fsc_earth .photo1 span {}
-main .container .fsc_earth .photo1 span em {}
-main .container .fsc_earth .photo1 span strong {}
+main .container > .fsc_earth > .photo1 > .text > span {position: absolute; top:0; left:0;}
+main .container .fsc_earth .photo1 .text span em {}
+main .container .fsc_earth .photo1 .text span strong {}
 /* 산림 보호를 위한 노력 - FSC 인증 지류 사용 */
-main .container .fsc_forest {
-    padding: 100px 0;
+main .container > .fsc_forest {
+    padding: 100px 0px;
     display: flex; flex-flow: column nowrap; align-items: center;
-    margin: 0 auto;
 }
 main .container .fsc_forest .con2 {
     display: flex; flex-flow: row nowrap; 
@@ -109,18 +120,51 @@ main .container .fsc_forest .con2 .title2 h2 {font-size: 2.125rem; font-weight: 
 main .container > .fsc_forest > p {
     font-size: 1.125rem; line-height: 1.6; margin: 20px 0 100px;
 }
-main .container .fsc_forest .photo2 {}
-main .container .fsc_forest .photo2 span {}
+main > .container > .fsc_forest > .photo2 {
+    width:100%;
+    display: grid;
+    grid-template-areas: 
+    'box1 box1'
+    'box2 box4'
+    'box3 box4';
+}
+main .container .fsc_forest .photo2 span {margin: 10px 10px;}
 main .container > .fsc_forest > .photo2 > span:nth-child(1) {
-    background-image:url('../images/category/brand_earth/EP02_003_brand_LP_7.jpg') ;
-    background-size:cover;
+    background-image:url('../images/category/brand_earth/EP02_003_brand_LP_7.jpg');
+    background-size:cover left;
+    background-position: center;
     content:'';
     display: block;
-    width: 100%; height: 700px;
+    width:100%; height: 700px;
+    grid-area: box1;
 }
-main .container .fsc_forest > .photo2 > span:nth-child(2) {}
-main .container .fsc_forest > .photo2 > span:nth-child(3) {}
-main .container .fsc_forest > .photo2 > span:nth-child(4) {}
+main .container .fsc_forest > .photo2 > span:nth-child(2) {
+    background-image:url('../images/category/brand_earth/EM02_003_brand_LP_8.jpg');
+    background-size:cover;
+    background-position: center;
+    content:'';
+    display: block;
+    width:100%; height: auto;
+    grid-area: box2;
+}
+main .container .fsc_forest > .photo2 > span:nth-child(3) {
+    background-image:url('../images/category/brand_earth/EM02_003_brand_LP_10.jpg');
+    background-size:cover;
+    background-position: center;
+    content:'';
+    display: block;
+    width:100%; height:auto;
+    grid-area: box3;
+}
+main .container .fsc_forest > .photo2 > span:nth-child(4) {
+    background-image:url('../images/category/brand_earth/EM02_003_brand_LP_.jpg');
+    background-size:cover;
+    background-position: center;
+    content:'';
+    display: block;
+    width:100%; height: 800px;
+    grid-area: box4;
+}
 /* RECYCLE - 재활용 방법 안내 */
 main .container .recycle {
     padding: 100px 0;
@@ -158,7 +202,7 @@ main .container .recycle .photo_box .step1 p:last-child,
 main .container .recycle .photo_box .step2 p:last-child,
 main .container .recycle .photo_box .step3 p:last-child {font-size: 1.125rem;}
 /* 마지막 안내 문구 */
-main .container .last_container {margin: 100px 0 260px;}
+main .container .last_container {margin: 70px 0 220px;}
 main .container .last_container p {}
 main .container .last_container p img {}
 main .container .last_container p:last-child {font-size: 1.5rem; font-weight: 600; line-height: 1.4; margin-top: 10px;}
