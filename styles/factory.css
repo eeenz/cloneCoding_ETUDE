@@ -1,3 +1,4 @@
+body, html {scroll-behavior: smooth;}
 main {}
 /* 영상 위치 */
 main .top {margin: 0 auto;}
