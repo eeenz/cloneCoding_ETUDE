@@ -1,0 +1,530 @@
+main {}
+/* 영상 위치 */
+main .top {margin: 0 auto;}
+main .top .bg {width: 100%;}
+main .top .bg .bg_video {width: 100%; object-fit: cover;}
+main .container {
+    display: flex; flex-flow: column nowrap; margin: 0 auto;
+    text-align: center; width: 1420px;
+}
+main .container .cate1 {padding: 30px 0; box-shadow: 0 0 6px rgba(0,0,0,0.1);}
+main .container .cate1 a {padding: 15px 80px; font-weight: 700; color: #333;}
+/* 맞춤형 파운데이션 서비스 안내 --- 1단락 */
+main .container .customized {
+    padding: 130px 0 100px;
+    display: flex; flex-flow: row nowrap; align-items: flex-start;
+    margin: 0 auto;
+}
+main .container .customized .service {text-align: left; padding: 0 20px;}
+main .container .customized .service h1 {font-size: 2rem; font-weight: 600;}
+main .container .customized .service:nth-of-type(1) p {margin:15px 0 40px;}
+main .container .customized .service p em {    
+    font-weight: 700; font-size: 1.6rem;
+    color: #D8A481; 
+}
+main .container .customized .service p:last-child {color:#333; line-height: 1.6;}
+main .container .customized .info {text-align: left; padding-left: 40px;}
+main .container .customized .info p:first-child {padding-top: 0;}
+main .container .customized .info p {
+    padding: 10px 0; 
+    display: flex; align-items: center; 
+}
+main .container .customized .info p img {width: 32px; margin-right: 15px;}
+main .container .customized .info p .title {
+    font-size: 1.125rem; font-weight: 500;
+    line-height: 26px; margin-right: 40px;
+}
+main .container .customized .info p .t_sub {line-height: 23px;}
+main .container .customized .info p:nth-child(3) .t_sub:nth-of-type(3) {font-size: 0.875rem; color:#777; margin-left: 15px;}
+/* 퍼스널 컬러 진단 */
+main .container .personal {}
+main .container > .personal > .bg {
+    background-image:url('../images/category/foundationfactory/img-foundation-banner-pc.jpg');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 520px;
+    
+}
+main .container .personal .rolling {position: relative ; width: 100%;}
+main .container .personal .rolling p {
+    font-size: 3.8rem; color:#fff; font-weight: 800;
+    position: absolute; top: -280px; left: 300px; 
+    text-align: left; margin: 0 auto;
+}
+/* 서비스 코스 안내 */
+main .container .course_guide {padding: 100px 0 40px;}
+main .container .course_guide h2 {
+    font-size: 2rem; font-weight: 600;
+}
+main .container .course_guide p {
+    font-weight: 700; font-size: 1.6rem;
+    color: #D8A481; margin-top: 10px;
+}
+/* 공통영역 */
+main .container .contents {}
+main .container .contents [class^=left] {}
+main .container .contents [class^=photo] {}
+main .container .contents [class^=photo] {}
+main .container .contents [class^=circle] {}
+main .container .contents [class^=right] {}
+/* 개별영역 - 위단락 */
+main .container .con1 {
+    display: flex; flex-flow: row nowrap; align-items: flex-start;
+}
+main .container .con1 .left1 {
+    width: calc((100% / 2) - 100px); height: 730px;
+    border-radius: 25px;
+    position: relative;
+}
+/* 왼쪽 사진 컨테이너 */
+main .container .con1 .left1 .photo1::after {
+    background-image:url('../images/category/foundationfactory/slide-step1.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con1 .left1 .photo1 {
+    background-image:url('../images/category/foundationfactory/factory-slide1.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con1 .left1 .photo2::after {
+    background-image:url('../images/category/foundationfactory/slide-step2.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con1 .left1 .photo2 {
+    opacity: 0;
+    background-image:url('../images/category/foundationfactory/factory-slide2.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con1 .left1 .photo3::after {
+    background-image:url('../images/category/foundationfactory/slide-step3.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con1 .left1 .photo3 {
+    opacity: 0;
+    background-image:url('../images/category/foundationfactory/factory-slide3.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con1 .left1 .photo4::after {
+    background-image:url('../images/category/foundationfactory/slide-step4.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con1 .left1 .photo4 {
+    opacity: 0;
+    background-image:url('../images/category/foundationfactory/factory-slide4.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con1 .left1 .photo5::after {
+    background-image:url('../images/category/foundationfactory/slide-step3.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con1 .left1 .photo5 {
+    opacity: 0;
+    background-image:url('../images/category/foundationfactory/factory-slide5.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con1 .left1 .photo6::after {
+    background-image:url('../images/category/foundationfactory/slide-step6.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con1 .left1 .photo6 {
+    opacity: 0;
+    background-image:url('../images/category/foundationfactory/factory-slide6.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+/* 오른쪽 토탈 서비스 */
+main .container .con1 .left1 .circle {}
+main .container .con1 .right {
+    display: flex; flex-flow:column nowrap; justify-items: center; align-items: flex-start;
+    padding-left: 40px; margin-bottom: 50px;
+}
+main .container .con1 .right .guide_title {
+    display: flex; flex-flow:row nowrap; align-items: center;
+    padding: 15px 20px; border-top: 1px solid #aaa;
+    width: 100%;
+}
+main .container .con1 .right .guide_title p:nth-child(1) {font-size: 1.875rem; margin-right: 20px;}
+main .container .con1 .right .guide_title p:nth-child(2) {font-size: 1.313rem; margin-right: 20px;}
+main .container .con1 .right .guide_title p:nth-child(3) {font-size: 1.413rem; color:#D8A481;}
+main .container .con1 .right .guide_time {
+    display: flex; flex-flow:row nowrap; align-items: baseline;
+    padding: 15px 60px; border-top: 1px solid #aaa;
+    width: 100%;
+}
+main .container .con1 .right .guide_time p {font-size: 1.125rem; color:#333;}
+main .container .con1 .right .guide_time p:nth-child(1) {margin-right: 45px;}
+main .container .con1 .right .guide_time p:nth-child(2)::before {
+    content: ''; display: inline-block;
+    width: 1px; height: 20px; background: #777; margin-right: 40px;
+    transform: translateY(3px);
+}
+main .container .con1 .right .guide_time p:nth-child(2) {}
+main .container .con1 .right .guide_price {
+    display: flex; flex-flow:row nowrap; align-items: center;
+    display: flex; flex-flow:row nowrap; align-items: baseline;
+    padding: 15px 60px; border-top: 1px solid #aaa;
+    width: 100%;
+}
+main .container .con1 .right .guide_price p {font-size: 1.125rem; color:#333;}
+main .container .con1 .right .guide_price p:nth-child(1) {margin-right: 35px;}
+main .container .con1 .right .guide_price p:nth-child(2) {}
+main .container .con1 .right .guide_price p:nth-child(2)::before {
+    content: ''; display: inline-block;
+    width: 1px; height: 20px; background: #777; margin-right: 40px;
+    transform: translateY(3px);
+}
+/* step 사진안내 */
+main .container .con1 .right .guide_course {
+    display: flex; flex-flow:row nowrap; align-items: center; 
+    padding: 15px 60px; border-top: 1px solid #aaa;
+    width: 100%;
+}
+main .container .con1 .right .guide_course p {
+    font-size: 1.125rem; color:#333; width: 116px;
+    line-height: 1.7; display: block;  text-align: left;
+}
+main .container .con1 .right .guide_course .line1 {padding: 0 20px;}
+main .container .con1 .right .guide_course .line1 img {}
+main .container .con1 .right .guide_course .list1 {padding: 20px 0;}
+main .container .con1 .right .guide_course .list1 .step {
+    display: flex; flex-flow:row nowrap;
+    align-items: center; justify-content: flex-start;
+    margin-bottom: 15px;
+}
+main .container .con1 .right .guide_course .list1 .step img {margin-right: 20px;}
+main .container .con1 .right .guide_course .list1 .step span {text-align: left; line-height: 1.5;}
+main .container .con1 .right .guide_course .list1 .step span .h3 {
+    font-size: 1.125rem; display: block; font-weight: 600;
+}
+main .container .con1 .right .guide_course .list1 .step span .h3_sub {color:#333;}
+/* 개별영역 - 아래단락 */
+main .container .con2 {
+    display: flex; flex-flow: row nowrap; align-items: flex-start;
+}
+main .container .con2 .left2 {
+    width: calc((100% / 2) - 100px); height: 730px;
+    border-radius: 25px;
+    position: relative;
+}
+main .container .con2 .left2 .photo1::after {
+    background-image:url('../images/category/foundationfactory/slide-step1.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con2 .left2 .photo1 {
+    opacity: 0;
+    background-image:url('../images/category/foundationfactory/factory-slide1.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con2 .left2 .photo2::after {
+    background-image:url('../images/category/foundationfactory/slide-step2.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con2 .left2 .photo2 {
+    opacity: 0;
+    background-image:url('../images/category/foundationfactory/factory-slide2.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con2 .left2 .photo3::after {
+    background-image:url('../images/category/foundationfactory/slide-step3.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con2 .left2 .photo3 {
+    opacity: 0;
+    background-image:url('../images/category/foundationfactory/factory-slide4.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con2 .left2 .photo4::after {
+    background-image:url('../images/category/foundationfactory/slide-step4.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100px; height: 100px;
+    position: absolute; right: 10px; top:45%; z-index: 999;
+}
+main .container .con2 .left2 .photo4 {
+    /* opacity: 0; */
+    background-image:url('../images/category/foundationfactory/factory-slide6.png');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 730px;
+    position: absolute; left: 0;
+    border-radius: 25px;
+}
+main .container .con2 .left2 .circle {}
+main .container .con2 .right2 {
+    display: flex; flex-flow:column nowrap; justify-items: center; align-items: flex-start;
+    padding-left: 40px; margin-bottom: 50px;
+}
+main .container .con2 .right2 .foundation_title {
+    display: flex; flex-flow:row nowrap; align-items: center;
+    padding: 15px 20px; border-top: 1px solid #aaa;
+    width: 100%;}
+main .container .con2 .right2 .foundation_title p:nth-child(1) {font-size: 1.875rem; margin-right: 20px;}
+main .container .con2 .right2 .foundation_title p:nth-child(2) {font-size: 1.313rem; margin-right: 20px;}
+main .container .con2 .right2 .foundation_title p:nth-child(3) {font-size: 1.413rem; color:#D8A481;}
+main .container .con2 .right2 .foundation_time {
+    display: flex; flex-flow:row nowrap; align-items: baseline;
+    padding: 15px 60px; border-top: 1px solid #aaa;
+    width: 100%;
+}
+main .container .con2 .right2 .foundation_time p {font-size: 1.125rem; color:#333;}
+main .container .con2 .right2 .foundation_time p:nth-child(1) {margin-right: 45px;}
+main .container .con2 .right2 .foundation_time p:nth-child(2)::before {
+    content: ''; display: inline-block;
+    width: 1px; height: 20px; background: #777; margin-right: 40px;
+    transform: translateY(3px);
+}
+main .container .con2 .right2 .foundation_time p:nth-child(2) {}
+main .container .con2 .right2 .foundation_price {
+    display: flex; flex-flow:row nowrap; align-items: center;
+    display: flex; flex-flow:row nowrap; align-items: baseline;
+    padding: 15px 60px; border-top: 1px solid #aaa;
+    width: 100%;
+}
+main .container .con2 .right2 .foundation_price p {font-size: 1.125rem; color:#333;}
+main .container .con2 .right2 .foundation_price p:nth-child(1) {margin-right: 35px;}
+main .container .con2 .right2 .foundation_price p:nth-child(2) {}
+main .container .con2 .right2 .foundation_price p:nth-child(2)::before {
+    content: ''; display: inline-block;
+    width: 1px; height: 20px; background: #777; margin-right: 40px;
+    transform: translateY(3px);
+}
+/* step 사진안내 */
+main .container .con2 .right2 .foundation_course {
+    display: flex; flex-flow:row nowrap; align-items: center; 
+    padding: 15px 60px; border-top: 1px solid #aaa;
+    width: 100%;
+}
+main .container .con2 .right2 .foundation_course p {
+    font-size: 1.125rem; color:#333; width: 116px;
+    line-height: 1.7; display: block;  text-align: left;
+}
+main .container .con2 .right2 .foundation_course .line2 {padding: 0 20px;}
+main .container .con2 .right2 .foundation_course .line2 img {}
+main .container .con2 .right2 .foundation_course .list2 {padding: 20px 0;}
+main .container .con2 .right2 .foundation_course .list2 .step2 {
+    display: flex; flex-flow:row nowrap;
+    align-items: center; justify-content: flex-start;
+    margin-bottom: 15px;
+}
+main .container .con2 .right2 .foundation_course .list2 .step2 img {margin-right: 20px;}
+main .container .con2 .right2 .foundation_course .list2 .step2 span {text-align: left; line-height: 1.5;}
+main .container .con2 .right2 .foundation_course .list2 .step2 span .h3 {
+    font-size: 1.125rem; display: block; font-weight: 600;
+}
+main .container .con2 .right2 .foundation_course .list2 .step2 span .h3_sub {color:#333;}
+/* 예약하기 페이지 보기 */
+main .reservation {position: relative; margin: 40px 0;}
+main .reservation .bg_img {
+    background-image:url('../images/category/foundationfactory/4.jpg');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width: 100%; height: 520px;
+}
+main .reservation a {
+    position:absolute; left:50%; top:50%;
+    transform: translate(-50%,-50%); 
+    background: rgba(0,0,0,0.9); color:#fff;  padding: 15px 30px;
+    border-radius: 10px; font-size: 1.2rem;
+}
+/* 나만의 파운데이션 만들기 6스텝 */
+main .last_container { width: 1420px; margin: 0 auto;}
+main .last_container .make {padding: 100px 0 10px;}
+main .last_container .make h2 {
+    font-size: 2rem; font-weight: 600; text-align: center;
+}
+main .last_container > .make > p:nth-of-type(1) {
+    font-weight: 700; font-size: 1.6rem;
+    color: #D8A481; margin-top: 10px; text-align: center;
+}
+main .last_container > .make > p:nth-of-type(2) {text-align: right; padding: 10px 0;}
+/* 6스텝 - 공통영역 */
+main .last_container .make .photo_box {
+    display: flex; flex-flow: row wrap; align-items: center; 
+    justify-content: space-between;
+    width: 100%; 
+}
+main .last_container .make .photo_box [class*=contents_img]:hover p {opacity: 1;}
+main .last_container .make .photo_box [class*=contents_img]:hover p em {opacity: 1;}
+main .last_container .make .photo_box [class*=contents_img]:hover {
+    opacity: 0.6; cursor: pointer;
+    background-color: #000; transition: 0.3s; 
+}
+main .last_container .make .photo_box [class*=contents_img] {
+    margin: 2px; 
+    position: relative; 
+}
+main .last_container .make .photo_box [class*=contents_img] p {
+    opacity: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size: 2.4rem;
+    text-align: center; position:absolute;
+    display: flex; flex-flow: column nowrap; 
+    top: 50%; left: 50%; color:#fff; font-weight: 700;
+    transform: translate(-50%,-50%); line-height: 2.1;
+}
+main .last_container .make .photo_box [class*=contents_img] p em {
+    opacity: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-size: 2.4rem;
+    text-align: center; position:absolute;
+    display: flex; flex-flow: column nowrap; font-weight: 300;
+    top: 50%; left: 50%; color:#fff; 
+    transform: translate(-50%,-50%);
+}
+/* 6스텝 - 개별영역 */
+main .last_container .make .photo_box .contents_img1 {
+    background-image:url('../images/category/foundationfactory/5-1.jpg') ;
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width:calc((100% / 3) - 4px); height: 330px;
+}
+main .last_container .make .photo_box .contents_img1 p {}
+main .last_container .make .photo_box .contents_img1 p em {}
+main .last_container .make .photo_box .contents_img2 {
+    background-image:url('../images/category/foundationfactory/5-2.jpg');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width:calc((100% / 3) - 4px); height: 330px;
+}
+main .last_container .make .photo_box .contents_img2 p {}
+main .last_container .make .photo_box .contents_img2 p em {}
+main .last_container .make .photo_box .contents_img3 {
+    background-image:url('../images/category/foundationfactory/5-3.jpg');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width:calc((100% / 3) - 4px); height: 330px;
+}
+main .last_container .make .photo_box .contents_img3 p {}
+main .last_container .make .photo_box .contents_img3 p em {}
+main .last_container .make .photo_box .contents_img4 {
+    background-image:url('../images/category/foundationfactory/5-4.jpg');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width:calc((100% / 3) - 4px); height: 330px;
+}
+main .last_container .make .photo_box .contents_img4 p {}
+main .last_container .make .photo_box .contents_img4 p em {}
+main .last_container .make .photo_box .contents_img5 {
+    background-image:url('../images/category/foundationfactory/5-5.jpg');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width:calc((100% / 3) - 4px); height: 330px;
+}
+main .last_container .make .photo_box .contents_img5 p {}
+main .last_container .make .photo_box .contents_img5 p em {}
+main .last_container .make .photo_box .contents_img6 {
+    background-image:url('../images/category/foundationfactory/5-6.jpg');
+    content: ''; display: block; 
+    background-size:cover;
+    background-position:center;
+    width:calc((100% / 3) - 4px); height: 330px;
+}
+main .last_container .make .photo_box .contents_img6 p {}
+main .last_container .make .photo_box .contents_img6 p em {}
+/* 유의사항 */
+main .last_container .notice {
+    background: #FAFAFA; width: 100%; 
+    padding: 30px 45px 30px 45px;
+    margin: 100px 0 100px;
+}
+main .last_container .notice .n_title {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    border-bottom: 1px solid #333; padding-bottom: 10px;
+}
+main .last_container .notice .n_title img { margin-right: 5px; transform: translateY(-3px);}
+main .last_container .notice .n_title span {font-size: 1.188rem;}
+main .last_container .notice ul {}
+main .last_container .notice ul li::before {
+    content: ''; display: inline-block;
+    width: 2px; height:2px; border-radius: 50%;
+    background: #333; transform: translateY(-5px);
+    margin-right: 10px;
+}
+main .last_container .notice ul li:first-child {margin-top: 20px; }
+main .last_container .notice ul li {margin-top: 10px; font-size: 0.875rem; color:#333;}
