@@ -1,0 +1,212 @@
+main {}
+/* 로그인 영역 */
+main .all  {
+    display: flex; flex-flow:row nowrap;
+    width: 100%;
+}
+main .all .join_area {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap; align-items: center;
+    margin: 70px 0;
+}
+main .all .join_area .box {
+    margin: 0 auto;
+    width: 58%;
+}
+/* 타이틀 */
+main .all .join_area .box h1 {
+    font-size: 2.15rem; font-style: italic; font-weight: 800;
+    letter-spacing: -0.05rem;
+    line-height: 3; padding: 30px 0;
+}
+/* 인풋영역 시작 */
+main .all .join_area .box fieldset {position:relative;}
+main .all .join_area .box fieldset [class*=list] input::placeholder {
+    font-weight: 700;  font-size: 0.9rem; color:#333
+}
+main .all .join_area .box fieldset input {
+    padding: 15px 20px; 
+    width: 100%; 
+    margin-bottom: 10px;
+}
+/* --------- 인풋 - 통합영역 --------- */
+main .all .join_area .box fieldset [class^=list] {
+    border-bottom: 1px solid #777;
+    margin-bottom: 25px;
+}
+main .all .join_area .box fieldset [class^=list] span {
+    position: absolute; top:20px; right: 0px;
+    font-size: 0.85rem; color:#aaa; font-weight: 600;
+}
+/* --------- 아이디 --------- */
+main .all .join_area .box fieldset .list_id {}
+main .all .join_area .box fieldset .list_id span { top:20px;}
+main .all .join_area .box fieldset .list_id #user_id {}
+/* --------- 비밀번호 --------- */
+main .all .join_area .box fieldset .list_pw {}
+main .all .join_area .box fieldset .list_pw span {top:102px;}
+main .all .join_area .box fieldset .list_pw #user_pw {}
+/* --------- 비밀번호 확인  --------- */
+main .all .join_area .box fieldset .list_pw_ck {}
+main .all .join_area .box fieldset .list_pw_ck span {}
+main .all .join_area .box fieldset .list_pw_ck #user_pw_ck {}
+/* --------- 이름  --------- */
+main .all .join_area .box fieldset .list_pw_ck {}
+main .all .join_area .box fieldset .list_pw_ck span {}
+main .all .join_area .box fieldset .list_pw_ck #user_pw_ck {}
+/* --------- 전화번호  --------- */
+main .all .join_area .box fieldset .list_phone {}
+main .all .join_area .box fieldset .list_phone span {}
+main .all .join_area .box fieldset .list_phone #user_phone_f {width: calc((100% / 3) - 10px);}
+main .all .join_area .box fieldset .list_phone #user_phone_m {width: calc((100% / 3) - 10px);}
+main .all .join_area .box fieldset .list_phone #user_phone_l {width: calc((100% / 3) - 10px);}
+/* --------- 이메일  --------- */
+main .all .join_area .box fieldset .list_mail {}
+main .all .join_area .box fieldset .list_mail span {}
+main .all .join_area .box fieldset .list_mail #user_mail {}
+/* --------- 필수 약관 동의 영역  --------- */
+main .all .join_area .box fieldset .agree {
+    display: flex; flex-flow: column nowrap; align-items: flex-start;
+    text-align: left;
+}
+main .all .join_area .box fieldset .agree .first {
+    display: flex; justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+main .all .join_area .box fieldset .agree .first label::before {
+    content:'\f058'; color: #ccc; font-size: 1.0rem;
+    margin-left: 4px; font-weight: 600;
+}
+main .all .join_area .box fieldset .agree .first #ck_all {
+    display: block; width: 20px;
+}
+main .all .join_area .box fieldset .agree .first .ck_all {
+    display: block;
+}
+main .all .join_area .box fieldset .agree .first .ck_all span {
+    font-size:0.85rem; color:#333; font-weight: 600;
+}
+main .all .join_area .box fieldset .agree .second {}
+main .all .join_area .box fieldset .agree .second p {
+    font-size:0.85rem; color:#777; font-weight: 600;
+}
+main .all .join_area .box fieldset .agree .second p em {
+    font-size:0.89rem; font-style: italic;
+    margin-right: 2px;
+    color:#777; font-weight: 500;
+}
+main .all .join_area .box fieldset .agree .second .box1 {
+    background-color: #fff;
+    border: 1px solid #777;
+    padding:15px 20px; text-align: left;
+    width:100%; height:100px;
+    overflow-y:auto; margin:20px 0px;
+}
+main .all .join_area .box fieldset .agree .second .box1 p {
+    font-size:0.85rem;
+    margin: 10px 0 30px;
+    line-height: 1.4;
+}
+main .all .join_area .box fieldset .agree .third {
+    display: flex; justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+main .all .join_area .box fieldset .agree .third #ck_2 {
+    display: inline-block; width: 20px;
+}
+main .all .join_area .box fieldset .agree .third .ck_2 {
+    display: inline-block;
+}
+main .all .join_area .box fieldset .agree .third .ck_2 span {
+    font-size:0.85rem; color:#333; font-weight: 600;
+}
+main .all .join_area .box fieldset .agree .last {}
+main .all .join_area .box fieldset .agree .last p {
+    font-size:0.85rem; color:#777; font-weight: 600;
+}
+main .all .join_area .box fieldset .agree .last p em {
+    font-size:0.89rem; font-style: italic;
+    margin-right: 2px;
+    color:#777; font-weight: 500;
+}
+main .all .join_area .box fieldset .agree .last .box2 {
+    background-color: #fff;
+    border: 1px solid #777;
+    padding:15px 20px; text-align: left;
+    width:100%; height:100px;
+    overflow-y:auto; margin:20px 0px;
+}
+main .all .join_area .box fieldset .agree .last .box2 p {
+    font-size:0.85rem;
+    margin: 10px 0 30px;
+    line-height: 1.4;
+}
+main .all .join_area .box fieldset .agree .sms {
+    display: flex;
+}
+main .all .join_area .box fieldset .agree .sms p {
+    font-size:0.85rem; color:#333; font-weight: 600;
+}
+main .all .join_area .box fieldset .agree .sms p em {
+    color:#333; font-weight: 600;
+}
+main .all .join_area .box fieldset .agree .sms #ck_sms {
+    width: 20px;
+}
+main .all .join_area .box fieldset .agree .sms .ck_sms {}
+main .all .join_area .box fieldset .agree .sms .ck_sms span {
+    font-size:0.85rem; color:#333; font-weight: 600;
+}
+/* 버튼영역 */
+main .all .join_area .box .login_btn:hover {
+    background: #111; color:#fff;
+    transition: 0.3s;
+}
+main .all .join_area .box .login_btn {
+    width: 100%; padding: 15px 0;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 25px;
+    display: block; text-align: center;
+    font-size: 0.9rem; font-weight: 500;
+    color:#111;
+    margin-top: 30px;
+}
+main .all .join_area .box .kakao_btn {
+    width: 100%; padding: 15px 0;
+    background-color: #fae100;
+    border: 1px solid #333;
+    border-radius: 25px;
+    display: flex; justify-content: center;
+    align-items: center;
+    margin-top: 15px; margin-bottom: 50px;
+}
+main .all .join_area .box .kakao_btn img {width: 20px; margin-right: 6px;}
+main .all .join_area .box .kakao_btn span {
+    font-size: 0.9rem; font-weight: 500;
+    color:#111;
+}
+/* 이미지 영역 */
+main .all .img_container {width:50%; position: relative;}
+main .all .img_container .logo {
+    background-image: url(../images/category/about_etude/about_etude_title2023.png);
+    background-size: cover;
+    background-position: center top;
+    width: 420px;
+    height: 620px;    
+    position: fixed; z-index: 999; right: 487px; bottom: 0px;
+}    
+main .all .img_container .bg {    
+    position: fixed;
+    background-image: url(../images/category/about_etude/about_etude2023_img2.jpg);
+    background-size: cover;
+    background-position: left top;
+    width: 50%;
+    height: 100vh;
+}
