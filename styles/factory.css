@@ -4,12 +4,21 @@ main {}
 main .top {margin: 0 auto;}
 main .top .bg {width: 100%;}
 main .top .bg .bg_video {width: 100%; object-fit: cover;}
+/* 카테고리 안내 */
+main .cate {
+    width: 100%; padding: 30px 0; 
+    box-shadow: 0 0 6px rgba(0,0,0,0.1); 
+    margin: 0 auto;
+    display: flex; align-items: center; justify-content: center;
+}
+main .cate a {
+    padding: 15px 80px; 
+    font-weight: 700; color: #333; 
+}
 main .container {
     display: flex; flex-flow: column nowrap; margin: 0 auto;
     text-align: center; width: 1420px;
 }
-main .container .cate1 {padding: 30px 0; box-shadow: 0 0 6px rgba(0,0,0,0.1);}
-main .container .cate1 a {padding: 15px 80px; font-weight: 700; color: #333;}
 /* 맞춤형 파운데이션 서비스 안내 --- 1단락 */
 main .container .customized {
     padding: 130px 0 100px;

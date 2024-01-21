@@ -3,16 +3,17 @@ main {}
 /* 상단영역 - 이미지 백그라운드로 처리 */
 main .top {
     background-image:url('../images/category/brand_earth/EP02_003_brand_LP_1_top.jpg') ;
-    background-position:center;
+    background-position:top;
     background-size:cover;
     content:'';
     display: block;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     position: relative;
 }
 main .top p {
-    position: absolute; top: 28vh; left: calc(100% / 3);
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50% , -50%);
     display: flex; flex-flow: column nowrap; 
     align-items: center; justify-content: center; 
 }
@@ -22,10 +23,16 @@ main .container {
     display: flex; flex-flow: column nowrap; margin: 0 auto;
     text-align: center; width: 1420px;
 }
-main .container .cate {}
-main .container .cate1 {padding: 30px 0; box-shadow: 0 0 6px rgba(0,0,0,0.1);}
-main .container .cate1 a {padding: 15px 80px; font-weight: 700; color: #333;}
-main .container .cate1 a:nth-child(1) {font-weight: 800; font-size: 1.1rem;}
+main .cate {
+    padding: 30px 0; 
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    display: flex; justify-content: center;
+}
+main .cate a {
+    padding: 15px 80px; 
+    font-weight: 700; color: #333;
+}
+main .cate a:nth-child(1) {font-weight: 800; font-size: 1.1rem;}
 /* 지구를 위한 활동 - 1번 컨테이너 */
 main .container .fsc_earth {
     padding: 100px 0;
@@ -40,7 +47,13 @@ main .container .fsc_earth .con1 p {}
 main .container .fsc_earth .con1 p img {margin-right: 20px;}
 main .container .fsc_earth .con1 .title1 {}
 main .container .fsc_earth .con1 .title1 h1 {font-size: 1.125rem;}
-main .container .fsc_earth .con1 .title1 h2 {font-size: 2.125rem; font-weight: 700; margin-top: 10px;}
+main .container .fsc_earth .con1 .title1 h1 strong {font-size: 1.3rem;margin-left: 3px;}
+main .container .fsc_earth .con1 .title1 h1 em {
+    font-style: italic; 
+    font-size: 1.3rem; margin-left: 5px;
+
+}
+main .container .fsc_earth .con1 .title1 h2 {font-size: 2.125rem; font-weight: 800; margin-top: 10px;}
 main .container > .fsc_earth > p {
     font-size: 1.125rem; line-height: 1.6; margin: 20px 0 100px;
 }
@@ -100,11 +113,11 @@ main .container .fsc_earth > .photo1 > .bg2 span:nth-child(2) {
 }
 main .container > .fsc_earth > .photo1 > .text > span:nth-child(1) {left: -960px; bottom: 60px;}
 main .container > .fsc_earth > .photo1 > .text > span:nth-child(2) {left: -380px; bottom: 240px;}
-main .container > .fsc_earth > .photo1 > .text > span:nth-child(3) {left: -380px; bottom: 100px;}
-main .container > .fsc_earth > .photo1 > .text > span:nth-child(4) {right: 390px; bottom: 70px;}
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(3) {left: -380px; bottom: 60px; }
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(4) {right: 390px; bottom: 60px;}
 main .container > .fsc_earth > .photo1 > .text > span:nth-child(5) {right: 90px; bottom: 240px;}
-main .container > .fsc_earth > .photo1 > .text > span:nth-child(6) {right: 70px; bottom: 120px;}
-main .container > .fsc_earth > .photo1 > .text > span i[class^=arrow] {}
+main .container > .fsc_earth > .photo1 > .text > span:nth-child(6) {right: 70px; bottom: 60px;}
+main .container > .fsc_earth > .photo1 > .text > span i[class*=arrow] {margin: 0 6px;}
 main .container > .fsc_earth > .photo1 > .text > span {
     position: absolute; bottom: 100px; right: 0; color:#333; font-weight: 600;
 }
@@ -123,7 +136,7 @@ main .container .fsc_forest .con2 p {}
 main .container .fsc_forest .con2 p img {margin-right: 20px;}
 main .container .fsc_forest .con2 .title2 {}
 main .container .fsc_forest .con2 .title2 h1 {font-size: 1.125rem;}
-main .container .fsc_forest .con2 .title2 h2 {font-size: 2.125rem; font-weight: 700; margin-top: 10px;}
+main .container .fsc_forest .con2 .title2 h2 {font-size: 2.125rem; font-weight: 800; margin-top: 10px;}
 main .container > .fsc_forest > p {
     font-size: 1.125rem; line-height: 1.6; margin: 20px 0 100px;
 }
@@ -155,9 +168,9 @@ main .container .fsc_forest > .photo2 > span:nth-child(2) {
     grid-area: box2;
 }
 main .container .fsc_forest > .photo2 > span:nth-child(3) {
-    background-image:url('../images/category/brand_earth/EM02_003_brand_LP_10.jpg');
+    background-image:url('../images/category/brand_earth/EM02_003_brand_LP_15.png');
     background-size:cover;
-    background-position: center;
+    background-position: left;
     content:'';
     display: block;
     width: calc(100% - 15px); height:auto;
@@ -185,7 +198,7 @@ main .container .recycle .con3 {
 main .container .recycle .con3 p {}
 main .container .recycle .con3 p img {margin-right: 20px;}
 main .container .recycle .con3 .title3 {}
-main .container .recycle .con3 .title3 h1 {font-size: 2.125rem; font-weight: 700;}
+main .container .recycle .con3 .title3 h1 {font-size: 2.125rem; font-weight: 800;}
 main .container .recycle .con3 .title3 h2 {font-size: 1.5rem; margin-top: 10px;}
 main .container .recycle .photo_box {
     display: flex; flex-flow: row nowrap;

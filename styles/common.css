@@ -32,7 +32,7 @@ header {
     /* justify-content: space-between; */
     align-items: center;
     height: 100px; width:100%; margin: 0 auto;
-    padding: 33px 60px 0 70px; position:fixed;
+    padding: 40px 60px 0 74px; position:fixed;
     left: 0; top:0; z-index: 900;
 }
 header > .left {display: flex; align-items: center; }
@@ -46,14 +46,15 @@ header .left nav .gnb li {}
 header .left nav .gnb > li:nth-child(1) > a:nth-child(1){position: relative;}
 header .left nav .gnb > li:nth-child(1) > a:nth-child(1)::after{
     content: 'NEW'; display: inline-block;
-    color: #EF426F; font-size: 0.55rem;
-    position:absolute; top:-5px; right: -22px;
-    font-weight: 500;
+    color: #EF426F; font-size: 0.6rem;
+    position:absolute; top:-5px; right: -26px;
+    font-weight: 600;
 }
 header .left nav .gnb > li > a {
     margin-left: 60px; color:#333;
     font-family: 'Sofia Sans', sans-serif;
-    font-weight: 800; letter-spacing: -0.02em;
+    font-weight: 800; 
+    font-size: 1.1rem;
 }
 /* header > nav > product 의 lnb영역 */
 /* product lnb영역 bg */
@@ -137,10 +138,10 @@ header > .right .search_other .search_fm fieldset label #search_fm {
 }
 header > .right .search_other .search_fm fieldset #other_search_btn {}
 header > .right .search_other .search_fm fieldset #other_search_btn img {width: 45px;}
-/* header > 오른쪽 검색 & 햄버거 아이콘 영역 */
+/* header > 오른쪽 검색 , 햄버거 , 유저 , 카트 아이콘 영역 */
 header > .right {display: flex; align-items: center; position: absolute; right: 80px;}
-header > .right .btn_search {margin-right: 3px;}
-header > .right .btn_search img { width: 42px;}
+header > .right .btn_search {margin-right: 6px;}
+header > .right .btn_search img { width: 44px;}
 header > .right .btn_barmenu {
     display: flex;
     flex-flow: column nowrap;
@@ -152,13 +153,12 @@ header > .right .btn_barmenu span {
     width:21px; background-color: #333;
     margin:4px 0; height: 2px;
 }
-header > .right .btn_user {margin-right: 12px;}
+header > .right .btn_user {margin-right: 4px;}
 header > .right .btn_user img {width: 24px;}
-header > .right .btn_cart {display: none; margin-right: 8px;}
-header > .right .btn_cart img {width: 34px;}
+header > .right .btn_cart {margin-right: 11px;}
+header > .right .btn_cart img {width: 32px;}
 /* header > right > 검색할 때 열리는 창  */
 header .search_bg {
-    display: none !important;
     position: absolute;
     left: 0; top:0;
     background: rgba(255, 255, 255, 0.5);
@@ -167,7 +167,6 @@ header .search_bg {
     padding: 22px 80px 0px 70px;
 }
 header .search_bg .src_head {
-    display: none !important;
     display: flex; flex-flow:row nowrap; justify-content:space-between;
     margin-top: 31px;
 }
@@ -194,6 +193,7 @@ header .search_bg .src_contens h2 {
     margin: 60px auto 0;
 }
 header .search_bg .src_contens .search_form {
+    border: 1px solid rgba(0,0,0,0.07); 
     background: rgba(231, 232, 234, 0.5); border-radius: 10px;
     height: 40px; width: 1000px;
     margin: 30px auto 35px; outline: none;
@@ -226,7 +226,6 @@ header .search_bg .src_contens .src_comment a span {
 }
 /* header > right > 햄버거바 클릭할 때 열리는 창 */
 header .side_category {
-    display: none !important;
     z-index: -100;
     background: linear-gradient(180deg, rgba(245, 226, 226, 0.65) 0%, rgba(242, 198, 207, 0.65) 127.47%); backdrop-filter: blur(12px);
     padding: 0 50% 16px 0 ; text-align: right; 
