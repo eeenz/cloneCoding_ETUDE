@@ -25,4 +25,4 @@ input, select, option {background: none; border:0; outline: none;}
 /* html에서 의미적으로 존재하나 css디자인상에선 숨겨야하는 요소 */
 .skip {display:none;}
 /* font-awesome unicode 전용 클래스 */
-.fa {font-family:'Font Awesome 5 Free', 'Font Awesome 5 Brands'; font-weight:600;}
+.fa {font-family:'Font Awesome 5 Free', 'Font Awesome 5 Brands'; font-weight:500;}
