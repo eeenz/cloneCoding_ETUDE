@@ -6,6 +6,7 @@
 * 24/01/05 ~ 24/01/16 - common.css, index.css 메인페이지 데스크탑버전 CSS 완성
 * 24/01/17 ~ 24/01/18 - MAKEUPLOOK 카테고리 페이지 makeuplook.html, makeuplook.css 완성
 * 24/01/19 ~ 24/01/21 - 로그인, 장바구니, STORE, FOUNDATION FACTORY 페이지 html, CSS 완성
+* 24/01/23 ~ 24/01/24 - PRODUCT-> 신제품 카테고리 페이지 html, CSS 완성
 --------------------
 ## INFO
 * 표기법 = 언더바 표기법으로 사용
