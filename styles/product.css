@@ -9,7 +9,7 @@ main .all_box .thumbnails {
     width: 50%;
     overflow: hidden;
     height: 100vh; 
-    position: fixed;
+    position: sticky; top:0;
 }
 main .all_box .thumbnails .small_thumb {
     position: absolute ;
@@ -92,7 +92,7 @@ main .all_box .thumbnails .bar .shotline span:nth-child(9) {}
 main .all_box .thumbnails .bar .shotline span:nth-child(10) {}
 /* 오른쪽 상품영역 */
 main .all_box .right_box {
-    width: 50%; position: absolute; right: 0;
+    width: 50%; 
 }
 main .all_box .right_box .info {
     width: 100%; 
@@ -237,13 +237,14 @@ main .all_box .right_box .info .product .container .btn .btn_buy {
 /* 오른쪽 상품영역 - 탭 */
 main .all_box .right_box .tab {
     display: flex; justify-content: space-between;
-    padding: 30px 0 10px;
-    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.06);
-    
+    padding: 30px 0 10px;    
 }
 main .all_box .right_box .tab a {    
-    font-size: 1.25rem; 
-    padding: 0 90px; line-height: 50px;
+    font-size: 1.2rem; 
+    line-height: 50px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.06);
 }
 main .all_box .right_box .tab a:nth-child(1) {
     font-weight: 700; 
@@ -266,16 +267,35 @@ main .all_box .right_box .ingredient {
 main .all_box .right_box .ingredient table {}
 main .all_box .right_box .ingredient table thead {}
 main .all_box .right_box .ingredient table thead tr {}
-main .all_box .right_box .ingredient table thead tr th {}
-main .all_box .right_box .ingredient table thead tr td {}
+main .all_box .right_box .ingredient table thead tr th {
+    width:35%; text-align: left; 
+    font-size: 0.938rem;
+    font-weight: 600;
+    padding: 10px 24px 10px 0;
+}
+main .all_box .right_box .ingredient table thead tr td {
+    width:65%; font-size:0.75rem;
+    padding: 10px 0;
+}
 main .all_box .right_box .ingredient table tbody {}
 main .all_box .right_box .ingredient table tbody tr {}
 main .all_box .right_box .ingredient table tbody .ig_option {}
 main .all_box .right_box .ingredient table tbody .ig_option td {
     display: flex; flex-flow: column nowrap;
+    justify-content: flex-start;
+    font-size: 0.75rem;
+    width:65%;
 }
-main .all_box .right_box .ingredient table tbody tr th {width:35%; text-align: left;}
-main .all_box .right_box .ingredient table tbody tr td {width:65%;}
+main .all_box .right_box .ingredient table tbody tr th {
+    width:35%; text-align: left; 
+    font-size: 0.938rem;
+    font-weight: 600;
+    padding: 10px 24px 10px 0;
+}
+main .all_box .right_box .ingredient table tbody tr td {
+    width:65%; font-size:0.875rem; 
+    padding: 10px 0;
+}
 /* 하단 - 추천제품 */
 main section {
     width: 100%; 
@@ -292,11 +312,14 @@ main section .item {
     display: flex; flex-flow: row nowrap; 
     justify-content: space-between; 
     align-items: center;
-    margin: 0 auto;
+}
+main section .item .item_list:nth-of-type(5) {
+    margin-right: 0;
 }
 main section .item .item_list {
-    width: calc((100% / 5) - 10px);
+    width: calc(100% / 5);
     text-align: center;
+    margin-right: 10px;
 }
 main section .item .item_list a {}
 main section .item .item_list a img {width: 100%;}
