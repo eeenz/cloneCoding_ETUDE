@@ -256,7 +256,7 @@ main .all_box .right_box .contents {
     flex-flow: column nowrap;
     align-items: flex-start;
     width: 100%;
-    padding: 90px;
+    padding: 7%;
 }
 main .all_box .right_box .contents img {width: 100%;}
 /* 오른쪽 상품영역 - 상품정보고시, 전성분 */
@@ -284,7 +284,8 @@ main .all_box .right_box .ingredient table tbody .ig_option td {
     display: flex; flex-flow: column nowrap;
     justify-content: flex-start;
     font-size: 0.75rem;
-    width:65%;
+    width:100%;
+    line-height: 1.3rem;
 }
 main .all_box .right_box .ingredient table tbody tr th {
     width:35%; text-align: left; 
