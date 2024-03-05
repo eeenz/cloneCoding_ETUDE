@@ -41,19 +41,29 @@ main .all_box .thumbnails .big_thumb a {
 }
 main .all_box .thumbnails .big_thumb a img {}
 /* 왼쪽 썸네일 - 왼쪽 오른쪽 버튼 */
-main .all_box .thumbnails .btn {
+main .all_box .thumbnails .btn {}
+main .all_box .thumbnails .btn a:nth-child(1) {
     position: absolute;
     top: 450px;
+    left: 0;
 }
-main .all_box .thumbnails .btn a:nth-child(1) {left: 0;}
-main .all_box .thumbnails .btn a:nth-child(2) {right: 0;}
+main .all_box .thumbnails .btn a:nth-child(2) {
+    position: absolute;
+    top: 450px;
+    right: 0;
+}
 main .all_box .thumbnails .btn a {
-    background-color: #111;
-    width: 50px; height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40px; height: 40px;
     padding: 20px;
-    opacity: 0.6; 
+    line-height: 0px;
 }
-main .all_box .thumbnails .btn a img {}
+main .all_box .thumbnails .btn a i[class*=-angle-] { 
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+    transform: translate(-3px , -6px);
+}
 /* 왼쪽 썸네일 - bar영역 */
 main .all_box .thumbnails .bar {
     position:absolute; z-index: 600;
