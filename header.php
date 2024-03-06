@@ -648,5 +648,4 @@
         </div>
     </div>
 </header>
-<script src="./script/common.js"></script>
 <script src="./script/header.js"></script>

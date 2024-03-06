@@ -12,3 +12,12 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 /* ---------------------- 구분선 -------------------------- */  
+// 상단으로 이동 up버튼
+const btn_up = document.querySelector('.btn_up')
+    btn_up.addEventListener('click',()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+    })
+})
+/* ---------------------- 구분선 -------------------------- */ 

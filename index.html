@@ -13,6 +13,9 @@
         font-family: 'Sofia Sans', sans-serif; -->
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
@@ -23,50 +26,50 @@
     <main>
         <!-- 메인 배너 영역 -->
         <section class="banner_area">
-            <div class="container">
-                <div class="banner banner1">
+            <div class="swiper-container mySwiper container" init="false">
+                <div class="swiper-slide banner banner1">
                     <div class="txt">
                         <h2>리플레이 컬렉션 ♥네이버 단독 선발매♥</h2>
                         <p>다시 보고, 모으고 싶은 소장가치 환생템 뉴이어 Replay</p>
                     </div>
                 </div>
-                <div class="banner banner2">
+                <div class="swiper-slide banner banner2">
                     <div class="txt">
                         <h2>리플레이 컬렉션 ♥네이버 단독 선발매♥</h2>
                         <p>신상 위크 12/18 ~ 12/24</p>
                     </div>
                 </div>
-                <div class="banner banner3">
+                <div class="swiper-slide banner banner3">
                     <div class="txt">
                         <h2>롯데온 선/런/칭</h2>
                         <p>속눈썹 뿌리부터 한올 한올 결살리는 역대급 마스카라♥</p>
                     </div>
                 </div>
-                <div class="banner banner4">
+                <div class="swiper-slide banner banner4">
                     <div class="txt">
                         <h2>핑덕 러버스! 핑카이브 컬렉션</h2>
                         <p>포근하고 따뜻한 웜 핑크 베리에이션 팔레트</p>
                     </div>
                 </div>
-                <div class="banner banner5">
+                <div class="swiper-slide banner banner5">
                     <div class="txt">
                         <h2>조효진 개발 쉐딩 스틱</h2>
                         <p>한-끗 차이로 달라지는 부위별 음영 재창조 메이커</p>
                     </div>
                 </div>
-                <div class="banner banner6">
+                <div class="swiper-slide banner banner6">
                     <div class="txt">
                         <h2>CITY EDITION</h2>
                         <p>매력적인 도시의 느낌을 담아낸 컬러 컬렉션</p>
                     </div>
                 </div>
-                <div class="banner banner7">
+                <div class="swiper-slide banner banner7">
                     <div class="txt">
                         <h2>고수분 물빛 스밈 틴트</h2>
                         <p>맑은 물빛이 촉촉하게 스며드는 프루티 듀이 틴트</p>
                     </div>
                 </div>
-                <div class="banner banner8">
+                <div class="swiper-slide banner banner8">
                     <div class="txt">
                         <h2>민감 피부 자극도 제로</h2>
                         <p>순정 약산성 5.5 진정 토너</p>
@@ -466,6 +469,37 @@
         </section>
     </main>
     <?php include("footer.php"); ?>
-    <script src="./script/common.js"></script>
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- script -->
+    <script>
+        // 상단 배너영역 스와이퍼
+        const swiperEl = document.querySelector("swiper-container");
+    
+        const params = {
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+            enabled: true,
+        },
+        breakpoints: {
+            1920: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            },
+        },
+        scrollbar: true,
+        navigation: true,
+        pagination: {
+            clickable: true,
+        },
+        };
+
+        Object.assign(swiperEl, params);
+
+        swiperEl.initialize();
+    </script>
 </body>
 </html> 
