@@ -1,6 +1,15 @@
 body, html {scroll-behavior: smooth;}
 /* main */
-main {}
+main {
+    min-width: 1920px;
+    overflow: hidden scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    scrollbar-width: thin;
+}
+main::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
 /* section.1 - 메인 배너 영역 */
 /* img -> background 로 처리 */
 /* 공통 */

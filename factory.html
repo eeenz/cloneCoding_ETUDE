@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>에뛰드 | MAKEUPLOOK </title>
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Sofia+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/logo/faviconV2.png" type="image/x-icon">
-    <link rel="icon" href="./images/logo/faviconV2.png" type="image/x-icon">
     <!-- font-family: 'Noto Sans KR', sans-serif;
         font-family: 'Sofia Sans', sans-serif; -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo/faviconV2.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo/faviconV2.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- css -->
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/common_sub.css">
     <link rel="stylesheet" href="./styles/factory.css">
 </head>
 <body>
+    <?php include("header_sub.php"); ?>
     <main>
         <div class="top">
             <div class="bg"><video class="bg_video" src="./images/category/foundationfactory/Foundation_PC.mp4" autoplay loop poster="https://www.etude.com/wp-content/uploads/2022/05/bg-01ff.jpg"></video></div>
@@ -234,5 +241,6 @@
             </div>
         </div>
     </main>
+    <?php include("footer.php"); ?>
 </body>
 </html>

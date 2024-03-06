@@ -1,5 +1,12 @@
 /* 사이트 이동하기 버튼 */
-body {}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+body {
+    overflow: hidden scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
 body, html {scroll-behavior: smooth;}
 .btn {display: flex; margin: 0 auto;}
 .btn .btn_up {}

@@ -1,36 +1,40 @@
 /* nav -> product -> 신제품 카테고리 */
 body, html {scroll-behavior: smooth;}
-main {/* display: flex; justify-content: space-between; */}
+main {
+    width:100%;
+    display: flex; justify-content: space-between;
+}
 /* 왼쪽 bg 이미지 영역 */
-main .bg {
+main .cate_bg {
     background-image: url('../images/category/img-categoty-new1.jpg');
     width:30%; height:100vh; overflow:hidden;
     background-size:cover;
     background-position:center;
-    position: fixed;
+    position: sticky;
+    top:0;
 }
 /* 오른쪽 상품 리스트 영역 */
-main .container {
+main .cate_container {
     width: 70%; padding: 140px 60px 100px 25px;
     float: right;
 }
 /* 타이틀 1단락 - gnb */
-main .container .top_gnb {display: flex; flex-flow: row nowrap; align-items: center;}
-main .container .top_gnb .cate_name {
+main .cate_container .top_gnb {display: flex; flex-flow: row nowrap; align-items: center;}
+main .cate_container .top_gnb .cate_name {
     position: relative;
 }
-main .container .top_gnb .cate_name > a {
+main .cate_container .top_gnb .cate_name > a {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
 }
-main .container .top_gnb .cate_name a h1 {
+main .cate_container .top_gnb .cate_name a h1 {
     font-size: 2rem;
     font-weight: 700;
     padding: 12px 40px 10px 20px;
 }
-main .container .top_gnb .cate_name a p {}
-main .container .top_gnb .cate_name a p img {}
-main .container .top_gnb .cate_name .box {
+main .cate_container .top_gnb .cate_name a p {}
+main .cate_container .top_gnb .cate_name a p img {}
+main .cate_container .top_gnb .cate_name .box {
     display: none;
     padding: 8px; background:#fff;
     border-radius: 5px;
@@ -39,49 +43,49 @@ main .container .top_gnb .cate_name .box {
     position: absolute; z-index: 400; left: 0;
     width: 190px;
 }
-main .container .top_gnb .cate_name .box a {
+main .cate_container .top_gnb .cate_name .box a {
     line-height: 40px; font-size: 1.125rem;
     display: block; 
 }
-main .container .top_gnb .comment {}
-main .container .top_gnb .comment p {font-size: 0.938rem; margin-left: 20px; font-weight: 400;}
+main .cate_container .top_gnb .comment {}
+main .cate_container .top_gnb .comment p {font-size: 0.938rem; margin-left: 20px; font-weight: 400;}
 /* 타이틀 2단락 - lnb */
-main .container .top_lnb {
+main .cate_container .top_lnb {
     display: flex; flex-flow: row nowrap; 
     align-items: center; justify-content: space-between;
     padding: 30px 4px 30px;
 }
-main .container .top_lnb .left {}
-main .container .top_lnb .left p {font-weight: 500;}
-main .container .top_lnb .right {
+main .cate_container .top_lnb > .left {}
+main .cate_container .top_lnb > .left p {font-weight: 500;}
+main .cate_container .top_lnb > .right {
     position: relative;
 }
-main .container .top_lnb .right a {
+main .cate_container .top_lnb > .right a {
     transform: translateY(7px);
 }
-main .container .top_lnb .right a:nth-child(1) {
+main .cate_container .top_lnb > .right a:nth-child(1) {
     background-image: url('../images/icon/icon-list-style_active.png'); 
     width: 24px; height: 24px; display: inline-block;
     background-position: center;
     background-size: cover;
     opacity: 0.5;
 }
-main .container .top_lnb .right a:nth-child(1):hover {
+main .cate_container .top_lnb > .right a:nth-child(1):hover {
     opacity: 1;
     transition: 0.4s;
 }
-main .container .top_lnb .right a:nth-child(2) {
+main .cate_container .top_lnb > .right a:nth-child(2) {
     background-image: url('../images/icon/icon-column-3_active.png'); 
     width: 24px; height: 24px; display: inline-block;
     background-position: center;
     background-size: cover;
     margin-left: 15px;
 }
-main .container .top_lnb .right a:nth-child(2):hover {
+main .cate_container .top_lnb > .right a:nth-child(2):hover {
     opacity: 1;
     transition: 0.4s;
 }
-main .container .top_lnb .right a:nth-child(3) {
+main .cate_container .top_lnb > .right a:nth-child(3) {
     background-image: url('../images/icon/icon-column-4_active.png'); 
     width: 24px; height: 24px; display: inline-block;
     background-position: center;
@@ -90,22 +94,22 @@ main .container .top_lnb .right a:nth-child(3) {
     opacity: 0.5;
 }
 
-main .container .top_lnb .right a:nth-child(3):hover {
+main .cate_container .top_lnb > .right a:nth-child(3):hover {
     opacity: 1;
     transition: 0.4s;
 }
-main .container .top_lnb .right a:nth-child(4) {
+main .cate_container .top_lnb > .right a:nth-child(4) {
     padding: 10px 0 10px 30px;
     transform: none;
 }
-main .container .top_lnb .right a:nth-child(4) span {
+main .cate_container .top_lnb > .right a:nth-child(4) span {
     text-align: center;
     line-height: 38px;
 }
-main .container .top_lnb .right a:nth-child(4) img {
+main .cate_container .top_lnb > .right a:nth-child(4) img {
     margin-left: 15px; transform: translateY(5px);
 }
-main .container .top_lnb .right .sub_arrange {
+main .cate_container .top_lnb > .right .sub_arrange {
     display: none;
     text-align: center;
     padding: 8px; background:#fff;
@@ -114,111 +118,111 @@ main .container .top_lnb .right .sub_arrange {
     position: absolute; right: 10px; z-index: 400;
     width: 160px;
 }
-main .container .top_lnb .right .sub_arrange a {
+main .cate_container .top_lnb > .right .sub_arrange a {
     line-height: 38px; display: block;
 }
 /* 상품 리스트 영역 */
-main .container .item_list {}
-main .container .item_list ul {
+main .cate_container .item_list {}
+main .cate_container .item_list ul {
     display: flex; flex-flow:row wrap; 
     justify-content: space-between; align-items: flex-start;
 }
-main .container .item_list ul li {
+main .cate_container .item_list ul li {
     width:calc((100% / 3) - 8px);
     padding-bottom: 60px;
 }
-main .container .item_list ul li .thumb {
+main .cate_container .item_list ul li .thumb {
     position:relative;  overflow: hidden;
 }
-main .container .item_list ul li .thumb a {}
-main .container .item_list ul li .thumb a img {
+main .cate_container .item_list ul li .thumb a {}
+main .cate_container .item_list ul li .thumb a img {
     width:100%; border-top-right-radius:4px; border-top-left-radius: 4px;
 }
-main .container .item_list ul li .thumb a .name_sns {
+main .cate_container .item_list ul li .thumb a .name_sns {
     display: none;
     padding: 5px 3px 1px; 
     color: #fff;
     border-radius: 2px; font-size: 0.813rem; font-weight: 200;
     position:absolute; left: 4px; bottom: 8px;
 }
-main .container .item_list ul li .thumb a .icon_oliv {
+main .cate_container .item_list ul li .thumb a .icon_oliv {
     padding: 5px 3px 1px; 
     color: #111; background-color: #fff; 
     border-radius: 2px; font-size: 0.813rem; font-weight: 500;
     position:absolute; left: 53px; top: 10px;
 }
-main .container .item_list ul li .thumb a .icon_zig {
+main .cate_container .item_list ul li .thumb a .icon_zig {
     padding: 5px 3px 1px; 
     color: #111; background-color: #fff; 
     border-radius: 2px; font-size: 0.813rem; font-weight: 500;
     position:absolute; left: 53px; top: 10px;
 }
-main .container .item_list ul li .thumb a .icon_new {
+main .cate_container .item_list ul li .thumb a .icon_new {
     padding: 4px 6px 2px; 
     color: #f5e2e2; background-color: #111; 
     border-radius: 2px; font-size: 0.813rem; font-weight: 800;
     position:absolute; left: 10px; top: 10px;
 }
-main .container .item_list ul li .item_info {
+main .cate_container .item_list ul li .item_info {
     background-color: #fafafa;
     padding: 15px 20px;
     transform: translateY(-5px);
     position: relative;
     overflow-x: hidden;
 }
-main .container .item_list ul li .item_info p:nth-child(1) em {
+main .cate_container .item_list ul li .item_info p:nth-child(1) em {
     font-style: italic;
     font-size: 0.875rem; color:#777;
     margin-bottom: 5px; margin-right: 2px;
     font-weight: 600;
 }
-main .container .item_list ul li .item_info p:nth-child(1) {
+main .cate_container .item_list ul li .item_info p:nth-child(1) {
     font-size: 0.875rem; color:#777;
     margin-bottom: 5px;
 }
-main .container .item_list ul li .item_info h3 {
+main .cate_container .item_list ul li .item_info h3 {
     margin-bottom: 60px;
     min-height: 52px;
 }
-main .container .item_list ul li .item_info h3 a em {
+main .cate_container .item_list ul li .item_info h3 a em {
     font-style: italic;
     font-size: 1.125rem; font-weight: 500; color:#111;
     margin-bottom: 5px; margin-right: 8px; letter-spacing: -0.4rem;
 }
-main .container .item_list ul li .item_info h3 a {
+main .cate_container .item_list ul li .item_info h3 a {
     font-size: 1.125rem; font-weight: 500; color:#111;
 }
-main .container .item_list ul li .item_info .price {
+main .cate_container .item_list ul li .item_info .price {
     font-size: 1.125rem; padding: 6px 12px; background-color: #fff;
     border: 1px solid #d9d9d9; font-size: 0.875rem;
     color:#111; align-content: center;
 }
-main .container .item_list ul li .item_info .price em {
+main .cate_container .item_list ul li .item_info .price em {
     font-size: 1.125rem; font-weight: 800; margin-right: 2px;
 }
-main .container .item_list ul li .item_info .item_option {
+main .cate_container .item_list ul li .item_info .item_option {
     display: flex; position: absolute; bottom: 45px;
 }
-/* main .container .item_list ul li .item_info .item_option a:focus {
+/* main .cate_container .item_list ul li .item_info .item_option a:focus {
     width: 27px;
     height: 27px;
     border: 1px solid #111;
     border-radius: 50%;
 } */
-main .container .item_list ul li .item_info .item_option a {
+main .cate_container .item_list ul li .item_info .item_option a {
     margin: 2px 6px 12px 0; 
 }
-main .container .item_list ul li .item_info .item_option a img {
+main .cate_container .item_list ul li .item_info .item_option a img {
     width:24px; height:24px; border-radius: 50%;
 }
 /* 하단 숫자, 버튼 영역 */
-main .container .btn_arrow {
+main .cate_container .btn_arrow {
     padding-top: 30px;
     display: flex; justify-content: center; 
     width: 100%; 
     margin: 0 auto;
 }
-main .container .btn_arrow a {margin:0 20px;}
-main .container .btn_arrow a img {height: 15px;}
-main .container .btn_arrow a span {font-weight: 700; margin:0; color:#111;}
-main .container .btn_arrow a:nth-child(2) span {font-weight: 700; color: #aaa;}
+main .cate_container .btn_arrow a {margin:0 20px;}
+main .cate_container .btn_arrow a img {height: 15px;}
+main .cate_container .btn_arrow a span {font-weight: 700; margin:0; color:#111;}
+main .cate_container .btn_arrow a:nth-child(2) span {font-weight: 700; color: #aaa;}

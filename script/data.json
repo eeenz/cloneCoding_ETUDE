@@ -1,0 +1,15 @@
+[
+    {
+        "images":"./images/main/product/p_002.jpg",
+        "cuppon": "",
+        "info": "샛별배송",
+        "name": "[Kurly's] 동물복지 유정란 20구",
+        "regularPrice": "9,990원",
+        "description": "1구 당 판매가:  499.5원",
+        "discount": "5%",
+        "price": "9,490",
+        "review": "9,999+",
+        "project1": "Kurly Only",
+        "project2": ""
+    },
+]
