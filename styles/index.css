@@ -34,7 +34,7 @@ main .banner_area .container .banner5,
 main .banner_area .container .banner6,
 main .banner_area .container .banner7,
 main .banner_area .container .banner8 {
-    position: absolute; top:0; left: 0;
+    /* position: absolute; top:0; left: 0; */
 }
 /* 개별 */
 /* main .banner_area .container .banner1 {
