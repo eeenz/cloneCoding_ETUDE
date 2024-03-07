@@ -222,8 +222,13 @@ main .all_box .right_box .info .product .container .btn .num_result .num_box spa
     margin-left: 25px; 
 }
 main .all_box .right_box .info .product .container .btn .num_result .num_box span em {font-size: 1.25rem; font-weight: 700; margin-right: 3px;}
+main .all_box .right_box .info .product .container .btn .btn_cart:hover {
+    background-color:  #F2C6CF;
+    transition: 0.7s ease;
+}
 main .all_box .right_box .info .product .container .btn .btn_cart {
-    width: 100%; padding: 15px 0;
+    width: 100%; 
+    padding: 15px 0;
     background-color: #fff;
     border: 2px solid #F2C6CF;
     border-radius: 35px;
@@ -232,16 +237,23 @@ main .all_box .right_box .info .product .container .btn .btn_cart {
     color: #333;
     margin-top: 30px;
     font-size: 2rem;
+    margin-right: 10px;
+}
+main .all_box .right_box .info .product .container .btn .btn_buy:hover {
+    background-color:  #F2C6CF;
+    transition: 0.7s ease;
+    color:#333;
 }
 main .all_box .right_box .info .product .container .btn .btn_buy {
-    width: 100%; padding: 15px 0;
+    width: 100%; 
+    padding: 15px 0;
     background-color: #333;
     border: 2px solid #333;
     border-radius: 35px;
     display: block; text-align: center;
     font-size: 0.9rem; font-weight: 700;
     color: #F2C6CF;
-    margin-top: 18px;
+    margin-top: 30px;
     font-size: 2rem;
 }
 /* 오른쪽 상품영역 - 탭 */
