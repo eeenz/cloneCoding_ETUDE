@@ -25,7 +25,7 @@
     <?php include("header.php"); ?>
     <main>
         <!-- 메인 배너 영역 -->
-        <section class="swiper-container banner_area">
+        <div class="swiper-container banner_area">
             <div class="swiper-wrapper mySwiper container" init="false">
                 <div class="swiper-slide banner banner1">
                     <div class="txt">
@@ -88,8 +88,8 @@
             <!-- <div class="bar">
                 <span class="bar_going"></span>
             </div> -->
-        </section>
-        <section class="best_product_area">
+        </div>
+        <div class="best_product_area">
             <ul>
                 <li>
                     <a href="./product.html">
@@ -127,8 +127,8 @@
                     </a>
                 </li>
             </ul>
-        </section>
-        <section class="makeup_area">
+        </div>
+        <div class="makeup_area">
             <div class="bg_img">
                 <div class="top">
                     <p class="small_img"><img src="./images/main_img/makeup/makeuplook-icon.png" alt=""></p>
@@ -151,8 +151,8 @@
                     </a>
                 </div>
             </div>
-        </section>
-        <section class="soonjung_area">
+        </div>
+        <div class="soonjung_area">
             <div class="contents">
                 <div class="top">
                     <p class="small_img"><img src="./images/main_img/soonjung/playwithetude-icon.png" alt=""></p>
@@ -253,8 +253,8 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        <section class="gift_area">
+        </div>
+        <div class="gift_area">
             <div class="contents">
                 <div class="top">
                     <p class="small_img"><img src="./images/main_img/gift/forgift-icon.png" alt=""></p>
@@ -291,8 +291,8 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        <section class="new_area">
+        </div>
+        <div class="new_area">
             <div class="bg_img">
                 <div class="top">
                     <p class="small_img"><img src="./images/main_img/whatnew/whatsnew-icon.png" alt=""></p>
@@ -435,8 +435,8 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-        </section>
-        <section class="official_area">
+        </div>
+        <div class="official_area">
             <div class="tiktok">
                 <div class="left_txt">
                     <p>ETUDE Official <em>Tiktok</em></p>
@@ -466,49 +466,49 @@
                 <a href="#"><img src="./images/main_img/official/youtube.png" alt="에뛰드하우스 유튜브 바로가기"></a>
                 <a href="#"><img src="./images/main_img/official/tik-tok.png" alt="에뛰드하우스 틱톡 바로가기"></a>
             </div>
-        </section>
-        <section class="news_event_area">
+        </div>
+        <div class="swiper-container news_event_area">
             <div class="top">
                 <p class="small_img"><img src="./images/main_img/news/newevent-icon.png" alt=""></p>
                 <h2>News & Event</h2>
                 <a href="#" class="icon_view">View More</a>
             </div>
-            <div class="container">
-                <div class="item">
+            <div class="swiper-wrapper container">
+                <div class="swiper-slide slide1 item">
                     <a href="#">
                         <!-- bg img -->
-                        <p>공병수거 캠페인</p>
                     </a>
+                    <p>공병수거 캠페인</p>
                 </div>
-                <div class="item">
+                <div class="swiper-slide slide2 item">
                     <a href="#">
                         <!-- bg img -->
-                        <p>모두를 위한 비건 라이프</p>
                     </a>
+                    <p>모두를 위한 비건 라이프</p>
                 </div>
-                <div class="item">
+                <div class="swiper-slide slide3 item">
                     <a href="#">
                         <!-- bg img -->
-                        <p>맞춤형 파운데이션 서비스</p>
                     </a>
+                    <p>맞춤형 파운데이션 서비스</p>
                 </div>
-                <div class="item">
+                <div class="swiper-slide slide4 item">
                     <a href="#">
                         <!-- bg img -->
-                        <p>어바웃 에뛰드</p>
                     </a>
+                    <p>어바웃 에뛰드</p>
                 </div>
-                <a href="#" class="prev_btn"><img src="./images/icon/icon-ham-arrow2.png" alt=""></a>
-                <a href="#" class="next_btn"><img src="./images/icon/icon-ham-arrow2.png" alt=""></a>
+                <!-- <a href="#" class="prev_btn"><img src="./images/icon/icon-ham-arrow2.png" alt=""></a>
+                <a href="#" class="next_btn"><img src="./images/icon/icon-ham-arrow2.png" alt=""></a> -->
             </div>
-        </section>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </main>
     <?php include("footer.php"); ?>
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- script -->
-    <script src="./script/header.js"></script>
     <script>
 
         // 상단 배너영역 스와이퍼
@@ -535,6 +535,27 @@
                 prevEl:'.swiper-button-prev'
             }
         })
+
+        let slide3 = new Swiper(".news_event_area",{
+            loop:'true',
+            slidesPerView:2,
+            spaceBetween:10,
+            navigation:{
+                nextEl:'.swiper-button-next',
+                prevEl:'.swiper-button-prev'
+            }
+        })
+
+        // const ranking_next_btn = document.querySelector('#ranking_next_btn')
+        // const ranking_prev_btn = document.querySelector('#ranking_prev_btn')
+
+        // ranking_prev_btn.addEventListener("click", () => {
+        //     const currentIndex = ranking_swiper.activeIndex;
+        //     // 다음 4개의 슬라이드로 이동
+        //     ranking_swiper.slideTo(currentIndex - 4);
+        // })
     </script>
+    <!-- script -->
+    <script src="./script/header.js"></script>
 </body>
 </html> 
