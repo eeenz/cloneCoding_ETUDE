@@ -21,6 +21,12 @@ main .all .login_area .box h1 {
     line-height: 3; padding: 30px 0;
 }
 main .all .login_area .box fieldset {}
+main .all .login_area .box fieldset .all_error {text-align: center;}
+main .all .login_area .box fieldset span {
+    color:#d50057;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
 main .all .login_area .box fieldset input::placeholder {
     font-weight: 600; letter-spacing: -0.04rem;
 }

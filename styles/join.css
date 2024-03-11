@@ -32,6 +32,9 @@ main .all .join_area .box fieldset input {
     margin-bottom: 10px;
 }
 /* --------- 인풋 - 통합영역 --------- */
+main .all .join_area .box fieldset div .error_massage {
+    color: #d0057d; font-size: 0.875rem; font-weight: 600;
+}
 main .all .join_area .box fieldset [class^=list] {
     border-bottom: 1px solid #777;
     margin-bottom: 25px;

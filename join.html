@@ -30,13 +30,16 @@
                         <div class="list_id">
                             <span>아이디를 입력해 주세요. (영문소문자/숫자, 4~16자)</span>
                             <input type="text" name="user_id" id="user_id" placeholder="ID" maxlength="16" minlength="4">
+                            <span class="error_massage"></span>
                         </div>
                         <div class="list_pw">
                             <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</span>
                             <input type="password" name="user_pw" id="user_pw" placeholder="PASSWORD" minlength="10" maxlength="16" >
+                            <span class="error_massage"></span>
                         </div>
                         <div class="list_pw_ck">
                             <input type="password" name="user_pw_ck" id="user_pw_ck" placeholder="VERIFY PASSWORD" minlength="10" maxlength="16" >
+                            <span class="error_massage"></span>
                         </div>
                         <div class="list_name">
                             <input type="text" name="user_name" id="user_name" placeholder="NAME" >
@@ -48,6 +51,7 @@
                         </div>
                         <div class="list_mail">
                             <input type="text" name="user_mail" id="user_mail" placeholder="EMAIL" >
+                            <span class="error_massage"></span>
                         </div>
                         <div class="agree">
                             <div class="first">
