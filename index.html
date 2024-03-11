@@ -448,16 +448,16 @@
                     <p><strong>@etude_official</strong></p>
                 </div>
             </div>
-            <div class="insta">
+            <div class="swiper-container insta">
                 <div class="txt">
                     <p>ETUDE Official <em>Instagram</em></p>
                 </div>
-                <div class="banner">
-                    <a href="#"><img src="./images/main_img/official/img1_main_insta_1212.jpg" alt=""></a>
-                    <a href="#"><img src="./images/main_img/official/img2_main_insta_1212.jpg" alt=""></a>
-                    <a href="#"><img src="./images/main_img/official/img3_main_insta_1212.jpg" alt=""></a>
-                    <a href="#"><img src="./images/main_img/official/img4_main_insta_1212.jpg" alt=""></a>
-                    <a href="#"><img src="./images/main_img/official/img5_main_insta_1212.jpg" alt=""></a>
+                <div class="swiper-wrapper banner">
+                    <a href="#" class="swiper-slide sns_slide1"><img src="./images/main_img/official/img1_main_insta_1212.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide sns_slide2"><img src="./images/main_img/official/img2_main_insta_1212.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide sns_slide3"><img src="./images/main_img/official/img3_main_insta_1212.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide sns_slide4"><img src="./images/main_img/official/img4_main_insta_1212.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide sns_slide5"><img src="./images/main_img/official/img5_main_insta_1212.jpg" alt=""></a>
                 </div>
             </div>
             <div class="sns_icon">
@@ -536,14 +536,22 @@
             }
         })
 
-        let slide3 = new Swiper(".news_event_area",{
+        let slide3 = new Swiper('.official_area > .insta',{
+            direction:'horizontal',
+            effect:'fade',
+            autoplay:{delay:1500,},
+            loop:'true',
+            slidesPerView:1,
+        })
+
+        let slide4 = new Swiper(".news_event_area",{
             loop:'true',
             slidesPerView:2,
             spaceBetween:10,
-            navigation:{
-                nextEl:'.swiper-button-next',
-                prevEl:'.swiper-button-prev'
-            }
+            // navigation:{
+            //     nextEl:'.swiper-button-next',
+            //     prevEl:'.swiper-button-prev'
+            // }
         })
 
         // const ranking_next_btn = document.querySelector('#ranking_next_btn')

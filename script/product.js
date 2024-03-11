@@ -1,3 +1,16 @@
+/* ---------------------- 장바구니 담기 버튼 클릭시 팝업 -------------------------- */  
+const btn_cart = document.querySelector('.btn_cart')
+const btn_buy = document.querySelector('.btn_buy')
+
+btn_cart.addEventListener('click',function(){
+    const pop_goto_cart = confirm(`장바구니에 담겼습니다.\n장바구니로 이동하시겠습니까?`);
+    if(pop_goto_cart){
+        location.href = './cart.html';
+    }
+})
+btn_buy.addEventListener('click',function(){
+    location.href = './cart.html';
+})
 /* ---------------------- sns 아이콘 클릭시 팝업 -------------------------- */  
 
 const sns_icon = document.querySelectorAll('.sns_icon > a')

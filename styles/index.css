@@ -489,13 +489,13 @@ main .official_area .insta .txt p em {
 main .official_area .insta .banner {display: flex; flex-flow: column nowrap;}
 main .official_area .insta .banner a {}
 main .official_area .insta .banner a img {
-    max-width: 545px; 
+    max-width: 545px;
 }
-main .official_area .insta .banner a:nth-child(1) img {/* display: none; */ position: absolute; left: 0;}
-main .official_area .insta .banner a:nth-child(2) img {display: none; position: absolute; left: 0;}
-main .official_area .insta .banner a:nth-child(3) img {display: none; position: absolute; left: 0;}
-main .official_area .insta .banner a:nth-child(4) img {display: none; position: absolute; left: 0;}
-main .official_area .insta .banner a:nth-child(5) img {display: none; position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(1) img {position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(2) img {position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(3) img {position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(4) img {position: absolute; left: 0;}
+main .official_area .insta .banner a:nth-child(5) img {position: absolute; left: 0;}
 /* sns-icon */
 main .official_area .sns_icon {
     display: flex; flex-flow: column nowrap; 
@@ -625,10 +625,11 @@ main .news_event_area .container .prev_btn {}
 main .news_event_area .container .next_btn {}
 main .news_event_area .container .prev_btn > img {
     /* transform:rotate(180deg); 
-    left: 150px; position:absolute; */
+    left: -5px; position:absolute;
+    z-index: 500; */
 }
 main .news_event_area .container .next_btn > img {
-    /* right: 150px; position:absolute; */
+    /* right: 5px; position:absolute; */
 }
 main .news_event_area .container .prev_btn > img,
 main .news_event_area .container .next_btn > img {

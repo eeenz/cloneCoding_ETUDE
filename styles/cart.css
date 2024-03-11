@@ -1,6 +1,6 @@
 /* 장바구니 페이지 */
 main {}
-main .container {padding: 80px; margin-bottom: 80px;}
+main .container {padding: 150px 80px 80px; margin-bottom: 80px;}
 /*  타이틀 */
 main .container h1 {
     font-size: 2.45rem; font-style: italic; font-weight: 800;

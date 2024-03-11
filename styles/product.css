@@ -4,6 +4,7 @@ main {width:100%; position: relative;}
 main .all_box {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
+    height: auto;
 }
 main .all_box .thumbnails {
     width: 50%;
@@ -18,7 +19,7 @@ main .all_box .thumbnails .small_thumb {
     display: flex; flex-flow: column nowrap; 
     justify-content: flex-start;
     width: 70px;
-    height: 85vh; /* 마지막에 보고 수정필요 */
+    height: 85vh; 
     overflow-y: hidden;
 }
 main .all_box .thumbnails .small_thumb a {}
