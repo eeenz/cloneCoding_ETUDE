@@ -35,7 +35,6 @@ const allInput = document.querySelectorAll('[id^=user_] input')
 const loginBtn = document.querySelector('.login_btn')
 
 
-const validate = () => {
 
     // 아이디 유효성 검사
     userId.addEventListener('blur',()=>{
@@ -94,6 +93,7 @@ const validate = () => {
         }
     })
 
+    const validate = () => {
     // 체크박스 확인
     if (!chkList[0].checked) {
         // 체크박스 검사
@@ -133,12 +133,14 @@ window.addEventListener('scroll', () => {
         rightArea.style.backgroundRepeat = 'no-repeat';
         rightArea.style.backgroundPosition = 'left bottom';
         rightArea.style.backgroundSize = 'contain';
+        rightArea.style.transition = '0.5s'
     } else {
         // 스크롤이 footer 위치를 벗어나면 fixed 적용
         rightArea.style.position = 'fixed';
         rightArea.style.height = '100vh';
         rightArea.style.backgroundSize = 'cover';
         rightArea.style.backgroundPosition = 'left top';
+        rightArea.style.transition = '0.2s'
     }
 });
 

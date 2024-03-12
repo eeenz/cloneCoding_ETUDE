@@ -282,11 +282,11 @@ main .all_box .right_box .info .product .container .btn .num_result .num_box spa
 main .all_box .right_box .info .product .container .btn .btn_area  {
     display: flex;
 }
-main .all_box .right_box .info .product .container .btn .btn_area .btn_cart:hover {
+main .all_box .right_box .info .product .container .btn .btn_area .p_btn_cart:hover {
     background-color:  #F2C6CF;
     transition: 0.7s ease;
 }
-main .all_box .right_box .info .product .container .btn .btn_area .btn_cart {
+main .all_box .right_box .info .product .container .btn .btn_area .p_btn_cart {
     width: 100%; 
     padding: 15px 0;
     background-color: #fff;
@@ -299,12 +299,12 @@ main .all_box .right_box .info .product .container .btn .btn_area .btn_cart {
     font-size: 2rem;
     margin-right: 10px;
 }
-main .all_box .right_box .info .product .container .btn .btn_area .btn_buy:hover {
+main .all_box .right_box .info .product .container .btn .btn_area .p_btn_buy:hover {
     background-color:  #F2C6CF;
     transition: 0.7s ease;
     color:#333;
 }
-main .all_box .right_box .info .product .container .btn .btn_area .btn_buy {
+main .all_box .right_box .info .product .container .btn .btn_area .p_btn_buy {
     width: 100%; 
     padding: 15px 0;
     background-color: #333;
