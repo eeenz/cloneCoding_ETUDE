@@ -1,18 +1,20 @@
 /* 상품 구매페이지 시작 - product */
-main {width:100%; position: relative;}
+main {width:100%;}
 /* 왼쪽 썸네일 영역 */
 main .all_box {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    height: auto;
 }
-main .all_box .thumbnails {
+main .all_box .thumb_nails {
     width: 50%;
     overflow: hidden;
     height: 100vh; 
-    position: sticky; top:0; left: 0;
+    position: sticky; 
+    top:0; 
+    left: 0;
+    z-index: 400;
 }
-main .all_box .thumbnails .small_thumb {
+main .all_box .thumb_nails .small_thumb {
     position: absolute ;
     top: 90px;
     left: 40px;
@@ -21,9 +23,10 @@ main .all_box .thumbnails .small_thumb {
     width: 70px;
     height: 85vh; 
     overflow-y: hidden;
+    z-index: 500;
 }
-main .all_box .thumbnails .small_thumb a {}
-main .all_box .thumbnails .small_thumb a img {
+main .all_box .thumb_nails .small_thumb a {}
+main .all_box .thumb_nails .small_thumb a img {
     overflow: hidden;
     margin-bottom: 5px;
     width: 70px;
@@ -31,76 +34,103 @@ main .all_box .thumbnails .small_thumb a img {
     border: 1px solid #d9d9d9; 
     background: #E7E8EA;
 }
-main .all_box .thumbnails .big_thumb {
+main .all_box .thumb_nails .big_thumb {
     display: flex;
     background: #E7E8EA;
 }
-main .all_box .thumbnails .big_thumb a:nth-child(1) {display: flex;}
-main .all_box .thumbnails .big_thumb a {
-    display: none; 
-    overflow: hidden;
+/* main .all_box .thumb_nails .big_thumb a:nth-child(1) {display: flex;} */
+main .all_box .thumb_nails .big_thumb a {
+    /* overflow: hidden; */
 }
-main .all_box .thumbnails .big_thumb a img {}
+main .all_box .thumb_nails .big_thumb a img {}
 /* 왼쪽 썸네일 - 왼쪽 오른쪽 버튼 */
-main .all_box .thumbnails .btn {}
-main .all_box .thumbnails .btn a:nth-child(1) {
+main .all_box .thumb_nails > .product_var .swiper-scrollbar-drag {
+    background-color: #fff;
+}
+main .all_box .thumb_nails > .product_var {
+    bottom: 30px;
+    background-color: rgba(253, 253, 253, 0.2);
+    height: 2px;
+    padding: 0 100px;
+    width: 100%;
+}
+main .all_box .thumb_nails > .swiper-button-prev {
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ebebeb;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 35px;
+    height: 35px;
+    z-index: 600;
+    left: 0;
+}
+main .all_box .thumb_nails > .swiper-button-next {
+    --swiper-navigation-size: 12px;
+    --swiper-theme-color: #ebebeb;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 35px;
+    height: 35px;
+    z-index: 600;
+    right: 0;
+}
+main .all_box .thumb_nails .btn {}
+main .all_box .thumb_nails .btn a:nth-child(1) {
     position: absolute;
     top: 450px;
     left: 0;
 }
-main .all_box .thumbnails .btn a:nth-child(2) {
+main .all_box .thumb_nails .btn a:nth-child(2) {
     position: absolute;
     top: 450px;
     right: 0;
 }
-main .all_box .thumbnails .btn a {
+main .all_box .thumb_nails .btn a {
     background-color: rgba(0, 0, 0, 0.2);
     width: 40px; height: 40px;
     padding: 20px;
     line-height: 0px;
 }
-main .all_box .thumbnails .btn a i[class*=-angle-] { 
+main .all_box .thumb_nails .btn a i[class*=-angle-] { 
     color:#fff;
     font-size: 12px;
     text-align: center;
     transform: translate(-3px , -6px);
 }
 /* 왼쪽 썸네일 - bar영역 */
-main .all_box .thumbnails .bar {
+main .all_box .thumb_nails .bar {
     position:absolute; z-index: 600;
     bottom:90px; left: 10
     0px;
 }
-main .all_box .thumbnails .bar .longline {
+main .all_box .thumb_nails .bar .longline {
     width: 80%; height: 1px; 
     background-color: #fff;
     display: block;
 }
-main .all_box .thumbnails .bar .shotline {
+main .all_box .thumb_nails .bar .shotline {
     width: 10%; 
     height: 3px;
     background-color: #fff;
 }
-main .all_box .thumbnails .bar .shotline .bar_active {
+main .all_box .thumb_nails .bar .shotline .bar_active {
     height: 3px;
     width: 10%; 
     background-color: #fff;
 }
-main .all_box .thumbnails .bar .shotline span {
+main .all_box .thumb_nails .bar .shotline span {
     height: 1px;
     width: 10%; 
     background-color: #fff;
 }
-main .all_box .thumbnails .bar .shotline span:nth-child(1) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(2) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(3) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(4) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(5) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(6) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(7) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(8) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(9) {}
-main .all_box .thumbnails .bar .shotline span:nth-child(10) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(1) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(2) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(3) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(4) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(5) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(6) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(7) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(8) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(9) {}
+main .all_box .thumb_nails .bar .shotline span:nth-child(10) {}
 /* 오른쪽 상품영역 */
 main .all_box .right_box {
     width: 50%; 

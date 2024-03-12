@@ -11,6 +11,12 @@ btn_cart.addEventListener('click',function(){
 btn_buy.addEventListener('click',function(){
     location.href = './cart.html';
 })
+/* ---------------------- 썸네일 -------------------------- */  
+
+// 작은 썸네일 클릭했을 때 큰썸네일 해당 이미지로 보여주기
+// const small_thumb = document.querySelectorAll('.small_thumb')
+const big_thumb = document.querySelectorAll('.big_thumb')
+
 /* ---------------------- sns 아이콘 클릭시 팝업 -------------------------- */  
 
 const sns_icon = document.querySelectorAll('.sns_icon > a')

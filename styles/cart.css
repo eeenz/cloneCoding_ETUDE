@@ -164,7 +164,7 @@ main .container .product_area .all_price p {
     text-align: right; font-weight: 700;
     margin-bottom: 6px;  font-size: 1.25rem;
 }
-main .container .product_area .all_price .total_price {font-weight: 800;}
+main .container .product_area .all_price .total_price {font-weight: 800; color: #f5426c;}
 /* 버튼 */
 main .container .product_area .btn {float: right;}
 main .container .product_area .btn a:nth-child(1):hover {

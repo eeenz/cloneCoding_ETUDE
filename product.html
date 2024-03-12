@@ -13,9 +13,12 @@
     <link rel="icon" href="./images/logo/faviconV2.png" type="image/x-icon">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
-    <!-- <link rel="stylesheet" href="./styles/common_sub.css"> -->
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/product.css">
 </head>
@@ -23,7 +26,7 @@
     <?php include("header.php"); ?>
     <main>
         <div class="all_box">
-            <div class="thumbnails">
+            <div class="swiper-container thumb_nails">
                 <div class="small_thumb">
                     <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/small/Dear_Darling_Oil_Tint_M_02-70x70.jpg" alt=""></a>
                     <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/small/Dear_Darling_Oil_Tint_M_01-70x70.jpg" alt=""></a>
@@ -38,26 +41,26 @@
                     <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/small/650003631-70x70.png" alt=""></a>
                     <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/small/650003646-70x70.png" alt=""></a>
                 </div>
-                <div class="big_thumb">
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_01.jpg" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_M_02.jpg" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_M_03.jpg" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_06.jpg" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_04.jpg" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_02.jpg" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_01.jpg" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003627.png" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003628.png" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003629.png" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003630.png" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003631.png" alt=""></a>
-                    <a href="#"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003646.png" alt=""></a>
+                <div class="swiper-wrapper big_thumb">
+                    <a href="#" class="swiper-slide slide1"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_01.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide slide2"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_M_02.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide slide3"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_M_03.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide slide4"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_06.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide slide5"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_04.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide slide6"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_02.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide slide7"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/Dear_Darling_Oil_Tint_01.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide slide8"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003627.png" alt=""></a>
+                    <a href="#" class="swiper-slide slide9"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003628.png" alt=""></a>
+                    <a href="#" class="swiper-slide slide10"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003629.png" alt=""></a>
+                    <a href="#" class="swiper-slide slide11"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003630.png" alt=""></a>
+                    <a href="#" class="swiper-slide slide12"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003631.png" alt=""></a>
+                    <a href="#" class="swiper-slide slide13"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003646.png" alt=""></a>
                 </div>
-                <div class="btn">
+                <!-- <div class="btn">
                     <a href="#"><i class="fa-solid fa-angle-left"></i></a>
                     <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div class="bar">
+                </div> -->
+                <!-- <div class="bar">
                     <div class="longline"></div>
                     <div class="shotline">
                         <span class="bar_active"></span>
@@ -74,7 +77,10 @@
                         <span></span>
                         <span></span>
                     </div>
-                </div>
+                </div> -->
+                <div class="swiper-button-prev product_prev"></div>
+                <div class="swiper-button-next product_next"></div>
+                <div class="swiper-scrollbar product_var"></div>
             </div>
             <div class="right_box">
                 <div class="info">
@@ -272,6 +278,31 @@
         </section>
     </main>
     <?php include("footer.php"); ?>
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./script/product.js"></script>
+    <script>
+        let slide6 = new Swiper(".thumb_nails",{
+            direction:'horizontal',
+            // effect:'fade',
+            autoplay:{delay:1800,},
+            loop:'true',
+            slidesPerView:1,
+            navigation:{
+                nextEl:'.product_next',
+                prevEl:'.product_prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type:'progressbar',
+                clickable: true,
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+
+    </script>
 </body>
 </html>
