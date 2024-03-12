@@ -9,7 +9,7 @@ main .container h1 {
 }
 /* ------------ 장바구니가 비어있을 때 ------------- */
 main .container .none_cart {
-    display: none;
+    /* display: none; */
     margin: 0 auto; width: 100%;
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
@@ -116,18 +116,20 @@ main .container .product_area .product .count {
     grid-area: c2;
 }
 main .container .product_area .product .count .btn_result {text-align: center;}
-main .container .product_area .product .count .btn_result #minus {}
+main .container .product_area .product .count .btn_result #minus {padding: 20px 10px 20px 2px;}
 main .container .product_area .product .count .btn_result #minus img {
     width: 10px;
 }
 main .container .product_area .product .count .btn_result #num_count {
     width:40px; height: 22px;
+    text-align: center;
+    color:#111; 
 }
 main .container .product_area .product .count .btn_result #num_count::placeholder{
     text-align: center; 
     color:#111; 
 }
-main .container .product_area .product .count .btn_result #plus {}
+main .container .product_area .product .count .btn_result #plus {padding: 20px 10px;}
 main .container .product_area .product .count .btn_result #plus img {
     width: 10px;
 }
@@ -146,6 +148,8 @@ main .container .product_area .product .count #remove::before {
 main .container .product_area .product .count #remove {
     font-weight: 700; font-size: 0.85rem;
     padding: 0 15px; 
+    margin-left: 10px;
+    /* background-color: aqua; */
 }
 /*  가격 */
 main .container .product_area .product .price {
@@ -165,6 +169,7 @@ main .container .product_area .all_price p {
     margin-bottom: 6px;  font-size: 1.25rem;
 }
 main .container .product_area .all_price .total_price {font-weight: 800; color: #f5426c;}
+main .container .product_area .all_price .total_price p {font-weight: 800; color: #f5426c;display: inline-block; margin-left: 4px;}
 /* 버튼 */
 main .container .product_area .btn {float: right;}
 main .container .product_area .btn a:nth-child(1):hover {
@@ -190,4 +195,7 @@ main .container .product_area .btn a:nth-child(2) {
     margin-left: 10px;
     font-weight: 700;
     color:#f5426c;
+}
+.display_none {
+    display: none;
 }

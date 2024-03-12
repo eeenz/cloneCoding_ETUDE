@@ -15,7 +15,6 @@ document.querySelectorAll('a').forEach(link => {
 /* ---------------------- 체크박스 all 체크 -------------------------- */  
 const chkAll = document.querySelector('#ck_all')
 const chkList = document.querySelectorAll('[id^=ck_list]')
-console.log(chkList)
 
 chkAll.addEventListener('click',()=>{
     if (chkAll.checked){
@@ -31,7 +30,6 @@ const userPwChk = document.querySelector('#user_pw_ck')
 const userEmail = document.querySelector('#user_mail')
 const userPhoneMid = document.querySelector('#user_phone_m')
 const userPhoneLast = document.querySelector('#user_phone_l')
-const errorMassage = document.querySelector('.error_massage')
 const errorBeforeReset = document.querySelectorAll('fieldset > div > span')
 const allInput = document.querySelectorAll('[id^=user_] input')
 const loginBtn = document.querySelector('.login_btn')
@@ -115,5 +113,33 @@ const result = () => {
     }
 };
 loginBtn.addEventListener('click', result);
+
+/* ---------------------- fixed가 footer 만났을 때 전환 -------------------------- */  
+
+const leftArea = document.querySelector('.join_area')
+const rightArea = document.querySelector('.img_container')
+const footerArea = document.querySelector('footer')
+
+const rightAreaHeight = rightArea.offsetHeight;
+const footerTop = footerArea.offsetTop;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset;
+
+    // 스크롤이 footer 위치에 도달하면 fixed 해제
+    if (scrollTop + rightAreaHeight >= footerTop) {
+        rightArea.style.position = 'sticky';
+        rightArea.style.height = 'auto';
+        rightArea.style.backgroundRepeat = 'no-repeat';
+        rightArea.style.backgroundPosition = 'left bottom';
+        rightArea.style.backgroundSize = 'contain';
+    } else {
+        // 스크롤이 footer 위치를 벗어나면 fixed 적용
+        rightArea.style.position = 'fixed';
+        rightArea.style.height = '100vh';
+        rightArea.style.backgroundSize = 'cover';
+        rightArea.style.backgroundPosition = 'left top';
+    }
+});
 
 /* ---------------------- 구분선 -------------------------- */  

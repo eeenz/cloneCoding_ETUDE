@@ -48,4 +48,72 @@ document.querySelectorAll('a').forEach(link => {
         }
     });
 });
+/* ---------------------- 옵션 클릭 시 리스트 출력 -------------------------- */  
+
+const clear = document.querySelector('.clear a')
+const optionList = document.querySelectorAll('.option_list a')
+const optionBox = document.querySelector('.num_result')
+
+clear.classList.add('display_none')
+optionBox.classList.add('display_none')
+
+optionList.forEach((t)=>{
+    t.addEventListener('click',()=>{
+        clear.classList.remove('display_none')
+        optionBox.classList.remove('display_none')
+        clear.addEventListener('click',()=>{
+            clear.classList.add('display_none')
+            optionBox.classList.add('display_none')
+        })
+    })
+})
+
+/* ---------------------- 옵션 증감 증가 -------------------------- */    
+
+const minus = document.querySelector('#minus')
+const plus = document.querySelector('#plus')
+const numCount = document.querySelector('#num_count')
+const text_area = document.querySelector('.num_box > span')
+let total
+let num = 0;
+let price = 11000;
+let delTotal;
+
+// 증가
+plus.addEventListener('click',()=>{
+    if(num < 8){
+        num++ ;
+        numCount.value = num
+        total =  num*price
+        text_area.innerHTML = `<em>${total.toLocaleString('ko-kr')}</em>원`
+    }else{
+        alert('최대 구매 수량입니다.')
+    }
+})
+// 감소
+minus.addEventListener('click',()=>{
+    if(1< num){
+        num--;
+        numCount.value = num
+        total =  num*price
+        text_area.innerHTML = `<em>${total.toLocaleString('ko-kr')}</em>원`
+    }else if(num == 1){
+        text_area.innerHTML = `<em>11,000</em>원`;
+        numCount.value = `1`;
+    }
+})
+
+/* ---------------------- 옵션명 변경 -------------------------- */    
+const optionTitle = document.querySelector('.num_result > p');
+
+optionList.forEach((t, i) => {
+    t.addEventListener('click', () => {
+        // img 태그 art 속성 값 가져오기
+        const artValue = optionList[i].children[0].alt;
+        optionTitle.innerHTML = artValue;
+    });
+});
+
 /* ---------------------- 구분선 -------------------------- */  
+
+

@@ -220,7 +220,7 @@ main .all .img_container {
     background-size: cover;
     background-position: left top;
     height: 100vh;
-    position: fixed; right: 0; top: 0;
+    position: sticky; right: 0; bottom: 0;
 }
 main .all .img_container .logo {
     background-image: url(../images/category/about_etude/about_etude_title2023.png);

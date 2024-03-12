@@ -31,4 +31,32 @@ login_btn.addEventListener('click',()=>{
     }
 })
 
+/* ---------------------- fixed가 footer 만났을 때 전환 -------------------------- */  
+
+const leftArea = document.querySelector('.login_area')
+const rightArea = document.querySelector('.img_container')
+const footerArea = document.querySelector('footer')
+
+const rightAreaHeight = rightArea.offsetHeight;
+const footerTop = footerArea.offsetTop;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset;
+
+    // 스크롤이 footer 위치에 도달하면 fixed 해제
+    if (scrollTop + rightAreaHeight >= footerTop) {
+        rightArea.style.position = 'sticky';
+        rightArea.style.height = 'auto';
+        rightArea.style.backgroundRepeat = 'no-repeat';
+        rightArea.style.backgroundPosition = 'left bottom';
+        rightArea.style.backgroundSize = 'contain';
+    } else {
+        // 스크롤이 footer 위치를 벗어나면 fixed 적용
+        rightArea.style.position = 'fixed';
+        rightArea.style.height = '100vh';
+        rightArea.style.backgroundSize = 'cover';
+        rightArea.style.backgroundPosition = 'left top';
+    }
+});
+
 /* ---------------------- 구분선 -------------------------- */  

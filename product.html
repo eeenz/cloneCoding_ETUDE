@@ -56,28 +56,6 @@
                     <a href="#" class="swiper-slide slide12"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003631.png" alt=""></a>
                     <a href="#" class="swiper-slide slide13"><img src="./images/category/single_page/Dear_Darling_Oil_Tint/big/650003646.png" alt=""></a>
                 </div>
-                <!-- <div class="btn">
-                    <a href="#"><i class="fa-solid fa-angle-left"></i></a>
-                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-                </div> -->
-                <!-- <div class="bar">
-                    <div class="longline"></div>
-                    <div class="shotline">
-                        <span class="bar_active"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div> -->
                 <div class="swiper-button-prev product_prev"></div>
                 <div class="swiper-button-next product_next"></div>
                 <div class="swiper-scrollbar product_var"></div>
@@ -115,12 +93,12 @@
                             <a href="#">OPTION</a>
                         </div>
                         <div class="option_list">
-                            <a href="#"><img src="./images/category/cate_new/650003627_aa0016.jpg" alt="리얼체리"></a>
-                            <a href="#"><img src="./images/category/cate_new/650003628_77000f.jpg" alt="플럼베리"></a>
-                            <a href="#"><img src="./images/category/cate_new/650003629_c10046.jpg" alt="네온핑크"></a>
-                            <a href="#"><img src="./images/category/cate_new/650003630_c4331d.jpg" alt="스윗애플"></a>
-                            <a href="#"><img src="./images/category/cate_new/650003631_fbbcce.jpg" alt="레드오일"></a>
-                            <a href="#"><img src="./images/category/cate_new/650003646_ffb5df.jpg" alt="핑크오일"></a>
+                            <a href="#"><img src="./images/category/cate_new/650003627_aa0016.jpg" alt="리얼체리 Real Cherry"></a>
+                            <a href="#"><img src="./images/category/cate_new/650003628_77000f.jpg" alt="플럼베리 Plum Berry"></a>
+                            <a href="#"><img src="./images/category/cate_new/650003629_c10046.jpg" alt="네온핑크 Neon Pink"></a>
+                            <a href="#"><img src="./images/category/cate_new/650003630_c4331d.jpg" alt="스윗애플 Sweet Apple"></a>
+                            <a href="#"><img src="./images/category/cate_new/650003631_fbbcce.jpg" alt="레드오일 Red Oil"></a>
+                            <a href="#"><img src="./images/category/cate_new/650003646_ffb5df.jpg" alt="핑크오일 Pink Oil"></a>
                         </div>
                         <div class="clear">
                             <a href="#">Clear</a>
@@ -131,13 +109,15 @@
                                     <p>리얼체리 Real Cherry <em></em></p>
                                     <div class="num_box">
                                         <button type="button" id="minus"><img src="./images/icon/delete.png" alt=""></button>
-                                        <input type="text" id="num_count" readonly>
+                                        <input type="text" id="num_count" readonly placeholder="1">
                                         <button type="button" id="plus"><img src="./images/icon/add.png" alt=""></button>
-                                        <span><em>16,900</em>원</span>
+                                        <span><em>11,000</em>원</span>
                                     </div>
                                 </div>
-                                <button type="button" class="btn_cart">Add to Cart</button>
-                                <button type="button" class="btn_buy">Buy Now</button>
+                                <div class="btn_area">
+                                    <button type="button" class="btn_cart">Add to Cart</button>
+                                    <button type="button" class="btn_buy">Buy Now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -285,8 +265,7 @@
     <script>
         let slide6 = new Swiper(".thumb_nails",{
             direction:'horizontal',
-            // effect:'fade',
-            autoplay:{delay:1800,},
+            // autoplay:{delay:1800,},
             loop:'true',
             slidesPerView:1,
             navigation:{
