@@ -15,51 +15,133 @@ document.querySelectorAll('a').forEach(link => {
 const userId = document.querySelector('#user_id')
 const userPw = document.querySelector('#user_pw')
 const userPwChk = document.querySelector('#user_pw_ck')
-const useMail = document.querySelector('#user_name')
-const errorMassage = document.querySelectorAll('.error_massage'); // 에러 메시지 출력 요소
+const userEmail = document.querySelector('#user_mail')
+const userPhoneMid = document.querySelector('#user_phone_m')
+const userPhoneLast = document.querySelector('#user_phone_l')
+const errorMassage = document.querySelector('.error_massage')
+const errorBeforeReset = document.querySelectorAll('fieldset > div > span')
+const allInput = document.querySelectorAll('fieldset input')
+const loginBtn = document.querySelector('.login_btn')
+console.log(allInput)
 
 const validate = () => {
-// 아이디 유효성 검사
-const idRegex = /^[a-z0-9]{4,16}$/;
-if (!idRegex.test(userId.value)) {
-    errorMassage.innerHTML = '아이디는 영문 소문자와 숫자 4~16자로 입력해야 합니다.';
-    return false;
-}
+    // 아이디 유효성 검사
+    const idRegex = /^[a-z0-9]{4,16}$/;
+    if (!idRegex.test(userId.value)) {
+        // userId.value = '';
+        errorBeforeReset[0].classList.add('error_massage');
+        errorBeforeReset[0].innerHTML = '아이디는 영문 소문자와 숫자 4-16자로 입력해야 합니다.';
+        return false;
+    }
 
-// 비밀번호 유효성 검사
-const pwRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{10,16}$/;
-if (!pwRegex.test(userPw.value)) {
-    errorMassage.innerHTML = '비밀번호는 영문 대소문자, 숫자, 특수문자 중 2가지 이상 조합하여 10~16자로 입력해야 합니다.';
-    return false;
-}
+    // 비밀번호 유효성 검사
+    const pwRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{10,16}$/;
+    if (!pwRegex.test(userPw.value)) {
+        // userPw.value = '';
+        errorBeforeReset[1].classList.add('error_massage');
+        errorBeforeReset[1].innerHTML = '영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10-16자';
+        return false;
+    }
 
-// 비밀번호 확인
-if (userPw.value !== userPwChk.value) {
-    errorMassage.innerHTML = '비밀번호가 일치하지 않습니다.';
-    return false;
-}
+    // 비밀번호 일치하는지 확인
+    if (userPw.value !== userPwChk.value) {
+        // userPwChk.value = '';
+        errorBeforeReset[2].classList.add('error_massage');
+        errorBeforeReset[2].innerHTML = '비밀번호가 일치하지 않습니다.';
+        return false;
+    }
 
-// 이메일 유효성 검사
-const emailRegex = /^[\w-]+@[\w-]+(\.[w-]+)+$/;
-if (!emailRegex.test(userEmail.value)) {
-    errorMassage.innerHTML = '이메일 주소 형식이 올바르지 않습니다.';
-    return false;
-}
+    // 이메일 유효성 검사
+    const emailRegex = /^[\w-]+@[\w-]+(\.[w-]+)+$/;
+    if (!emailRegex.test(userEmail.value)) {
+        errorBeforeReset[3].classList.add('error_massage');
+        errorBeforeReset[3].innerHTML = '이메일 주소 형식이 올바르지 않습니다.';
+        return false;
+    }
 
-// 모든 유효성 검사를 통과하면 true 반환
-return true;
+    // 핸드폰 번호 유효성 검사 
+    const phoneRegex = /^[0-9]+$/;
+    if (!phoneRegex.test(userPhoneMid.value)) {
+        userPhoneMid.style.color = '#d0057d'
+        return false;
+    }
+    if (!phoneRegex.test(userPhoneLast.value)) {
+        userPhoneLast.style.color = '#d0057d'
+        return false;
+    }
+    return true;
 };
-
-const submitForm = (event) => {
-event.preventDefault();
-
-if (!validate()) {
-    return;
-}
-
-// 유효성 검사를 통과하면 회원가입 처리
-// ...
+const result = (event) => {
+    event.preventDefault();
+    if (!validate()) {
+        allInput.value = '';
+        alert('입력하신 정보가 올바르지 않습니다\n정보를 다시 확인해주세요.');
+    }else{
+        allInput.value = '';
+        alert('회원가입을 환영합니다.😊');
+        window.location = './index.html';
+    }
 };
+loginBtn.addEventListener('click', result);
 
-// document.querySelector('form').addEventListener('submit', submitForm);
+// loginBtn.addEventListener('click',()=>{
+//     // 아이디 유효성 검사
+//     const idRegex = /^[a-z0-9]{4,16}$/;
+//     if (idRegex !== userId.value) {
+//         userId.value = '';
+//         errorBeforeReset[0].classList.add('error_massage');
+//         errorBeforeReset[0].innerHTML = '아이디는 영문 소문자와 숫자 4-16자로 입력해야 합니다.';
+//         // errorMassage.innerHTML = '아이디는 영문 소문자와 숫자 4~16자로 입력해야 합니다.';
+//     }
+
+//     // 비밀번호 유효성 검사
+//     const pwRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{10,16}$/;
+//     if (pwRegex !== userPw.value) {
+//         // userPw.value = '';
+//         errorBeforeReset[1].classList.add('error_massage');
+//         errorBeforeReset[1].innerHTML = '영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10-16자';
+//         // errorMassage.innerHTML = '비밀번호는 영문 대소문자, 숫자, 특수문자 중 2가지 이상 조합하여 10~16자로 입력해야 합니다.';
+//     }
+
+//     // 비밀번호 일치하는지 확인
+//     if (userPw.value !== userPwChk.value) {
+//         // userPwChk.value = '';
+//         errorBeforeReset[2].classList.add('error_massage');
+//         errorBeforeReset[2].innerHTML = '비밀번호가 일치하지 않습니다.';
+//     }
+
+//     // 이메일 유효성 검사
+//     const emailRegex = /^[\w-]+@[\w-]+(\.[w-]+)+$/;
+//     if (emailRegex.test !== userEmail.value) {
+//         errorBeforeReset[3].classList.add('error_massage');
+//         errorBeforeReset[3].innerHTML = '이메일 주소 형식이 올바르지 않습니다.';
+//     }
+
+//     // 핸드폰 번호 유효성 검사 
+//     const phoneRegex = /^[0-9]+$/;
+//     if (phoneRegex !== userPhoneMid.value) {
+//         userPhoneMid.style.color = '#d0057d'
+//     }
+//     if (phoneRegex !== userPhoneLast.value) {
+//         userPhoneLast.style.color = '#d0057d'
+//     }
+// });
+
+
+    // allInput.value = '';
+    // alert('회원가입을 환영합니다.😊')
+    // window.location = './index.html'
+
+/* ---------------------- 체크박스 all 체크 -------------------------- */  
+const chkAll = document.querySelector('#ck_all')
+const chkList = document.querySelectorAll('[id^=ck_list]')
+console.log(chkList)
+
+chkAll.addEventListener('click',()=>{
+    if (chkAll.checked){
+        for(let i of chkList){i.checked = true}
+    }else {
+        for(let i of chkList){i.checked = false}
+    }
+})
 /* ---------------------- 구분선 -------------------------- */  

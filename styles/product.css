@@ -10,7 +10,7 @@ main .all_box .thumbnails {
     width: 50%;
     overflow: hidden;
     height: 100vh; 
-    position: sticky; top:0;
+    position: sticky; top:0; left: 0;
 }
 main .all_box .thumbnails .small_thumb {
     position: absolute ;
