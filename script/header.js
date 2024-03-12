@@ -10,7 +10,6 @@ const header_right = document.querySelector('header > .right')
 const search_btn = header_right.querySelector('.btn_search')
 const search_area = document.querySelector('.search_bg')
 const close_btn = search_area.querySelector('.search_bg .btn_x')
-console.log(header_left,header_right,'---',search_btn,search_area,close_btn);
 
 // 검색버튼 사라지게하기 
 search_area.style = 'display:none';

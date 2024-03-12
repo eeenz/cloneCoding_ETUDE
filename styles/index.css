@@ -554,7 +554,7 @@ main .news_event_area .container .item {
     border-radius: 6px; 
 }
 /* img background 로 처리 */
-main .news_event_area .container .item:nth-child(1) > a {
+main .news_event_area .container .slide1 > a {
     background-image: url('../images/main_img/news/EP01_002_main_news_01_recycle.jpg');
     background-position:center right;
     background-repeat:no-repeat;
@@ -562,7 +562,7 @@ main .news_event_area .container .item:nth-child(1) > a {
     background-size:cover;
     display: inline-block;
 }
-main .news_event_area .container .item:nth-child(2) > a {
+main .news_event_area .container .slide2 > a {
     background: url('../images/main_img/news/EP01_002_main_news_02_vegan.jpg') ;
     background-repeat:no-repeat;
     background-position:center right;
@@ -570,7 +570,7 @@ main .news_event_area .container .item:nth-child(2) > a {
     background-size:cover;
     display: inline-block;
 }
-main .news_event_area .container .item:nth-child(3) > a {
+main .news_event_area .container .slide3 > a {
     background-image: url('../images/main_img/news/EP01_002_main_news_03_foundationFactory.jpg');
     background-position:center right;
     background-repeat:no-repeat;
@@ -578,7 +578,7 @@ main .news_event_area .container .item:nth-child(3) > a {
     background-size:cover;
     display: inline-block;
 }
-main .news_event_area .container .item:nth-child(4) > a {
+main .news_event_area .container .slide4 > a {
     background: url('../images/main_img/news/EP01_002_main_news_04_brand.jpg') ;
     background-repeat:no-repeat;
     background-position:center right;
