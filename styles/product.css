@@ -249,38 +249,43 @@ main .all_box .right_box .info .product .container .btn {
     flex-flow: column nowrap;
     justify-content: center;
 }
-main .all_box .right_box .info .product .container .btn .num_result {
+main .all_box .right_box .info .product .container .btn .num_result .opt_list {
     display: flex; justify-content: space-between; align-items: center;
     padding: 0 4px 10px;
 }
-main .all_box .right_box .info .product .container .btn .num_result p {
+main .all_box .right_box .info .product .container .btn .num_result .opt_list p {
     font-size: 1.5rem; 
 }
-main .all_box .right_box .info .product .container .btn .num_result p em {
+main .all_box .right_box .info .product .container .btn .num_result .opt_list p em {
     margin-left: 15px; font-weight: 800; font:1.25rem;
 }
-main .all_box .right_box .info .product .container .btn .num_result .num_box button img {width: 11px;}
-main .all_box .right_box .info .product .container .btn .num_result .num_box #minus {}
-main .all_box .right_box .info .product .container .btn .num_result .num_box #num_count { 
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box button img {width: 11px;}
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box #minus {}
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box #num_count { 
     text-align: center;
     width: 35px;
     font-weight: 800;
     font-size: 1rem;
 }
-main .all_box .right_box .info .product .container .btn .num_result .num_box #num_count::placeholder { 
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box #num_count::placeholder { 
     width: 35px;
     text-align: center;
     font-weight: 800;
     font-size: 1rem;
     color:#333;
 }
-main .all_box .right_box .info .product .container .btn .num_result .num_box #plus {}
-main .all_box .right_box .info .product .container .btn .num_result .num_box span {
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box #plus {}
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box span {
     margin-left: 25px; 
 }
-main .all_box .right_box .info .product .container .btn .num_result .num_box span em {font-size: 1.25rem; font-weight: 700; margin-right: 3px;}
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box span em {font-size: 1.25rem; font-weight: 700; margin-right: 3px;}
 main .all_box .right_box .info .product .container .btn .btn_area  {
     display: flex;
+}
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box a {}
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box a img {
+    transform: translateY(6px);
+    margin-left: 8px;
 }
 main .all_box .right_box .info .product .container .btn .btn_area .p_btn_cart:hover {
     background-color:  #F2C6CF;

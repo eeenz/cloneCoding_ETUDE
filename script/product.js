@@ -51,13 +51,16 @@ document.querySelectorAll('a').forEach(link => {
 /* ---------------------- 옵션 클릭 시 리스트 출력 -------------------------- */  
 
 const clear = document.querySelector('.clear a')
-const optionList = document.querySelectorAll('.option_list a')
+const listClear = document.querySelector('.num_box > a')
+const optionName = document.querySelectorAll('.option_list a')
 const optionBox = document.querySelector('.num_result')
+const optionList = document.querySelector('.opt_list')
 
 clear.classList.add('display_none')
 optionBox.classList.add('display_none')
+// optionList.classList.add('display_none')
 
-optionList.forEach((t)=>{
+optionName.forEach((t)=>{
     t.addEventListener('click',()=>{
         clear.classList.remove('display_none')
         optionBox.classList.remove('display_none')
@@ -65,8 +68,14 @@ optionList.forEach((t)=>{
             clear.classList.add('display_none')
             optionBox.classList.add('display_none')
         })
+        listClear.addEventListener('click',()=>{
+            optionList.remove();
+        })
     })
 })
+
+/* ---------------------- 옵션 클릭 했을 때 해당 상품 리스트 쌓이게 하기 -------------------------- */  
+
 
 /* ---------------------- 옵션 증감 증가 -------------------------- */    
 
@@ -104,12 +113,12 @@ minus.addEventListener('click',()=>{
 })
 
 /* ---------------------- 옵션명 변경 -------------------------- */    
-const optionTitle = document.querySelector('.num_result > p');
+const optionTitle = document.querySelector('.opt_list > p');
 
-optionList.forEach((t, i) => {
+optionName.forEach((t, i) => {
     t.addEventListener('click', () => {
         // img 태그 art 속성 값 가져오기
-        const artValue = optionList[i].children[0].alt;
+        const artValue = optionName[i].children[0].alt;
         optionTitle.innerHTML = artValue;
     });
 });
