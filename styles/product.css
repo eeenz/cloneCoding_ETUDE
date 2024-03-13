@@ -260,21 +260,26 @@ main .all_box .right_box .info .product .container .btn .num_result .opt_list p 
     margin-left: 15px; font-weight: 800; font:1.25rem;
 }
 main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box button img {width: 11px;}
-main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box #minus {}
-main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box #num_count { 
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box .minus {
+    padding: 10px 10px;
+    width: 30px;
+}
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box .num_count { 
     text-align: center;
-    width: 35px;
+    width: 36px;
     font-weight: 800;
     font-size: 1rem;
 }
-main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box #num_count::placeholder { 
-    width: 35px;
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box .num_count::placeholder { 
     text-align: center;
     font-weight: 800;
     font-size: 1rem;
     color:#333;
 }
-main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box #plus {}
+main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box .plus {
+    padding: 10px 10px;
+    width: 30px;
+}
 main .all_box .right_box .info .product .container .btn .num_result .opt_list .num_box span {
     margin-left: 25px; 
 }
