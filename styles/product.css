@@ -135,8 +135,15 @@ main .all_box .thumb_nails .bar .shotline span:nth-child(8) {}
 main .all_box .thumb_nails .bar .shotline span:nth-child(9) {}
 main .all_box .thumb_nails .bar .shotline span:nth-child(10) {}
 /* 오른쪽 상품영역 */
+main .all_box .right_box::-webkit-scrollbar {
+    display: none;
+}
 main .all_box .right_box {
     width: 50%; 
+    height: 100vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
 main .all_box .right_box .info {
     width: 100%; 
@@ -292,9 +299,12 @@ main .all_box .right_box .info .product .container .btn .num_result .opt_list .n
     transform: translateY(6px);
     margin-left: 8px;
 }
-main .all_box .right_box .info .product .container .btn .btn_area .p_btn_cart:hover {
-    background-color:  #F2C6CF;
-    transition: 0.7s ease;
+main .all_box .right_box .info .product .container .btn .btn_area .p_btn_cart:hover {}
+main .all_box .right_box .info .product .container .btn .opt_total {
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: 800;
+    padding-top: 10px;
 }
 main .all_box .right_box .info .product .container .btn .btn_area .p_btn_cart {
     width: 100%; 
