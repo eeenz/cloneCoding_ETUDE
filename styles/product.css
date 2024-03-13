@@ -301,10 +301,16 @@ main .all_box .right_box .info .product .container .btn .num_result .opt_list .n
 }
 main .all_box .right_box .info .product .container .btn .btn_area .p_btn_cart:hover {}
 main .all_box .right_box .info .product .container .btn .opt_total {
-    font-size: 1.5rem;
+    font-size: 2.15rem;
     text-align: right;
     font-weight: 800;
     padding-top: 10px;
+}
+main .all_box .right_box .info .product .container .btn .opt_total em {
+    margin-right: 10px;
+    font-weight: 700;
+    color:#333;
+    font-size: 1.25rem;
 }
 main .all_box .right_box .info .product .container .btn .btn_area .p_btn_cart {
     width: 100%; 
