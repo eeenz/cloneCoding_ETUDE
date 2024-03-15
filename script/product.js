@@ -264,6 +264,10 @@ const optionCreate = () => {
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
+                // test
+                creDelTotal_l = cre_num*cre_price;
+                console.log(creDelTotal_l)
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -280,6 +284,10 @@ const optionCreate = () => {
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
+                // test
+                creDelTotal_l = cre_num*cre_price;
+                console.log(creDelTotal_l)
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -350,6 +358,10 @@ const optionCreate = () => {
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
+                // test
+                creDelTotal_l = cre_num*cre_price;
+                console.log(creDelTotal_l)
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -363,6 +375,10 @@ const optionCreate = () => {
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
+                // test
+                creDelTotal_l = cre_num*cre_price;
+                console.log(creDelTotal_l)
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -418,7 +434,7 @@ const optionCreate = () => {
             itemBtnClear.innerHTML = `<img src="./images/icon/ico-clear.svg" alt="">`;
 
             // createElement 버튼 재설정
-            let cre_total
+            let cre_total ;
             let cre_num = 0;
             let cre_price = 11000;
 
@@ -433,6 +449,10 @@ const optionCreate = () => {
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
+                // test
+                creDelTotal_l = cre_num*cre_price;
+                console.log(creDelTotal_l)
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
 
             // 감소
@@ -447,6 +467,10 @@ const optionCreate = () => {
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
+                // test
+                creDelTotal_l = cre_num*cre_price;
+                console.log(creDelTotal_l)
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -517,6 +541,10 @@ const optionCreate = () => {
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
+                // test
+                creDelTotal_l = cre_num*cre_price;
+                console.log(creDelTotal_l)
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -530,6 +558,10 @@ const optionCreate = () => {
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
+                // test
+                creDelTotal_l = cre_num*cre_price;
+                console.log(creDelTotal_l)
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -626,11 +658,13 @@ const optionCreate = () => {
 }
 optionCreate();
 
-optionName.forEach((t)=>{
-    t.addEventListener('click',()=>{
+for(let i of optionName){
+    i.addEventListener('click',()=>{
         showTotal()
+        // order = Number(itemPrice.firstElementChild.innerText)
+        console.log(allBoxPrice)
     })
-})
+}
 
 // 큰 clear버튼 클릭했을 때
 clear.addEventListener('click',()=>{

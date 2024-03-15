@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <style>
+        .order {border-bottom:1px solid gray;}
+        .price {font-weight:800;}
+        .plus {cursor:pointer; background:gray; color:white;}
+    </style>
+</head>
+<body>
+    
+<div class="option">
+    <div class="opt opt1"><span>3000</span>원</div>
+    <div class="opt opt2"><span>5000</span>원</div>
+</div>
+<div class="order_list">
+    <!-- 옵션 클릭 시 삽입되는 위치 -->
+</div>
+<div class="total"><span class="price">0</span>원</div>
+
+<script>
+
+    const opt = document.querySelectorAll('.option .opt')
+    const order_list = document.querySelector('.order_list')
+    const total_price = document.querySelector('.total .price')
+    let order = ''
+    let total = 0
+    // let count = 0
+
+    for(let i of opt){
+        i.addEventListener('click',()=>{
+            // 클릭한 option에 대한 주문 리스트 출력
+            order = Number(i.firstElementChild.innerText)
+            const p = document.createElement('p')
+            p.classList.add('order')
+            p.innerHTML = `<span>${order}</span>`
+
+            //플러스버튼 추가
+            const plus = document.createElement('span')
+            plus.classList.add('plus')
+            plus.innerHTML = '+'
+            
+            //주문리스트+플러스 버튼 삽입
+            p.appendChild(plus)
+            order_list.appendChild(p)
+            let count = 1; //수량 초기화
+
+            //주문리스트에 대한 최종 가격 출력
+            total += order
+            total_price.innerHTML = total.toLocaleString('ko-kr')
+            console.log(total, typeof(order), typeof(total))
+
+            //추가 버튼 이벤트
+            const plusDOM = document.querySelectorAll('.plus')
+            for(let p of plusDOM){
+                p.addEventListener('click',function(){
+                    console.log('가격', Number(this.parentElement.firstElementChild.innerText))
+                    const itemPrice = Number(this.parentElement.firstElementChild.innerText);
+                    total += itemPrice;
+                    total_price.innerHTML = total.toLocaleString('ko-kr');
+                })
+            }
+        })
+    }    
+
+</script>
+</body>
+</html>
