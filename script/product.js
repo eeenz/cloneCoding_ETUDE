@@ -94,25 +94,25 @@ let listResult5 = false;
 let listResult6 = false;
 
 let creDelTotalAll = 0;
-let creDelTotal = 0;
-let creDelTotal_l = 0;
+let creDelTotal_1 = 0;
 let creDelTotal_2 = 0;
 let creDelTotal_3 = 0;
 let creDelTotal_4 = 0;
 let creDelTotal_5 = 0;
 let creDelTotal_6 = 0;
-// creDelTotalAll = creDelTotal_l + creDelTotal_2 + creDelTotal_3 + creDelTotal_4 + creDelTotal_5 + creDelTotal_6;
+// creDelTotalAll = creDelTotal_1 + creDelTotal_2 + creDelTotal_3 + creDelTotal_4 + creDelTotal_5 + creDelTotal_6;
+
+let valTotalAll;
+let val_1;
+let val_2;
+let val_3;
+let val_4;
+let val_5;
+let val_6;
 
 clear.classList.add('display_none')
 optionBox.classList.add('display_none')
 opt_total.classList.add('display_none')
-
-function showTotal (){
-    opt_total.classList.remove('display_none')
-    opt_total.innerHTML = `<em>TOTAL</em> 11,000원`
-}
-
-
 
 function optionCreate (){
     // 개별로 작성 옵션 1
@@ -173,9 +173,10 @@ function optionCreate (){
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
-                // test
-                creDelTotal_l = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                // 매개변수 전달위치
+                creDelTotal_1 = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_1.toLocaleString('ko-kr')}원`
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -188,9 +189,10 @@ function optionCreate (){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
-                // test
-                creDelTotal_l = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                // 매개변수 전달위치
+                creDelTotal_1 = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_1.toLocaleString('ko-kr')}원`
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -200,6 +202,7 @@ function optionCreate (){
             })
             listResult1 = !listResult1;
         } 
+        
     })
 
     // 개별로 작성 옵션 2
@@ -260,9 +263,9 @@ function optionCreate (){
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
-                // test
+                // 매개변수 전달위치
                 creDelTotal_2 = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_2.toLocaleString('ko-kr')}원`
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -275,9 +278,9 @@ function optionCreate (){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
-                // test
+                // 매개변수 전달위치
                 creDelTotal_2 = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_2.toLocaleString('ko-kr')}원`
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -348,9 +351,9 @@ function optionCreate (){
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
-                // test
+                // 매개변수 전달위치
                 creDelTotal_3 = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_3.toLocaleString('ko-kr')}원`
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -364,9 +367,9 @@ function optionCreate (){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
-                // test
+                // 매개변수 전달위치
                 creDelTotal_3 = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_3.toLocaleString('ko-kr')}원`
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -437,9 +440,9 @@ function optionCreate (){
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
-                // test
+                // 매개변수 전달위치
                 creDelTotal_4 = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_4.toLocaleString('ko-kr')}원`
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
 
             // 감소
@@ -454,9 +457,9 @@ function optionCreate (){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
-                // test
+                // 매개변수 전달위치
                 creDelTotal_4 = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_4.toLocaleString('ko-kr')}원`
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -523,13 +526,13 @@ function optionCreate (){
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    creDelTotal = cre_total;
+                    creDelTotal_5 = cre_total;
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
-                // test
-                creDelTotal = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal.toLocaleString('ko-kr')}원`
+                // 매개변수 전달위치
+                creDelTotal_5 = cre_num*cre_price;
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -538,14 +541,14 @@ function optionCreate (){
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    creDelTotal = cre_total;
+                    creDelTotal_5 = cre_total;
                 }else if(cre_num == 1){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
-                // test
-                creDelTotal = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal.toLocaleString('ko-kr')}원`
+                // 매개변수 전달위치
+                creDelTotal_5 = cre_num*cre_price;
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -576,6 +579,11 @@ function optionCreate (){
             let itemPrice = document.createElement('span') //가격넣을 span 생성
             let itemBtnClear = document.createElement('a') //x버튼 넣을 a생성
 
+            // createElement 버튼 재설정
+            let cre_total
+            let cre_num = 1;
+            let cre_price = 11000;
+
             // 클릭대상 옵션리스트 클래스 추가
             itemWrap.classList.add('opt_list'); 
             itemTitle.classList.add('opt_title'); 
@@ -592,7 +600,7 @@ function optionCreate (){
             itemBtnWrap.appendChild(btnMinus)
             btnMinus.innerHTML = `<img src="./images/icon/delete.png" alt="">`;
             itemBtnWrap.appendChild(inputCount)
-            inputCount.value = 1;
+            inputCount.value = cre_num;
             itemBtnWrap.appendChild(btnPlus)
             btnPlus.innerHTML = `<img src="./images/icon/add.png" alt="">`;
             itemBtnWrap.appendChild(itemPrice)
@@ -600,10 +608,6 @@ function optionCreate (){
             itemBtnWrap.appendChild(itemBtnClear)
             itemBtnClear.innerHTML = `<img src="./images/icon/ico-clear.svg" alt="">`;
 
-            // createElement 버튼 재설정
-            let cre_total
-            let cre_num = 0;
-            let cre_price = 11000;
 
             // 증가
             btnPlus.addEventListener('click',()=>{
@@ -612,13 +616,15 @@ function optionCreate (){
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    creDelTotal = cre_total;
+                    creDelTotal_6 = cre_total;
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
-                // test
-                creDelTotal = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal.toLocaleString('ko-kr')}원`
+                // 매개변수 전달위치
+                creDelTotal_6 = cre_num*cre_price;
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
+                val_1 = cre_num
+                console.log(inputCount.value,val_1)
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -627,14 +633,19 @@ function optionCreate (){
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    creDelTotal = cre_total;
+                    creDelTotal_6 = cre_total;
+                    val_1 = inputCount.value;
                 }else if(cre_num == 1){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
-                    inputCount.value = `1`;
+                    inputCount.value = 1;
+                    val_1 = inputCount.value;
                 }
-                // test
-                creDelTotal = cre_num*cre_price;
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal.toLocaleString('ko-kr')}원`
+                // 매개변수 전달위치
+                creDelTotal_6 = cre_num*cre_price;
+                all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
+                val_1 = cre_num;
+                valRetrun (val_1)
+                console.log(inputCount.value,val_1)
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -645,17 +656,32 @@ function optionCreate (){
             listResult6 = !listResult6;
         } 
     })
-    // 최종 가격 출력
-    creDelTotalAll += creDelTotal;
-    opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotalAll.toLocaleString('ko-kr')}원`
 }
 optionCreate();
 
+// 각 옵션마다 가격을 최종 토탈 값에 전달하는 매개변수
+function all (cre1,cre2,cre3,cre4,cre5,cre6){
+    creDelTotalAll = cre1 + cre2 + cre3 + cre4 + cre5 + cre6
+    opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotalAll.toLocaleString('ko-kr')}원`
+    return console.log(creDelTotalAll)
+}
+
+// value 값 전달받는 매개변수
+// function valRetrun (v1,v2,v3,v4,v5,v6){
+//     valTotalAll = (v1 + v2 + v3 + v4 + v5 + v6) * 11000
+function valRetrun (v1){
+    valTotalAll = v1 * 11000
+    opt_total.innerHTML = `<em>TOTAL</em> ${valTotalAll.toLocaleString('ko-kr')}원`
+    return console.log(valTotalAll)
+}
+
+// 옵션 선택했을 때
 for(let i of optionName){
     i.addEventListener('click',()=>{
-        showTotal()
-        // order = Number(itemPrice.firstElementChild.innerText)
-        console.log(allBoxPrice)
+        opt_total.classList.remove('display_none')
+        val_1 = 1;
+        all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
+        opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotalAll.toLocaleString('ko-kr')}원`
     })
 }
 
@@ -675,5 +701,4 @@ optionName.forEach((t, i) => {
         optionTitle.innerHTML = artValue;
     });
 }); */
-
 /* ---------------------- 구분선 -------------------------- */  
