@@ -94,6 +94,7 @@ let listResult5 = false;
 let listResult6 = false;
 
 let creDelTotalAll = 0;
+let creDelTotal = 0;
 let creDelTotal_l = 0;
 let creDelTotal_2 = 0;
 let creDelTotal_3 = 0;
@@ -111,8 +112,9 @@ function showTotal (){
     opt_total.innerHTML = `<em>TOTAL</em> 11,000원`
 }
 
-const optionCreate = () => {
-    
+
+
+function optionCreate (){
     // 개별로 작성 옵션 1
     optionName[0].addEventListener('click',()=>{
 
@@ -173,7 +175,6 @@ const optionCreate = () => {
                 }
                 // test
                 creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
                 opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             // 감소
@@ -189,7 +190,6 @@ const optionCreate = () => {
                 }
                 // test
                 creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
                 opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
             })
             
@@ -257,17 +257,12 @@ const optionCreate = () => {
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    // test
-                    creDelTotal_2 = cre_num*cre_price;
-                    console.log(creDelTotal_2)
-                    opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_2.toLocaleString('ko-kr')}원`
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
                 // test
-                creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                creDelTotal_2 = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_2.toLocaleString('ko-kr')}원`
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -276,18 +271,13 @@ const optionCreate = () => {
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    // test
-                    creDelTotal_2 = cre_num*cre_price;
-                    console.log(creDelTotal_2)
-                    opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_2.toLocaleString('ko-kr')}원`
                 }else if(cre_num == 1){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
                 // test
-                creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                creDelTotal_2 = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_2.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -359,9 +349,8 @@ const optionCreate = () => {
                     alert('최대 구매 수량입니다.')
                 }
                 // test
-                creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                creDelTotal_3 = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_3.toLocaleString('ko-kr')}원`
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -376,9 +365,8 @@ const optionCreate = () => {
                     inputCount.value = `1`;
                 }
                 // test
-                creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                creDelTotal_3 = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_3.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -450,9 +438,8 @@ const optionCreate = () => {
                     alert('최대 구매 수량입니다.')
                 }
                 // test
-                creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                creDelTotal_4 = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_4.toLocaleString('ko-kr')}원`
             })
 
             // 감소
@@ -468,9 +455,8 @@ const optionCreate = () => {
                     inputCount.value = `1`;
                 }
                 // test
-                creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                creDelTotal_4 = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_4.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -537,14 +523,13 @@ const optionCreate = () => {
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    creDelTotal_5 = cre_total;
+                    creDelTotal = cre_total;
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
                 // test
-                creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                creDelTotal = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal.toLocaleString('ko-kr')}원`
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -553,15 +538,14 @@ const optionCreate = () => {
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    creDelTotal_5 = cre_total;
+                    creDelTotal = cre_total;
                 }else if(cre_num == 1){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
                 // test
-                creDelTotal_l = cre_num*cre_price;
-                console.log(creDelTotal_l)
-                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal_l.toLocaleString('ko-kr')}원`
+                creDelTotal = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -628,10 +612,13 @@ const optionCreate = () => {
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    creDelTotal_6 = cre_total;
+                    creDelTotal = cre_total;
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
+                // test
+                creDelTotal = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal.toLocaleString('ko-kr')}원`
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -640,11 +627,14 @@ const optionCreate = () => {
                     inputCount.value = cre_num
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
-                    creDelTotal_6 = cre_total;
+                    creDelTotal = cre_total;
                 }else if(cre_num == 1){
                     itemPrice.innerHTML = `<em>11,000</em>원`;
                     inputCount.value = `1`;
                 }
+                // test
+                creDelTotal = cre_num*cre_price;
+                opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotal.toLocaleString('ko-kr')}원`
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -655,6 +645,9 @@ const optionCreate = () => {
             listResult6 = !listResult6;
         } 
     })
+    // 최종 가격 출력
+    creDelTotalAll += creDelTotal;
+    opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotalAll.toLocaleString('ko-kr')}원`
 }
 optionCreate();
 
