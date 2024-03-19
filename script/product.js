@@ -624,7 +624,6 @@ function optionCreate (){
                 creDelTotal_6 = cre_num*cre_price;
                 all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
                 val_1 = cre_num
-                console.log(inputCount.value,val_1)
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -644,8 +643,8 @@ function optionCreate (){
                 creDelTotal_6 = cre_num*cre_price;
                 all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
                 val_1 = cre_num;
-                valRetrun (val_1)
-                console.log(inputCount.value,val_1)
+                valRetrun (val_1,val_2)
+                console.log(val_1)
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -682,6 +681,7 @@ for(let i of optionName){
         val_1 = 1;
         all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
         opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotalAll.toLocaleString('ko-kr')}원`
+        valRetrun(val_1)
     })
 }
 
