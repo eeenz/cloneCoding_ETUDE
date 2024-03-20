@@ -47,7 +47,7 @@ const numCount = document.querySelector('.num_count')
 const text_area = document.querySelector('.num_box > span')
 let total
 let num = 0;
-let price = 11000;
+let price = 11800;
 let delTotal;
 
 // 증가
@@ -69,7 +69,7 @@ minus.addEventListener('click',()=>{
         total =  num*price
         text_area.innerHTML = `<em>${total.toLocaleString('ko-kr')}</em>원`
     }else if(num == 1){
-        text_area.innerHTML = `<em>11,000</em>원`;
+        text_area.innerHTML = `<em>11,800</em>원`;
         numCount.value = `1`;
     }
 }) */
@@ -102,7 +102,7 @@ let creDelTotal_5 = 0;
 let creDelTotal_6 = 0;
 // creDelTotalAll = creDelTotal_1 + creDelTotal_2 + creDelTotal_3 + creDelTotal_4 + creDelTotal_5 + creDelTotal_6;
 
-let valTotalAll;
+let valTotalAll = 0;
 let val_1;
 let val_2;
 let val_3;
@@ -113,6 +113,24 @@ let val_6;
 clear.classList.add('display_none')
 optionBox.classList.add('display_none')
 opt_total.classList.add('display_none')
+
+const data = [
+    {
+        name: '리얼체리 Real Cherry',
+        itemPrice: 11800,
+        num:1,
+    },
+    {
+        name: '플럼베리 Plum Berry',
+        itemPrice: 11800,
+        num:1,
+    }
+]
+let names = ['리얼체리 Real Cherry', '플럼베리 Plum Berry', '네온핑크 Neon Pink', '스윗애플 Sweet Apple', '레드오일 Red Oil', '핑크오일 Pink Oil']
+let nums = [1,1,1,1,1,1];
+let p_price = [11800, 11800, 11800, 11800, 11800, 11800];
+let t_price = 0;
+let all_price =  p_price[0] + p_price[1]+ p_price[2]+ p_price[3]+ p_price[4]+ p_price[5]
 
 function optionCreate (){
     // 개별로 작성 옵션 1
@@ -154,14 +172,14 @@ function optionCreate (){
             itemBtnWrap.appendChild(btnPlus)
             btnPlus.innerHTML = `<img src="./images/icon/add.png" alt="">`;
             itemBtnWrap.appendChild(itemPrice)
-            itemPrice.innerHTML = `<em>11,000</em>원`;
+            itemPrice.innerHTML = `<em>11,800</em>원`;
             itemBtnWrap.appendChild(itemBtnClear)
             itemBtnClear.innerHTML = `<img src="./images/icon/ico-clear.svg" alt="">`;
 
             // createElement 버튼 재설정
             let cre_total
             let cre_num = 0;
-            let cre_price = 11000;
+            let cre_price = 11800;
             
             // 증가
             btnPlus.addEventListener('click',()=>{
@@ -186,7 +204,7 @@ function optionCreate (){
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
                 }else if(cre_num == 1){
-                    itemPrice.innerHTML = `<em>11,000</em>원`;
+                    itemPrice.innerHTML = `<em>11,800</em>원`;
                     inputCount.value = `1`;
                 }
                 // 매개변수 전달위치
@@ -244,14 +262,14 @@ function optionCreate (){
             itemBtnWrap.appendChild(btnPlus)
             btnPlus.innerHTML = `<img src="./images/icon/add.png" alt="">`;
             itemBtnWrap.appendChild(itemPrice)
-            itemPrice.innerHTML = `<em>11,000</em>원`;
+            itemPrice.innerHTML = `<em>11,800</em>원`;
             itemBtnWrap.appendChild(itemBtnClear)
             itemBtnClear.innerHTML = `<img src="./images/icon/ico-clear.svg" alt="">`;
 
             // createElement 버튼 재설정
             let cre_total
             let cre_num = 0;
-            let cre_price = 11000;
+            let cre_price = 11800;
 
             // 증가
             btnPlus.addEventListener('click',()=>{
@@ -275,7 +293,7 @@ function optionCreate (){
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
                 }else if(cre_num == 1){
-                    itemPrice.innerHTML = `<em>11,000</em>원`;
+                    itemPrice.innerHTML = `<em>11,800</em>원`;
                     inputCount.value = `1`;
                 }
                 // 매개변수 전달위치
@@ -331,14 +349,14 @@ function optionCreate (){
             itemBtnWrap.appendChild(btnPlus)
             btnPlus.innerHTML = `<img src="./images/icon/add.png" alt="">`;
             itemBtnWrap.appendChild(itemPrice)
-            itemPrice.innerHTML = `<em>11,000</em>원`;
+            itemPrice.innerHTML = `<em>11,800</em>원`;
             itemBtnWrap.appendChild(itemBtnClear)
             itemBtnClear.innerHTML = `<img src="./images/icon/ico-clear.svg" alt="">`;
 
             // createElement 버튼 재설정
             let cre_total
             let cre_num = 0;
-            let cre_price = 11000;
+            let cre_price = 11800;
 
             // 증가
             btnPlus.addEventListener('click',()=>{
@@ -364,7 +382,7 @@ function optionCreate (){
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
                     creDelTotal_3 = cre_total;
                 }else if(cre_num == 1){
-                    itemPrice.innerHTML = `<em>11,000</em>원`;
+                    itemPrice.innerHTML = `<em>11,800</em>원`;
                     inputCount.value = `1`;
                 }
                 // 매개변수 전달위치
@@ -420,14 +438,14 @@ function optionCreate (){
             itemBtnWrap.appendChild(btnPlus)
             btnPlus.innerHTML = `<img src="./images/icon/add.png" alt="">`;
             itemBtnWrap.appendChild(itemPrice)
-            itemPrice.innerHTML = `<em>11,000</em>원`;
+            itemPrice.innerHTML = `<em>11,800</em>원`;
             itemBtnWrap.appendChild(itemBtnClear)
             itemBtnClear.innerHTML = `<img src="./images/icon/ico-clear.svg" alt="">`;
 
             // createElement 버튼 재설정
             let cre_total ;
             let cre_num = 0;
-            let cre_price = 11000;
+            let cre_price = 11800;
 
             // 증가
             btnPlus.addEventListener('click',()=>{
@@ -454,7 +472,7 @@ function optionCreate (){
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
                     creDelTotal_4 = cre_total;
                 }else if(cre_num == 1){
-                    itemPrice.innerHTML = `<em>11,000</em>원`;
+                    itemPrice.innerHTML = `<em>11,800</em>원`;
                     inputCount.value = `1`;
                 }
                 // 매개변수 전달위치
@@ -510,14 +528,14 @@ function optionCreate (){
             itemBtnWrap.appendChild(btnPlus)
             btnPlus.innerHTML = `<img src="./images/icon/add.png" alt="">`;
             itemBtnWrap.appendChild(itemPrice)
-            itemPrice.innerHTML = `<em>11,000</em>원`;
+            itemPrice.innerHTML = `<em>11,800</em>원`;
             itemBtnWrap.appendChild(itemBtnClear)
             itemBtnClear.innerHTML = `<img src="./images/icon/ico-clear.svg" alt="">`;
 
             // createElement 버튼 재설정
             let cre_total
             let cre_num = 0;
-            let cre_price = 11000;
+            let cre_price = 11800;
 
             // 증가
             btnPlus.addEventListener('click',()=>{
@@ -543,7 +561,7 @@ function optionCreate (){
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
                     creDelTotal_5 = cre_total;
                 }else if(cre_num == 1){
-                    itemPrice.innerHTML = `<em>11,000</em>원`;
+                    itemPrice.innerHTML = `<em>11,800</em>원`;
                     inputCount.value = `1`;
                 }
                 // 매개변수 전달위치
@@ -582,7 +600,7 @@ function optionCreate (){
             // createElement 버튼 재설정
             let cre_total
             let cre_num = 1;
-            let cre_price = 11000;
+            let cre_price = 11800;
 
             // 클릭대상 옵션리스트 클래스 추가
             itemWrap.classList.add('opt_list'); 
@@ -604,7 +622,7 @@ function optionCreate (){
             itemBtnWrap.appendChild(btnPlus)
             btnPlus.innerHTML = `<img src="./images/icon/add.png" alt="">`;
             itemBtnWrap.appendChild(itemPrice)
-            itemPrice.innerHTML = `<em>11,000</em>원`;
+            itemPrice.innerHTML = `<em>11,800</em>원`;
             itemBtnWrap.appendChild(itemBtnClear)
             itemBtnClear.innerHTML = `<img src="./images/icon/ico-clear.svg" alt="">`;
 
@@ -623,7 +641,6 @@ function optionCreate (){
                 // 매개변수 전달위치
                 creDelTotal_6 = cre_num*cre_price;
                 all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
-                val_1 = cre_num
             })
             // 감소
             btnMinus.addEventListener('click',()=>{
@@ -635,16 +652,13 @@ function optionCreate (){
                     creDelTotal_6 = cre_total;
                     val_1 = inputCount.value;
                 }else if(cre_num == 1){
-                    itemPrice.innerHTML = `<em>11,000</em>원`;
+                    itemPrice.innerHTML = `<em>11,800</em>원`;
                     inputCount.value = 1;
                     val_1 = inputCount.value;
                 }
                 // 매개변수 전달위치
                 creDelTotal_6 = cre_num*cre_price;
                 all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
-                val_1 = cre_num;
-                valRetrun (val_1,val_2)
-                console.log(val_1)
             })
             
             // 옵션리스트 개별 clear버튼 클릭했을 때
@@ -667,23 +681,26 @@ function all (cre1,cre2,cre3,cre4,cre5,cre6){
 
 // value 값 전달받는 매개변수
 // function valRetrun (v1,v2,v3,v4,v5,v6){
-//     valTotalAll = (v1 + v2 + v3 + v4 + v5 + v6) * 11000
-function valRetrun (v1){
-    valTotalAll = v1 * 11000
-    opt_total.innerHTML = `<em>TOTAL</em> ${valTotalAll.toLocaleString('ko-kr')}원`
-    return console.log(valTotalAll)
-}
+//     valTotalAll = (v1 + v2 + v3 + v4 + v5 + v6) * 11800
+// function valRetrun (v1){
+//     valTotalAll = v1 * 11800
+//     opt_total.innerHTML = `<em>TOTAL</em> ${valTotalAll.toLocaleString('ko-kr')}원`
+//     return console.log(valTotalAll)
+// }
 
 // 옵션 선택했을 때
-for(let i of optionName){
-    i.addEventListener('click',()=>{
+optionName.forEach((t,i)=>{
+    t.addEventListener('click',()=>{
         opt_total.classList.remove('display_none')
-        val_1 = 1;
-        all(creDelTotal_1,creDelTotal_2,creDelTotal_3,creDelTotal_4,creDelTotal_5,creDelTotal_6)
-        opt_total.innerHTML = `<em>TOTAL</em> ${creDelTotalAll.toLocaleString('ko-kr')}원`
-        valRetrun(val_1)
+        t_price += p_price[i] * nums[i]
+        opt_total.innerHTML = `<em>TOTAL</em> ${t_price.toLocaleString('ko-kr')}원`
     })
-}
+})
+
+// const totalResult = () => {
+//     let totalAll = 0;
+    
+// }
 
 // 큰 clear버튼 클릭했을 때
 clear.addEventListener('click',()=>{

@@ -1,15 +1,32 @@
 [
     {
-        "images":"./images/main/product/p_002.jpg",
-        "cuppon": "",
-        "info": "샛별배송",
-        "name": "[Kurly's] 동물복지 유정란 20구",
-        "regularPrice": "9,990원",
-        "description": "1구 당 판매가:  499.5원",
-        "discount": "5%",
-        "price": "9,490",
-        "review": "9,999+",
-        "project1": "Kurly Only",
-        "project2": ""
+        "name":"리얼체리 Real Cherry",
+        "itemPrice": "11,800",
+        "num": "1"
     },
+    {
+        "name":"플럼베리 Plum Berry",
+        "itemPrice": "11,800",
+        "num": "1"
+    },
+    {
+        "name":"네온핑크 Neon Pink",
+        "itemPrice": "11,800",
+        "num": "1"
+    },
+    {
+        "name":"스윗애플 Sweet Apple",
+        "itemPrice": "11,800",
+        "num": "1"
+    },
+    {
+        "name":"레드오일 Red Oil",
+        "itemPrice": "11,800",
+        "num": "1"
+    },
+    {
+        "name":"핑크오일 Pink Oil",
+        "itemPrice": "11,800",
+        "num": "1"
+    }
 ]
