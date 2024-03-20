@@ -635,6 +635,8 @@ function optionCreate (){
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
                     creDelTotal_6 = cre_total;
+                    t_price += p_price[0] * nums[0]
+                    opt_total.innerHTML = `<em>TOTAL</em> ${t_price.toLocaleString('ko-kr')}원`
                 }else{
                     alert('최대 구매 수량입니다.')
                 }
@@ -650,11 +652,11 @@ function optionCreate (){
                     cre_total =  cre_num*cre_price
                     itemPrice.innerHTML = `<em>${cre_total.toLocaleString('ko-kr')}</em>원`
                     creDelTotal_6 = cre_total;
-                    val_1 = inputCount.value;
+                    t_price += p_price[0] * nums[0]
+                    opt_total.innerHTML = `<em>TOTAL</em> ${t_price.toLocaleString('ko-kr')}원`
                 }else if(cre_num == 1){
                     itemPrice.innerHTML = `<em>11,800</em>원`;
                     inputCount.value = 1;
-                    val_1 = inputCount.value;
                 }
                 // 매개변수 전달위치
                 creDelTotal_6 = cre_num*cre_price;
@@ -692,8 +694,6 @@ function all (cre1,cre2,cre3,cre4,cre5,cre6){
 optionName.forEach((t,i)=>{
     t.addEventListener('click',()=>{
         opt_total.classList.remove('display_none')
-        t_price += p_price[i] * nums[i]
-        opt_total.innerHTML = `<em>TOTAL</em> ${t_price.toLocaleString('ko-kr')}원`
     })
 })
 
