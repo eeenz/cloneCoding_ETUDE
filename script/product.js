@@ -705,7 +705,7 @@ optionName.forEach((t,i)=>{
 // 큰 clear버튼 클릭했을 때
 clear.addEventListener('click',()=>{
     clear.classList.add('display_none')
-    window.location.reload(); //새로고침
+    window.location.reload(); //새로고침 초기화
 })
 
 /* ---------------------- 옵션명 변경 -------------------------- */    

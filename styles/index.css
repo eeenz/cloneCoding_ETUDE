@@ -1,7 +1,7 @@
 body, html {scroll-behavior: smooth;}
 /* main */
 main {
-    min-width: 1920px;
+    /* min-width: 1920px; */
     overflow: hidden scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -12,7 +12,7 @@ main::-webkit-scrollbar {
 }
 /* 스와이퍼 1. 배너영역 */
 main .banner_area .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
-    bottom: var(--swiper-scrollbar-bottom,40px)
+    bottom: var(--swiper-scrollbar-bottom, 40px)
 }
 main .banner_area .swiper-scrollbar .swiper-scrollbar-drag {
     background: var(--swiper-scrollbar-drag-bg-color, rgba(253, 253, 253, 0.7));
@@ -28,9 +28,10 @@ main .banner_area .container {position: relative;}
 main .banner_area .container .banner {
     /* background-size: cover;  */
     width: 100%; height: 100vh; /* z-index: -200; */
+    background: #fbf3eb;
 }
-main .banner_area .container .banner > a {}
-main .banner_area .container .banner > a img {width:100%;}
+main .banner_area .container .banner > a {width:100%;}
+main .banner_area .container .banner > a img {/* height: 100vh; */}
 main .banner_area .container .banner > .txt {position: absolute; bottom: 170px; left: 140px; }
 main .banner_area .container .banner > .txt > h2 {
     font-size: 2.188rem; font-weight: 700;
@@ -206,7 +207,8 @@ main .soonjung_area .container .item > li {
 }
 main .soonjung_area .container .item > li > .thumb {
     position: relative;
-    height: 380px; overflow: hidden;
+    width: 100%; overflow: hidden;
+    aspect-ratio: 1 / 1;
 }
 main .soonjung_area .container .item > li > .thumb > a:hover img {
     transform: scale(1.06);
@@ -225,6 +227,7 @@ main .soonjung_area .container .item > li > .thumb > a > .icon_new {
 main .soonjung_area .container .item > li > .item_info {
     background-color: #fafafa;
     padding: 15px 20px;
+    width: 100%;
 }
 main .soonjung_area .container .item > li > .item_info > p {
     font-size: 0.875rem; color:#777;
@@ -358,16 +361,21 @@ main .new_area .bg_img .what_new_item > .swiper-wrapper > .swiper-slide {
     /* border-radius:4px; */
 }
 main .new_area .bg_img .what_new_item > .swiper-wrapper .swiper-slide .thumb {
-    position:relative;  overflow: hidden;
-    height: 375px;
+    position:relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+main .new_area .bg_img .what_new_item > .swiper-wrapper .swiper-slide .thumb > a {
+    display: inline-block;
 }
 main .new_area .bg_img .what_new_item > .swiper-wrapper .swiper-slide .thumb > a:hover img {
     transform: scale(1.05);
     transition: 0.4s linear;
 }
-main .new_area .bg_img .what_new_item > .swiper-wrapper .swiper-slide .thumb > a {}
 main .new_area .bg_img .what_new_item > .swiper-wrapper .swiper-slide .thumb > a > img {
-    width:100%; border-top-right-radius:4px; border-top-left-radius: 4px;
+    width:100%; 
+    border-top-right-radius:4px; 
+    border-top-left-radius: 4px;
 }
 main .new_area .bg_img .what_new_item > .swiper-wrapper .swiper-slide .thumb > a > .icon_new {
     padding: 2px 6px; 
@@ -635,4 +643,16 @@ main .news_event_area .container .prev_btn > img,
 main .news_event_area .container .next_btn > img {
     /* height: 27px; position:absolute; top: 200px;
     z-index: 900; */
+}
+
+@keyframes text_up {
+    0% {transform: translateY(50px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+.up {
+    animation: text_up 1.5s ease;
+}
+
+@media screen and (max-width:1480px) {
+    main .banner_area .container .banner > a img {height: 100vh;}
 }
